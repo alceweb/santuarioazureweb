@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Le preghiere dei fedeli" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Elenco.aspx.cs" Inherits="Preghiere_Elenco" %>
+﻿<%@ Page Title="Le preghiere a Maria" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Elenco.aspx.cs" Inherits="Preghiere_Elenco" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
     <script src="../Scripts/ddaccordion.js"></script>
@@ -85,9 +85,13 @@
     <h2><%= Title %></h2><hr />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
-    <div style="border-style: solid; border-width: 1px; border-color: #C4B7A7; Border-Radius:10px; background-image: url('<%: ResolveUrl("~/Images/SfondoTabellaNews.png")%>'); background-repeat: repeat">
-        <asp:LinkButton ID="ButtonNew" runat="server" Text="Lascia la tua preghiera" PostBackUrl="~/Preghi/Inserisci.aspx" />
-        <table >
+        <table class="tbl3">
+            <tr>
+                <td>
+        <asp:LinkButton ID="ButtonNew" runat="server" ForeColor="#452a17" Text="Lascia la tua preghiera" PostBackUrl="~/Riservata/PreghiAdd.aspx" />
+
+                </td>
+            </tr>
             <tr>
                 <td style="width: 250px; vertical-align: top">
                     <img style="border: none; box-shadow: none" src="<%: ResolveUrl("~/Images/Madonna.png")%>" />
@@ -144,15 +148,12 @@
             </tr>
         </table>
 
-        <h1>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                 ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
                 ProviderName="<%$ ConnectionStrings:DefaultConnection.ProviderName %>" 
-                SelectCommand="SELECT [id], [Nome], [Cognome], [Citta], [Preghiera], [Data] FROM [FedPreg] ORDER BY [Data] DESC">
+                SelectCommand="SELECT * FROM [FedPreg] ORDER BY [Data] DESC">
 
             </asp:SqlDataSource>
-        </h1>
-    </div>
 
 </asp:Content>
 
