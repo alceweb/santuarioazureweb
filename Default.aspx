@@ -121,13 +121,20 @@
             <p id="P1" runat="server" ></p>
         </EmptyItemTemplate>
     </asp:ListView>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [News] WHERE ([Pubblica] = @Pubblica)">
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
+        SelectCommand="SELECT * FROM [News] WHERE ([Pubblica] = @Pubblica)">
         <SelectParameters>
             <asp:Parameter DefaultValue="true" Name="Pubblica" Type="Boolean" />
         </SelectParameters>
     </asp:SqlDataSource>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
             ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
-            SelectCommand='SELECT * FROM [News] WHERE ([Data] &gt; { fn NOW() })'>
+            SelectCommand='SELECT * FROM [News] WHERE ([DataInizio] <= { fn NOW() } AND [DataFine] >= { fn NOW() })'>
             </asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [News] WHERE (([DataInizio] &lt;= @DataInizio) AND ([DataFine] &gt;= @DataFine)) ORDER BY [Data]">
+        <SelectParameters>
+            <asp:Parameter DefaultValue="Now()" Name="DataInizio" Type="DateTime" />
+            <asp:Parameter DefaultValue="Now()" Name="DataFine" Type="DateTime" />
+        </SelectParameters>
+    </asp:SqlDataSource>
 </asp:Content>

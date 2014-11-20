@@ -2,7 +2,7 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
-        <h1><%: Title %>.</h1>
+        <h1><%: Title %></h1>
         <h2>Utilizzare il form seguente per creare un nuovo account.</h2>
     </hgroup>
 

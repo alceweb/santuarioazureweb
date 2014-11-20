@@ -1,11 +1,9 @@
-﻿<%@ Page Title="Accedi" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Account_Login" %>
+﻿<%@ Page Title="Login utenti registrati" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Account_Login" %>
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <hgroup class="title">
-        <h1><%: Title %>.</h1>
     </hgroup>
-    
     <section id="loginForm">
         <h2>Utilizzare un account locale per eseguire l'accesso.</h2>
         <asp:Login runat="server" ViewStateMode="Disabled" RenderOuterTable="false">
@@ -37,12 +35,20 @@
         </asp:Login>
         <p>
             <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Esegui registrazione</asp:HyperLink>
-            se non è disponibile un account.
+            se non è disponibile un account.<br />
+            La registrazione server per:
         </p>
+        <ul>
+            <li>inserire nel sito le preghiere</li>
+            <li>fare donazioni</li>
+            <li>prenotare le S. Messe</li>
+            <li>scaricare i documenti e le riviste</li>
+        </ul>
+
     </section>
 
     <section id="socialLoginForm">
-        <h2>Utilizzare un altro servizio per eseguire l'accesso.</h2>
-        <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
+<%--        <h2>Utilizzare un altro servizio per eseguire l'accesso.</h2>
+        <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />--%>
     </section>
 </asp:Content>

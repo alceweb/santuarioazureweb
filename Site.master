@@ -81,7 +81,7 @@
                     <a href="<%: ResolveUrl("~/centro.aspx")%>" class="link2 homeMenu">Centro di spiritualità<br />
                         <img src="<%: ResolveUrl("~/Images/Tumb2.png")%>" /></a><br />
                     <a href="<%: ResolveUrl("~/VirtualTour/Main.aspx")%>" class="link2 homeMenu">Virtual tour<br />
-                        <img src="<%: ResolveUrl("~/Images/Tumb4.png")%>" /></a><br />
+                        <img src="<%: ResolveUrl("~/Images/ioeal.jpg")%>" /></a><br />
                     <a href="/Pubblicazioni/main.html" class="link2 homeMenu">Pubblicazioni<br />
                         <img src="<%: ResolveUrl("~/Images/Tumb5.png")%>" /></a><br />
                 </div>

@@ -64,7 +64,7 @@
                     <StaticSelectedStyle BackColor="#507CD1" />
                 </asp:Menu>
             </div>
-            <div style="display:table">
+            <div style="border: thin solid #FFFFFF; margin-left:10px; border-radius:20px; padding-right:10px; padding-left:10px; background-image: url('../Images/SfondoTabellaNews.png'); background-repeat: repeat; display:table; margin:auto"  ">
 
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
                 </asp:ContentPlaceHolder>
