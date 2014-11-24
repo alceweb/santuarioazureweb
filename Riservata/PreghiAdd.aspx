@@ -41,14 +41,14 @@
                     Preghiera:
                 </td>
                 <td>
-                    <CKEditor:CKEditorControl ID="PreghieraTextBox" Text='<%# Bind("Preghiera") %>' BasePath="~/ckeditor" runat="server" UIColor="Gray" Language="it" EnterMode="BR"></CKEditor:CKEditorControl>
+                    <CKEditor:CKEditorControl ID="PreghieraTextBox" Text='<%# Bind("Preghiera") %>' BasePath="~/ckeditor" runat="server" UIColor="Gray" Language="it" EnterMode="BR" CustomConfig="config1.js"></CKEditor:CKEditorControl>
                 </td>
             </tr>
             <tr>
                 <td>
                 </td>
                 <td>
-                <asp:Button ID="InsertButton" ForeColor="Green"  runat="server" CommandName="Insert" Text="Invia la preghiera" />
+                <asp:Button ID="InsertButton" ForeColor="Green"  runat="server" OnClientClick="return confirm('Stai inviando la tua preghiera. Verrà valutata dal persobale addetto prima della pubblicazione sul sito')" CommandName="Insert" Text="Invia la preghiera" />
                 <asp:Button ID="CancelButton" ForeColor="Red" runat="server" CommandName="Cancel" Text="Cancella" />
                 </td>
             </tr>
@@ -94,9 +94,10 @@
             <asp:Parameter Name="Id" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
+    <%-- Lista preghiere ultima settimana --%>
     <asp:ListView ID="ListView2" runat="server" DataSourceID="SqlDataSource2" DataKeyNames="Id">
         <AlternatingItemTemplate>
-            <tr >
+            <tr style="background-image: url('http://localhost:41238/santuarioazureweb/Images/SfondoTabellaNews.png')">
                 <td>
                     <asp:Label ID="DataLabel" runat="server" Text='<%# Eval("Data", "{0: dddd dd-MM-yy}") %>' />
                 </td>
@@ -141,18 +142,21 @@
                         <table id="itemPlaceholderContainer" runat="server" border="0" style="">
                             <tr runat="server" >
                             </tr>
-                            <tr style="border-width: thin; border-color: #FFFFFF; border-bottom-style: solid;" id="itemPlaceholder" runat="server">
+                            <tr style="" id="itemPlaceholder" runat="server">
                             </tr>
                         </table>
                     </td>
                 </tr>
-                <tr runat="server">
-                    <td runat="server" style=""></td>
+                <tr>
+                    <td>
+
+                    </td>
                 </tr>
             </table>
         </LayoutTemplate>
     </asp:ListView>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [FedPreg] WHERE [Data] > {fn NOW()}-7">
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
+        SelectCommand="SELECT * FROM [FedPreg] WHERE [Data] > {fn NOW()}-7 AND [Pubblica] = 1 ORDER BY [Data] desc ">
     </asp:SqlDataSource>
 </asp:Content>
 

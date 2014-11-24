@@ -12,28 +12,28 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <header>
-        <div class="content-wrapper">
-            <div class="float-right">
-                <nav>
-                    <section id="login">
-                        <asp:LoginView ID="LoginView1" runat="server" ViewStateMode="Disabled">
-                            <LoggedInTemplate>
-                                <p>
-                                    Hello, <a id="A1" runat="server" class="username" href="~/Account/Manage" title="Manage your account">
-                                        <asp:LoginName ID="LoginName1" runat="server" CssClass="username" />
-                                    </a>!
-                                </p>
-                            </LoggedInTemplate>
-                        </asp:LoginView>
-                    </section>
-                </nav>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-right">
+                    <nav>
+                        <section id="login">
+                            <asp:LoginView ID="LoginView1" runat="server" ViewStateMode="Disabled">
+                                <LoggedInTemplate>
+                                    <p>
+                                        Hello, <a id="A1" runat="server" class="username" href="~/Account/Manage" title="Manage your account">
+                                            <asp:LoginName ID="LoginName1" runat="server" CssClass="username" />
+                                        </a>!
+                                    </p>
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+                        </section>
+                    </nav>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
         <div id="body">
-            <h2>Pannello di gestione contenuti dinamici</h2>
-                        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <h2>Gestione contenuti dinamici</h2>
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
             <div class="float-left">
                 <div>
                     <a class="linka" runat="server" href="~/Default.aspx">Torna al sito</a><hr />
@@ -49,9 +49,9 @@
                             <asp:MenuItem Text="Aggiungi" Value="Aggiungi" NavigateUrl="~/Admin/NewsAdd.aspx"></asp:MenuItem>
                         </asp:MenuItem>
                         <asp:MenuItem Text="Preghiere" Value="Preghiere">
-                            <asp:MenuItem Text="Gestisci" Value="Gestisci"></asp:MenuItem>
+                            <asp:MenuItem Text="Gestisci" Value="Gestisci"  NavigateUrl="~/Admin/PreghiereAdmin.aspx"></asp:MenuItem>
                         </asp:MenuItem>
-<%--                        <asp:MenuItem Text="Utenti" Value="Utenti">
+                        <%--                        <asp:MenuItem Text="Utenti" Value="Utenti">
                             <asp:MenuItem NavigateUrl="~/Admin/Utenti.aspx" Text="Gestisci" Value="Gestisci"></asp:MenuItem>
                         </asp:MenuItem>--%>
                         <asp:MenuItem Text="Ramo fiorito" Value="Ramo fiorito">
@@ -64,12 +64,10 @@
                     <StaticSelectedStyle BackColor="#507CD1" />
                 </asp:Menu>
             </div>
-            <div style="border: thin solid #FFFFFF; margin-left:10px; border-radius:20px; padding-right:10px; padding-left:10px; background-image: url('../Images/SfondoTabellaNews.png'); background-repeat: repeat; display:table; margin:auto"  ">
-
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
-                </asp:ContentPlaceHolder>
-             </div>
-       </div>
+            <div style="border: thin solid #FFFFFF; margin-left: 10px; border-radius: 20px; padding-right: 10px; padding-left: 10px; background-image: url('../Images/SfondoTabellaNews.png'); background-repeat: repeat; display: table; margin: auto">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server"/>
+            </div>
+        </div>
     </form>
 </body>
 </html>

@@ -88,8 +88,7 @@
         <table class="tbl3">
             <tr>
                 <td>
-        <asp:LinkButton ID="ButtonNew" runat="server" ForeColor="#452a17" Text="Lascia la tua preghiera" PostBackUrl="~/Riservata/PreghiAdd.aspx" />
-
+                    <asp:LinkButton ID="ButtonNew" runat="server" ForeColor="#452a17" Text="Lascia la tua preghiera" PostBackUrl="~/Riservata/PreghiAdd.aspx" />
                 </td>
             </tr>
             <tr>
@@ -143,16 +142,13 @@
                             </div>
                         </LayoutTemplate>
                     </asp:ListView>
-
                 </td>
             </tr>
         </table>
-
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
                 ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
                 ProviderName="<%$ ConnectionStrings:DefaultConnection.ProviderName %>" 
-                SelectCommand="SELECT * FROM [FedPreg] ORDER BY [Data] DESC">
-
+                SelectCommand="SELECT * FROM [FedPreg] WHERE [Pubblica] = 1 ORDER BY [Data] DESC">
             </asp:SqlDataSource>
 
 </asp:Content>
