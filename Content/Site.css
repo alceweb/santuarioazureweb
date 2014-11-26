@@ -297,24 +297,25 @@ ul#menu {
             position:relative;
         }
 
-#menul {
+.menul {
     float: left;
     /*background-image: url('../Images/SfondoTabellaNews.png');*/
     background-repeat: repeat;
     font-size:0.93em;
     padding-left:15px;
     padding-top:10px;
+    display:block;
 }
-#menul a {
+.menul a {
     color: #3D2815;
     transition: all 1s ease;  
 }
-#menul span {
+.menul span {
     color: #3D2815;    
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
 
 }
-#menul a:hover img {
+.menul a:hover img {
     opacity: 0.8;
     border-radius: 10px;
     -ms-transform: rotate(-5deg) scale(1.2,1.2); /* IE 9 */
@@ -326,7 +327,7 @@ ul#menu {
     -ms-transition: all 1s ease;
     transition: all 1s ease;
 }
-#menul img {
+.menul img {
     width: 150px;
     transition: all 1s ease;
 }

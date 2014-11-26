@@ -11,8 +11,4 @@ public partial class Test : System.Web.UI.Page
     {
 
     }
-    protected void btnSave_Click(object sender, EventArgs e)
-    {
-        DateTime dob = DateTime.Parse(Request.Form[TextBox1.UniqueID]);
-    }
 }

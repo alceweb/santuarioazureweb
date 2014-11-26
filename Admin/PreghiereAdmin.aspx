@@ -10,11 +10,11 @@
         <ItemTemplate>
             <asp:LinkButton CssClass="link3" ID="EditButton" runat="server" CommandName="Edit" > 
             <asp:Label ID="NomeLabel" Font-Bold="true" runat="server" Text='<%# Eval("Nome") %>' />
-             da 
+             <em>da</em> 
             <asp:Label ID="CittaLabel" runat="server" Text='<%# Eval("Citta") %>' />
              - 
             <asp:Label ID="DataLabel" runat="server" Text='<%# Eval("Data", "{0:dd-MM-yy}") %>' />
-             - Pubblica  <asp:CheckBox ID="PubblicaCheckBox" runat="server" Checked='<%# Eval("Pubblica") %>' Enabled="false" />
+             - <em>Pubblica</em>  <asp:CheckBox ID="PubblicaCheckBox" runat="server" Checked='<%# Eval("Pubblica") %>' Enabled="false" />
 
             </asp:LinkButton><span style="float:right"><asp:LinkButton ID="DeleteButton" ForeColor="Red" Font-Bold="true" OnClientClick='return confirm("Stai cancellando definitivamente record")' runat="server" CommandName="Delete" Text="Elimina" />
             </span>
@@ -62,13 +62,12 @@
         </EditItemTemplate>
         <EmptyDataTemplate>
             <span>Non è stato restituito alcun dato.</span></EmptyDataTemplate><LayoutTemplate>
-            <div id="itemPlaceholderContainer" runat="server" style=""><h2>Gestione preghiere</h2><hr /><span runat="server" id="itemPlaceholder" /></div><div style="">
+            <div id="itemPlaceholderContainer" runat="server" style=""><h2>Gestione preghiere</h2><hr /><span runat="server" id="itemPlaceholder" /></div>
                 <asp:DataPager ID="DataPager1" runat="server">
                     <Fields>
-                        <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowLastPageButton="True" />
+                        <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="True" ShowLastPageButton="True" />
                     </Fields>
                 </asp:DataPager>
-            </div>
         </LayoutTemplate>
     </asp:ListView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" DeleteCommand="DELETE FROM [FedPreg] WHERE [Id] = @Id" InsertCommand="INSERT INTO [FedPreg] ([Nome], [Citta], [Preghiera], [Data], [Utente], [Pubblica]) VALUES (@Nome, @Citta, @Preghiera, @Data, @Utente, @Pubblica)" SelectCommand="SELECT * FROM [FedPreg] ORDER BY [Pubblica], [Data]" UpdateCommand="UPDATE [FedPreg] SET [Nome] = @Nome, [Citta] = @Citta, [Preghiera] = @Preghiera, [Data] = @Data, [Utente] = @Utente, [Pubblica] = @Pubblica WHERE [Id] = @Id">

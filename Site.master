@@ -63,50 +63,44 @@
             </div>
         </div>
     </header>
-    <div id="body">
-                            <ul id="menu">
-                                <li><a id="A1" runat="server" href="~/">Home</a></li>
-                                <li><a id="A2" runat="server" href="~/Info.aspx">Info e orari</a></li>
-                                <li><a id="A3" runat="server" href="~/Apparizione/App.aspx">Apparizione</a></li>
-                                <li><a id="A4" runat="server" href="~/Storia/Storia.aspx">La storia</a></li>
-                            </ul>
-
-        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
-        <section class="content-wrapper main-content clear-fix">
-            <div id="menul">
-                <br />
-                <div>
-                    <a href="http://www.verbumradio.com/caravaggio.m3u" class="link2 homeMenu">Ascolta le celebrazioni<br />
-                        <img src="<%: ResolveUrl("~/Images/Tumb7.png")%>" /></a><br />
-                    <a href="<%: ResolveUrl("~/centro.aspx")%>" class="link2 homeMenu">Centro di spiritualità<br />
-                        <img src="<%: ResolveUrl("~/Images/Tumb2.png")%>" /></a><br />
-                    <a href="<%: ResolveUrl("~/VirtualTour/Main.aspx")%>" class="link2 homeMenu">Virtual tour<br />
-                        <img src="<%: ResolveUrl("~/Images/ioeal.jpg")%>" /></a><br />
-                    <a href="/Pubblicazioni/main.html" class="link2 homeMenu">Pubblicazioni<br />
-                        <img src="<%: ResolveUrl("~/Images/Tumb5.png")%>" /></a><br />
+        <div id="body">
+            <ul id="menu">
+                <li><a id="A1" runat="server" href="~/">Home</a></li>
+                <li><a id="A2" runat="server" href="~/Info.aspx">Info e orari</a></li>
+                <li><a id="A3" runat="server" href="~/Apparizione/App.aspx">Apparizione</a></li>
+                <li><a id="A4" runat="server" href="~/Storia/Storia.aspx">La storia</a></li>
+            </ul>
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <section class="content-wrapper main-content clear-fix">
+                <div class="menul">
+                    <br />
+                    <div>
+                        <a href="http://www.verbumradio.com/caravaggio.m3u" class="link2 homeMenu">Ascolta le celebrazioni<br />
+                            <img src="<%: ResolveUrl("~/Images/Tumb7.png")%>" /></a><br />
+                        <a href="<%: ResolveUrl("~/centro.aspx")%>" class="link2 homeMenu">Centro di spiritualità<br />
+                            <img src="<%: ResolveUrl("~/Images/Tumb2.png")%>" /></a><br />
+                        <a href="<%: ResolveUrl("~/VirtualTour/Main.aspx")%>" class="link2 homeMenu">Virtual tour<br />
+                            <img src="<%: ResolveUrl("~/Images/ioeal.jpg")%>" /></a><br />
+                        <a href="/Pubblicazioni/main.html" class="link2 homeMenu">Pubblicazioni<br />
+                            <img src="<%: ResolveUrl("~/Images/Tumb5.png")%>" /></a><br />
+                        <a href="<%: ResolveUrl("~/Preghiere/Elenco.aspx") %>" class="link2 homeMenu">Lascia una preghiera<br />
+                            <img src="<%: ResolveUrl("~/Images/Tumb1.png")%>" /></a>
+                    </div>
                 </div>
-                <div>
-                    <a href="<%: ResolveUrl("~/Preghiere/Elenco.aspx") %>" class="link2 homeMenu">Lascia una preghiera<br />
-                        <img src="<%: ResolveUrl("~/Images/Tumb1.png")%>" /></a>
-                </div>
-            </div>
-            <div style="float:right;">
-                <h3 style="text-align:right">
-                <a class="linka" href='<%: ResolveUrl("~/EleNews.aspx") %>'>Eventi</a><br />
-                <a class="linka" href="<%: ResolveUrl("~/Donazioni.aspx") %>">Aiuta il Santuario</a><br />
-                <a class="linka" href='<%: ResolveUrl("~/Lumen.aspx") %>'>Candele</a><br />
-                <a class="linka" href="<%: ResolveUrl("~/Pellegrinaggi.aspx") %>">Pellegrinaggi</a><br />
-                 <a class="linka" href="<%: ResolveUrl("~/Scholae.aspx") %>">Scholae Cantorum</a><br />
-               <a class="linka" href="<%: ResolveUrl("~/Preghiere/Elenco.aspx") %>">Preghiere</a><br />
+                <div style="float: right; text-align:right; position:relative; height:260px; bottom:0px">
+                    <h3 >
+                        <a class="linka" href='<%: ResolveUrl("~/EleNews.aspx") %>'>Eventi</a><br />
+                        <a class="linka" href="<%: ResolveUrl("~/Donazioni.aspx") %>">Aiuta il Santuario</a><br />
+                        <a class="linka" href='<%: ResolveUrl("~/Lumen.aspx") %>'>Candele</a><br />
+                        <a class="linka" href="<%: ResolveUrl("~/Pellegrinaggi.aspx") %>">Pellegrinaggi</a><br />
+                        <a class="linka" href="<%: ResolveUrl("~/Scholae.aspx") %>">Scholae Cantorum</a><br />
+                        <a class="linka" href="<%: ResolveUrl("~/Preghiere/Elenco.aspx") %>">Preghiere</a><br />
 
-                </h3>
-            </div>
-            <section class="contentCentro">
-                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+                    </h3>
+                </div>
+                    <asp:ContentPlaceHolder runat="server" ID="MainContent" />
             </section>
-
-        </section>
-    </div>
+        </div>
     <footer>
         <hr />
             <div class="float-left">

@@ -7,7 +7,7 @@
     <h2><%: Title %></h2><hr />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
-    <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="SqlDataSource1" GroupItemCount="3"  InsertItemPosition="FirstItem">
+    <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="SqlDataSource1" GroupItemCount="3" InsertItemPosition="FirstItem">
         <EmptyDataTemplate>
             <table runat="server" style="">
                 <tr>
@@ -15,9 +15,6 @@
                 </tr>
             </table>
         </EmptyDataTemplate>
-        <EmptyItemTemplate>
-<td runat="server" />
-        </EmptyItemTemplate>
         <GroupTemplate>
             <tr id="itemPlaceholderContainer" runat="server">
                 <td id="itemPlaceholder" runat="server"></td>
@@ -25,44 +22,40 @@
         </GroupTemplate>
         <InsertItemTemplate>
             <td runat="server" style="">Nome:
-                </td>
+            </td>
             <td>
                 <asp:TextBox ID="NomeTextBox" runat="server" Text='<%# Bind("Nome") %>' />
             </td>
             <tr>
-                <td>
-                    Città:
+                <td>Città:
                 </td>
-            <td>
-                <asp:TextBox ID="CittaTextBox" runat="server" Text='<%# Bind("Citta") %>' />
+                <td>
+                    <asp:TextBox ID="CittaTextBox" runat="server" Text='<%# Bind("Citta") %>' />
+                </td>
+                <tr>
+                    <td style="vertical-align: top">Preghiera:
+                    </td>
+                    <td>
+                        <CKEditor:CKEditorControl ID="PreghieraTextBox" Text='<%# Bind("Preghiera") %>' BasePath="~/ckeditor" runat="server" UIColor="Gray" Language="it" EnterMode="BR" CustomConfig="config1.js"></CKEditor:CKEditorControl>
+                    </td>
+                </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <asp:Button ID="InsertButton" ForeColor="Green" runat="server" OnClientClick="return confirm('Stai inviando la tua preghiera. Verrà valutata dal persobale addetto prima della pubblicazione sul sito')" CommandName="Insert" Text="Invia la preghiera" />
+                    <asp:Button ID="CancelButton" ForeColor="Red" runat="server" CommandName="Cancel" Text="Cancella" />
+                </td>
+            </tr>
             </td>
-            <tr>
-                <td style="vertical-align:top">
-                    Preghiera:
-                </td>
-                <td>
-                    <CKEditor:CKEditorControl ID="PreghieraTextBox" Text='<%# Bind("Preghiera") %>' BasePath="~/ckeditor" runat="server" UIColor="Gray" Language="it" EnterMode="BR" CustomConfig="config1.js"></CKEditor:CKEditorControl>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                <asp:Button ID="InsertButton" ForeColor="Green"  runat="server" OnClientClick="return confirm('Stai inviando la tua preghiera. Verrà valutata dal persobale addetto prima della pubblicazione sul sito')" CommandName="Insert" Text="Invia la preghiera" />
-                <asp:Button ID="CancelButton" ForeColor="Red" runat="server" CommandName="Cancel" Text="Cancella" />
-                </td>
-            </tr>
-</td>
         </InsertItemTemplate>
         <ItemTemplate>
-            <td runat="server" style="">
-                </td>
+            <td runat="server" style=""></td>
         </ItemTemplate>
         <LayoutTemplate>
-            <table runat="server">
+            <table class="tbl3" runat="server">
                 <tr runat="server">
                     <td runat="server">
-                        <table class="tbl3" id="groupPlaceholderContainer" runat="server" border="0" style="">
+                        <table id="groupPlaceholderContainer" runat="server" border="0" style="">
                             <tr id="groupPlaceholder" runat="server">
                             </tr>
                         </table>

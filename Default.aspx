@@ -10,7 +10,6 @@
 </asp:Content>
 <asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
      <div class="wrapper">
-
          <div id="ei-slider" class="ei-slider">
             <ul class="ei-slider-large">
                 <li>
@@ -79,7 +78,8 @@
             <!-- ei-slider-thumbs -->
         </div>
         <!-- ei-slider -->
-    </div><!-- wrapper -->
+    </div>
+    <!-- wrapper -->
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
         <script type="text/javascript" src="Slideshow/js/jquery.eislideshow.js"></script>
         <script type="text/javascript" src="Slideshow/js/jquery.easing.1.3.js"></script>
@@ -95,46 +95,36 @@
         </script>
 </asp:Content>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-   <asp:ListView ID="ListView2" runat="server" DataKeyNames="Id" DataSourceID="SqlDataSource1" >
-        <ItemTemplate >
-            <div id="Div1" runat="server" class="NewsItems" >
-                <asp:Label ID="DataLabel" CssClass="NewsData" runat="server" Text='<%# Eval("Data", "{0:dddd dd-MMM-yy}") %>' />
-                <br />
-                <asp:Label ID="TitoloLabel" CssClass="NewsTitolo" runat="server" Text='<%# Eval("Titolo") %>' />
-                <br />
-                <a href='News.aspx?ID=<%# Eval("Id") %>' class="NewsA" >
-                    <img  class="NewsImg" src='<%# "NewsImg/" + Eval("ID") + "/" + Eval("id") + ".jpg" %>' /></a>
-                <br />
-                <span>
-                <asp:Label ID="DescrizioneBreveLabel" CssClass="NewsDescrizione" runat="server" Text='<%# Eval("DescrizioneBreve") %>' />
-                      </span>
-                <br />
-            </div>
-        </ItemTemplate>
-        <LayoutTemplate>
-                        <div id="itemPlaceholderContainer" runat="server" style="">
-                            <div id="itemPlaceholder" runat="server" style="">
-                            </div>
-                        </div>
-        </LayoutTemplate>
-        <EmptyItemTemplate>
-            <p id="P1" runat="server" ></p>
-        </EmptyItemTemplate>
-    </asp:ListView>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
-        SelectCommand="SELECT * FROM [News] WHERE ([Pubblica] = @Pubblica)">
-        <SelectParameters>
-            <asp:Parameter DefaultValue="true" Name="Pubblica" Type="Boolean" />
-        </SelectParameters>
-    </asp:SqlDataSource>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
-            SelectCommand='SELECT * FROM [News] WHERE ([DataInizio] <= { fn NOW() } AND [DataFine] >= { fn NOW() })'>
-            </asp:SqlDataSource>
-    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [News] WHERE (([DataInizio] &lt;= @DataInizio) AND ([DataFine] &gt;= @DataFine)) ORDER BY [Data]">
-        <SelectParameters>
-            <asp:Parameter DefaultValue="Now()" Name="DataInizio" Type="DateTime" />
-            <asp:Parameter DefaultValue="Now()" Name="DataFine" Type="DateTime" />
-        </SelectParameters>
-    </asp:SqlDataSource>
+    <div style="display: block">
+        <asp:ListView ID="ListView2" runat="server" DataKeyNames="Id" DataSourceID="SqlDataSource1">
+            <ItemTemplate>
+                <span class="NewsItems">
+                    <asp:Label ID="DataLabel" CssClass="NewsData" runat="server" Text='<%# Eval("Data", "{0:dddd dd-MMM-yy}") %>' />
+                    <br />
+                    <asp:Label ID="TitoloLabel" CssClass="NewsTitolo" runat="server" Text='<%# Eval("Titolo") %>' />
+                    <br />
+                    <a href='News.aspx?ID=<%# Eval("Id") %>' class="NewsA">
+                        <img class="NewsImg" src='<%# "NewsImg/" + Eval("ID") + "/" + Eval("id") + ".jpg" %>' /></a>
+                    <br />
+                    <span>
+                        <asp:Label ID="DescrizioneBreveLabel" CssClass="NewsDescrizione" runat="server" Text='<%# Eval("DescrizioneBreve") %>' />
+                    </span>
+                    <br />
+                </span>
+            </ItemTemplate>
+            <LayoutTemplate>
+                <div id="itemPlaceholderContainer" runat="server" style="">
+                    <div id="itemPlaceholder" runat="server" style="">
+                    </div>
+                </div>
+            </LayoutTemplate>
+            <EmptyItemTemplate>
+                <p id="P1" runat="server"></p>
+            </EmptyItemTemplate>
+        </asp:ListView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server"
+            ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"
+            SelectCommand='SELECT * FROM [News] WHERE ([DataInizio] <= { fn NOW() } AND [DataFine] >= { fn NOW() })'></asp:SqlDataSource>
+
+    </div>
 </asp:Content>

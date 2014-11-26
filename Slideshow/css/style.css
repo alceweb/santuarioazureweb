@@ -52,14 +52,14 @@
     text-shadow: 3px 3px 33px 15px #000;
 }
 .ei-title h3{
-	font-size: 4em;
+	font-size: 2em;
 	line-height: 1em;
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
 	color: #000;
 }
 .ei-slider-thumbs{
-	height: 13px;
+	height: 0px;
 	margin: 0 auto;
 	position: relative;
 }

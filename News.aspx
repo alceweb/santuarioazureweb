@@ -11,7 +11,7 @@
         </EmptyDataTemplate>
         <ItemTemplate>
             <span class="NewsItem" style="">
-                <a class="linkag" style="float:right" href="#nogo">Galleria fotografica</a>
+                <a class="linkag" style="float:right" href='<%# "NewsGalleria.aspx?id=" + Eval("Id")  %>'>Galleria fotografica</a>
             <asp:Label ID="DataLabel" CssClass="NewsData" runat="server" Text='<%# Eval("Data", "{0:dddd dd-MM-yy}") %>' Font-Size="1.9em" />
             <br />
             <asp:Label ID="TitoloLabel" CssClass="NewsTitolo" runat="server" Text='<%# Eval("Titolo") %>' />
