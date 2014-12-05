@@ -90,7 +90,7 @@
     <%-- Lista preghiere ultima settimana --%>
     <asp:ListView ID="ListView2" runat="server" DataSourceID="SqlDataSource2" DataKeyNames="Id">
         <AlternatingItemTemplate>
-            <tr style="background-image: url('http://localhost:41238/santuarioazureweb/Images/SfondoTabellaNews.png')">
+            <tr style="background-image: url('../Images/SfondoTabellaNews.png')">
                 <td>
                     <asp:Label ID="DataLabel" runat="server" Text='<%# Eval("Data", "{0: dddd dd-MM-yy}") %>' />
                 </td>

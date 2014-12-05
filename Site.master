@@ -17,10 +17,8 @@
 </head>
 <body>
     <form runat="server">
-    <asp:ScriptManager runat="server">
+<%--    <asp:ScriptManager runat="server">
         <Scripts>
-            <%--Per ulteriori informazioni sulla creazione di bundle di script in ScriptManager, vedere http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
-            <%--Script framework--%>
             <asp:ScriptReference Name="MsAjaxBundle" />
             <asp:ScriptReference Name="jquery" />
             <asp:ScriptReference Name="jquery.ui.combined" />
@@ -33,10 +31,8 @@
             <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
             <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
             <asp:ScriptReference Name="WebFormsBundle" />
-            <%--Script sito--%>
-
         </Scripts>
-    </asp:ScriptManager>
+    </asp:ScriptManager>--%>
     <header>
         <div class="content-wrapper">
             <div class="float-right">

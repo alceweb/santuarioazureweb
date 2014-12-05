@@ -860,6 +860,9 @@ tr.pager td {
     vertical-align:top;
     padding-left:8px;
 }
+    .tbl3 h3 {
+        text-align:center;
+    }
     .tbl4 {
     margin:auto;
     border-radius:20px;

@@ -48,7 +48,8 @@
         .DescrizioneLunga {
             font-style: italic;
             width:90%;
-            text-align:justify;
+            background-image: url('../Images/SfondoTabellaNews.png');
+            /*text-align:justify;*/
         }
         .TdNews {
             border-style: solid none solid none;
@@ -108,11 +109,11 @@
                                     <asp:Label ID="CittàLabel" runat="server" Text='<%#", da " + Eval("Citta")%>' />
                                 </asp:LinkButton>
                             </div>
-                            <div class="thepet" style="border-style: none solid solid solid; border-width: 1px; border-color: #ffffff; border-radius: 0 0 5px 5px">
+                            <div class="thepet" style="background-image: url('../Images/SfondoTabellaNews.png'); border-style: none solid solid solid; border-width: 1px; border-color: #ffffff; border-radius: 0 0 5px 5px">
                                 <table style="margin-top: 0;">
-                                    <tr>
-                                        <td style="vertical-align: top; background-image: url('http://localhost:53424/SantuarioAzure/Images/SfondoTabellaNews.png')">
-                                            <asp:Label ID="PreghieraLabel" runat="server" Text='<%# Eval("Preghiera")%>' CssClass="Preghiera" />
+                                    <tr >
+                                        <td>
+                                            <asp:Label ID="PreghieraLabel" runat="server" Text='<%# Eval("Preghiera")%>' />
                                         </td>
                                     </tr>
                                 </table>
@@ -128,7 +129,7 @@
                                 <table>
                                     <tr>
                                         <td style="vertical-align: top; padding: 5px 10px 5px 10px;">
-                                            <asp:Label ID="PreghieraLabel" runat="server" Text='<%# Eval("Preghiera")%>' CssClass="Preghiera" />
+                                            <asp:Label ID="PreghieraLabel" runat="server" Text='<%# Eval("Preghiera")%>' />
                                         </td>
                                     </tr>
                                 </table>
