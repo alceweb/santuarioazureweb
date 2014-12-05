@@ -81,23 +81,26 @@
                             <img src="<%: ResolveUrl("~/Images/Tumb2.png")%>" /></a><br />
                         <a href="<%: ResolveUrl("~/VirtualTour/Main.aspx")%>" class="link2 homeMenu">Virtual tour<br />
                             <img src="<%: ResolveUrl("~/Images/ioeal.jpg")%>" /></a><br />
-                        <a href="/Pubblicazioni/main.html" class="link2 homeMenu">Pubblicazioni<br />
+                        <a href="<%: ResolveUrl("~/Pubblicazioni/Main.aspx")%>" class="link2 homeMenu">Pubblicazioni<br />
                             <img src="<%: ResolveUrl("~/Images/Tumb5.png")%>" /></a><br />
                         <a href="<%: ResolveUrl("~/Preghiere/Elenco.aspx") %>" class="link2 homeMenu">Lascia una preghiera<br />
                             <img src="<%: ResolveUrl("~/Images/Tumb1.png")%>" /></a>
                     </div>
                 </div>
-                <div style="float: right; text-align:right; position:relative; height:260px; bottom:0px">
-                    <h3 >
-                        <a class="linka" href='<%: ResolveUrl("~/EleNews.aspx") %>'>Eventi</a><br />
-                        <a class="linka" href="<%: ResolveUrl("~/Donazioni.aspx") %>">Aiuta il Santuario</a><br />
-                        <a class="linka" href='<%: ResolveUrl("~/Lumen.aspx") %>'>Candele</a><br />
-                        <a class="linka" href="<%: ResolveUrl("~/Pellegrinaggi.aspx") %>">Pellegrinaggi</a><br />
-                        <a class="linka" href="<%: ResolveUrl("~/Scholae.aspx") %>">Scholae Cantorum</a><br />
-                        <a class="linka" href="<%: ResolveUrl("~/Preghiere/Elenco.aspx") %>">Preghiere</a><br />
+                <aside>
+                    <div>
+                        <h3>
+                            <a class="linka" href='<%: ResolveUrl("~/EleNews.aspx") %>'>Eventi</a><br />
+                            <a class="linka" href="<%: ResolveUrl("~/Donazioni.aspx") %>">Aiuta il Santuario</a><br />
+                            <a class="linka" href='<%: ResolveUrl("~/Lumen.aspx") %>'>Candele</a><br />
+                            <a class="linka" href="<%: ResolveUrl("~/Pellegrinaggi.aspx") %>">Pellegrinaggi</a><br />
+                            <a class="linka" href="<%: ResolveUrl("~/Scholae.aspx") %>">Scholae Cantorum</a><br />
+                            <a class="linka" href="<%: ResolveUrl("~/Preghiere/Elenco.aspx") %>">Preghiere</a><br />
+                            <a class="linka" href="<%: ResolveUrl("~/Ramo/Main.aspx") %>">Il ramo fiorito</a><br />
+                        </h3>
+                    </div>
 
-                    </h3>
-                </div>
+                </aside>
                     <asp:ContentPlaceHolder runat="server" ID="MainContent" />
             </section>
         </div>

@@ -15,7 +15,7 @@
                         </div>
                     </HeaderTemplate>
                     <ItemTemplate>
-                        <a class="linka" href="<%# (Container.DataItem as string).Substring(Server.MapPath("./").Length).Replace("\\", "/") %>">
+                        <a class="swipebox" href="<%# (Container.DataItem as string).Substring(Server.MapPath("./").Length).Replace("\\", "/") %>">
                             <img class="NewsImg" style="border: thin solid #9C9C9C; margin: 8px;" src="<%# (Container.DataItem as string).Substring(Server.MapPath("./").Length).Replace("\\", "/") %>" />
                         </a>
                     </ItemTemplate>

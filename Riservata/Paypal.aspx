@@ -27,9 +27,6 @@
                     <a style="color: white;" href="javascript:;" class="simpleCart_empty">Annulla</a>
             </div>
         </asp:Panel>
-        <p>
-<asp:Label ID="lblCar" runat="server" Text="Fai la tua offerta per il Santuario con una Messa una Novena o un'offerta libera"></asp:Label>
-        </p>
         <table class="tblpay">
             <tr>
                 <td>
@@ -41,7 +38,7 @@
                         <asp:Label ID="Label1" runat="server" Text="Euro"></asp:Label>
                         <asp:TextBox CssClass="item_price" ID="TextBox1" runat="server"></asp:TextBox><br />
                         <asp:Label ID="Label2" runat="server" Text="Intenzione"></asp:Label>
-                        <asp:TextBox ID="TextBox2" CssClass="item_intenzione" TextMode="MultiLine" Width="90%" Height="90px" runat="server"></asp:TextBox><br />
+                        <asp:TextBox ID="TextBox2" CssClass="item_intenzione" TextMode="MultiLine" Width="90%" Height="90px" runat="server" >Scrivi qui l'intenzione</asp:TextBox><br />
                         <asp:Button ID="Button4" OnClick="Button4_Click" CssClass="item_add" runat="server" Text="Aggiungi" />
                     </div>
                 </td>
@@ -54,7 +51,7 @@
                         <strong class="item_price">€ 10.00</strong><br />
                         <br />
                         <asp:Label ID="Label4" runat="server" Text="Intenzione"></asp:Label>
-                        <asp:TextBox ID="TextBox4" CssClass="item_size" TextMode="MultiLine" Width="90%" Height="100px" runat="server"></asp:TextBox><br />
+                        <asp:TextBox ID="TextBox4" CssClass="item_intenzione" TextMode="MultiLine" Width="90%" Height="100px" runat="server">Scrivi qui l'intenzione</asp:TextBox><br />
                         <asp:Button ID="Button3" OnClick="Button3_Click" CssClass="item_add" runat="server" Text="Aggiungi" />
                     </div>
                 </td>
@@ -67,7 +64,7 @@
                         <strong class="item_price">€ 15.00</strong><br />
                         <br />
                         <asp:Label ID="Label3" runat="server" Text="Data e intenzione"></asp:Label>
-                        <asp:TextBox ID="TextBox3" CssClass="item_size" TextMode="MultiLine" Width="90%" Height="100px" runat="server"></asp:TextBox><br />
+                        <asp:TextBox ID="TextBox3" CssClass="item_intenzione" TextMode="MultiLine" Width="90%" Height="100px" runat="server">Scrivi qui la data e l'intenzione</asp:TextBox><br />
                         <asp:Button ID="Button2" OnClick="Button2_Click" CssClass="item_add" runat="server" Text="Aggiungi" />
                     </div>
                 </td>
@@ -80,8 +77,45 @@
                         <strong class="item_price">€ 130.00</strong><br />
                         <br />
                         <asp:Label ID="Label5" runat="server" Text="Data inizio e intenzione"></asp:Label>
-                        <asp:TextBox ID="TextBox5" CssClass="item_intenzione" TextMode="MultiLine" Width="90%" Height="100px" runat="server"></asp:TextBox><br />
+                        <asp:TextBox ID="TextBox5" CssClass="item_intenzione" TextMode="MultiLine" Width="90%" Height="100px" runat="server">Scrivi qui la data e l'intenzione</asp:TextBox><br />
                         <asp:Button ID="Button1" OnClick="Button1_Click" CssClass="item_add" runat="server" Text="Aggiungi" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="simpleCart_shelfItem">
+                        <h3 class="item_name">Il Santuario di Caravaggio</h3>
+                        <img src='<%: ResolveUrl("~/Pubblicazioni/rivista_santuario.jpg") %>' /><br />
+                        <br />
+                        <span class="item_intenzione">AMICO</span>
+                        <br />
+                        <strong class="item_price">€ 15.00</strong><br />
+                        <br />
+                        <asp:Button ID="Button5" OnClick="Button1_Click" CssClass="item_add" runat="server" Text="Aggiungi" />
+                    </div>
+                </td>
+                <td>
+                    <div class="simpleCart_shelfItem">
+                        <h3 class="item_name">Il Santuario di Caravaggio</h3>
+                        <img src='<%: ResolveUrl("~/Pubblicazioni/rivista_santuario.jpg") %>' /><br />
+                        <br />
+                        <span class="item_intenzione">SOSTENITORE</span>
+                        <br />
+                        <strong class="item_price">€ 30.00</strong><br />
+                        <br />
+                        <asp:Button ID="Button6" OnClick="Button1_Click" CssClass="item_add" runat="server" Text="Aggiungi" />
+                    </div>
+                </td>
+                <td>
+                    <div class="simpleCart_shelfItem">
+                        <h3 class="item_name">Santa Maria del Fonte</h3>
+                        <img src='<%: ResolveUrl("~/Pubblicazioni/apparizione_e_santuario.jpg") %>' /><br />
+                        <br />Testi di Roberto Ziglioli Fotografie di Luca e Pepi Merisio
+                        <br />
+                        <strong class="item_price">€ 20.00</strong><br />
+                        <br />
+                        <asp:Button ID="Button7" OnClick="Button1_Click" CssClass="item_add" runat="server" Text="Aggiungi" />
                     </div>
                 </td>
             </tr>

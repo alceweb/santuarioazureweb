@@ -17,21 +17,17 @@ public partial class Riservata_Paypal : System.Web.UI.Page
     protected void Button4_Click(object sender, EventArgs e)
     {
         pnlCar.Visible = true;
-        lblCar.Text = "";
     }
     protected void Button3_Click(object sender, EventArgs e)
     {
         pnlCar.Visible = true;
-        lblCar.Text = "";
     }
     protected void Button2_Click(object sender, EventArgs e)
     {
         pnlCar.Visible = true;
-        lblCar.Text = "";
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
         pnlCar.Visible = true;
-        lblCar.Text = "";
     }
 }

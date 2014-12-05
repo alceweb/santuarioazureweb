@@ -131,7 +131,7 @@
         <LayoutTemplate>
             <table class="tbl3" runat="server">
                 <tr runat="server">
-                    <td runat="server"><h3>Preghiere dell'ultima settimana</h3><hr />
+                    <td runat="server"><hr /><h3 style="text-align:center">Preghiere dell'ultima settimana</h3><hr />
                         <table id="itemPlaceholderContainer" runat="server" border="0" style="">
                             <tr runat="server" >
                             </tr>

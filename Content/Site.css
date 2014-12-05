@@ -330,6 +330,7 @@ ul#menu {
 .menul img {
     width: 150px;
     transition: all 1s ease;
+    border:none;
 }
 .link2 {
     font-size:0.85em;
@@ -348,8 +349,6 @@ ul#menu {
 /* News
 ------------------------------------------------*/
 .NewsItems {
-    border: thin solid #FFFFFF;
-    text-align:center;
     margin: 10px;
     padding: 10px;
     float: left;
@@ -357,6 +356,7 @@ ul#menu {
     background-image: url('../Images/SfondoTabellaNews.png');
     background-repeat: repeat;
 }
+
 .NewsA {
     transition: 1s all ease;
 }
@@ -366,8 +366,7 @@ ul#menu {
 }
 
 .NewsItem {
-    border: thin solid #FFFFFF;
-    margin: 10px;
+    margin: auto;
     padding: 10px;
     float: left;
     border-radius: 5px;
@@ -385,6 +384,7 @@ ul#menu {
     height:150px;
     text-align: center;
     vertical-align: bottom;
+    border:none;
     border-radius: 5px;
     -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.75);
@@ -538,7 +538,8 @@ article {
 
 aside {
     float: right;
-    width: 25%;
+    text-align:right;
+    height:270px;
 }
 
 aside ul {
@@ -804,6 +805,7 @@ tr.pager td {
     padding-left:8px;
 }
 .tbl2 {
+    margin:auto;
     background-image: url('../Images/SfondoTabellaNews.png');
     font-size: 0.8em;
     line-height: 1.4em;
@@ -825,6 +827,7 @@ tr.pager td {
         background:#ac9c90;
     }
     .tbl2 img {
+        border:none;
         height:60px;
         margin-left:auto;
         float:right;
@@ -835,9 +838,6 @@ tr.pager td {
     transition: all 1s ease;
     }
     .tbl2 tr:hover img{
-    -ms-transform: scale(1.1,1.1); /* IE 9 */
-    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
-    transform: scale(1.1,1.1);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -848,7 +848,7 @@ tr.pager td {
     box-shadow: 0px 0px 225px #000;
 }
 .tbl3 {
-    display:inherit;
+    margin:auto;
     border-radius:20px;
     background-image: url('../Images/SfondoTabellaNews.png');
 }
@@ -857,9 +857,28 @@ tr.pager td {
         font-weight:bold;
     }
     .tbl3 td {
-        vertical-align:top;
+    vertical-align:top;
     padding-left:8px;
 }
+    .tbl4 {
+    margin:auto;
+    border-radius:20px;
+    background-image: url('../Images/SfondoTabellaNews.png');
+}
+    .tbl4 th {
+        text-align:center;
+        font-weight:bold;
+    }
+    .tbl4 tr {
+    border-style: none none inset none;
+    border-width: thin;
+    border-color: #5B5048;
+}
+    .tbl4 td {
+    vertical-align:top;
+    padding-left:8px;
+}
+
 @media only screen and (max-width: 850px) {
     h2 {
         font-size:0.8em;
@@ -927,7 +946,7 @@ tr.pager td {
         float: none;
         width: 100%;
     }
-
+    
     /* ordered list */
     ol.round {
         list-style-type: none;

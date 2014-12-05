@@ -12,10 +12,10 @@
                     
                 <td>
                     <a href='<%# ResolveUrl("~/News.aspx?Id=" + Eval("Id")) %>'>
-                    <asp:Label  ID="DataLabel" runat="server" Text='<%# Eval("Data", "{0:dddd dd MMM yy}") + " -   " %>' Font-Bold="True" Font-Italic="True" />
-                    <asp:Label ID="TitoloLabel" runat="server" Text='<%# Eval("Titolo") %>' />
+                    <asp:Image ID="Image1" CssClass="float-right" runat="server" ImageUrl='<%# "~/NewsImg/" + Eval("Id") + "/" + Eval("Id") + ".jpg"  %>' PostBackUrl="~/News.aspx" />
+                    <asp:Label  ID="DataLabel" runat="server" Text='<%# Eval("Data", "{0:dddd dd MMM yy}") + " -   " %>' Font-Bold="True" Font-Italic="True" /><br />
+                    <asp:Label ID="TitoloLabel" runat="server" Text='<%# Eval("Titolo") %>' /><br />
                     <asp:Label ID="DescrizioneBreveLabel" runat="server" Text='<%# Eval("DescrizioneBreve") %>' />
-                        <asp:Image ID="Image1" runat="server" ImageUrl='<%# "~/NewsImg/" + Eval("Id") + "/" + Eval("Id") + ".jpg"  %>' PostBackUrl="~/News.aspx" />
                     </a>
                 </td>
             </tr>
@@ -28,12 +28,12 @@
             </table>
         </EmptyDataTemplate>
         <LayoutTemplate>
-            <table runat="server">
+            <table style="margin:auto" runat="server">
                 <tr runat="server">
                     <td runat="server">
                         <table class="tbl2"  id="itemPlaceholderContainer" runat="server" border="0" style="">
                             <tr runat="server" style="">
-                                <th runat="server">Fai click sull'immagina per approfondire</th>
+                                <th runat="server"></th>
                             </tr>
                             <tr id="itemPlaceholder" runat="server">
                             </tr>
@@ -41,7 +41,7 @@
                     </td>
                 </tr>
                 <tr runat="server">
-                    <td runat="server" style="">
+                    <td runat="server" style="text-align:center">
                         <asp:DataPager ID="DataPager1" runat="server" PageSize="10">
                             <Fields>
                                 <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="True" ShowLastPageButton="True" />
