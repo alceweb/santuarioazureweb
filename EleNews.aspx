@@ -31,6 +31,11 @@
             <table style="margin:auto" runat="server">
                 <tr runat="server">
                     <td runat="server">
+                        <h2>Vita del Santuario</h2>
+                    </td>
+                </tr>
+                <tr runat="server">
+                    <td runat="server">
                         <table class="tbl2"  id="itemPlaceholderContainer" runat="server" border="0" style="">
                             <tr runat="server" style="">
                                 <th runat="server"></th>

@@ -16,51 +16,51 @@
                     <img src="Slideshow/images/large/6.jpg" />
                     <div class="ei-title">
                         <a href="#nogo">
-                            <h2>Il Sacro Fonte</h2>
-                            <h3>Il catenaccio</h3>
+                            <h2></h2>
+                            <h3></h3>
                         </a>
                     </div>
                 </li>
                 <li>
                     <img src="Slideshow/images/large/1.jpg" />
                     <div class="ei-title">
-                        <h2>il parco</h2>
-                        <h3>viale alberato</h3>
+                        <h2></h2>
+                        <h3></h3>
                     </div>
                 </li>
                 <li>
                     <img src="Slideshow/images/large/2.jpg" />
                     <div class="ei-title">
-                        <h2>Il Sacro Fonte</h2>
-                        <h3>La vasca della Fonte</h3>
+                        <h2></h2>
+                        <h3></h3>
                     </div>
                 </li>
                 <li>
                     <img src="Slideshow/images/large/3.jpg" />
                     <div class="ei-title">
-                        <h2>L'esterno</h2>
-                        <h3>Il porticato</h3>
+                        <h2></h2>
+                        <h3></h3>
                     </div>
                 </li>
                 <li>
                     <img src="Slideshow/images/large/4.jpg" />
                     <div class="ei-title">
-                        <h2>Il Sacro Fonte</h2>
-                        <h3>La vasca della Fonte</h3>
+                        <h2></h2>
+                        <h3></h3>
                     </div>
                 </li>
                 <li>
                     <img src="Slideshow/images/large/5.jpg" />
                     <div class="ei-title">
-                        <h2>Il Sacro Fonte</h2>
-                        <h3>La scure ferale</h3>
+                        <h2></h2>
+                        <h3></h3>
                     </div>
                 </li>
                 <li>
                     <img src="Slideshow/images/large/7.jpg" />
                     <div class="ei-title">
-                        <h2>Il piazzale</h2>
-                        <h3 >Obelisco, particolare</h3>
+                        <h2></h2>
+                        <h3 ></h3>
                     </div>
                 </li>
             </ul>
@@ -95,7 +95,6 @@
         </script>
 </asp:Content>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <div style="display: block">
         <asp:ListView ID="ListView2" runat="server" DataKeyNames="Id" DataSourceID="SqlDataSource1">
             <ItemTemplate>
                 <span class="NewsItems">
@@ -125,6 +124,4 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server"
             ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"
             SelectCommand='SELECT * FROM [News] WHERE ([DataInizio] <= { fn NOW() } AND [DataFine] >= { fn NOW() })'></asp:SqlDataSource>
-
-    </div>
 </asp:Content>

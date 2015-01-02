@@ -6,7 +6,7 @@
     <h2><%: Title %></h2><hr />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
-    <table class="tbl3">
+    <table class="tbl4">
         <thead>
         </thead>
         <tr>
@@ -43,14 +43,6 @@
                     (function () { dmdEmbeds.push('dQahzq'); })();
                 </script>
                 <script type="text/javascript" src="http://static.dermandar.com/js/embed.js.php?v=88.78.59"></script>
-            </td>
-        </tr>
-        <tr>
-            <td>
-
-            </td>
-            <td>
-
             </td>
         </tr>
     </table>

@@ -86,71 +86,74 @@
     <h2><%= Title %></h2><hr />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
-        <table class="tbl3">
-            <tr>
-                <td>
+    <table >
+        <thead>
+        <tr>
+            <td>
                     <asp:LinkButton ID="ButtonNew" runat="server" ForeColor="#452a17" Text="Lascia la tua preghiera" PostBackUrl="~/Riservata/PreghiAdd.aspx" />
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 250px; vertical-align: top">
-                    <img style="border: none; box-shadow: none" src="<%: ResolveUrl("~/Images/Madonna.png")%>" />
-                </td>
-                <td style="vertical-align: top">
-                    <asp:ListView ID="ListView1" runat="server" DataKeyNames="id" DataSourceID="SqlDataSource1">
-                        <EmptyDataTemplate>
-                            <span>Non è stato restituito alcun dato.</span>
-                        </EmptyDataTemplate>
-                        <ItemTemplate>
-                            <div class="mypets">
-                                <asp:LinkButton ID="LinkButton1" CommandName="Select" runat="server">
-                                    <asp:Label ID="dataLabel" runat="server" Text='<%# Eval("Data", "{0: dddd dd MMM yyyy}")%>' CssClass="Data" />-
-                                    <asp:Label ID="NomeLabel" runat="server" Text='<%# Eval("Nome")%>' CssClass="Nome" />  
-                                    <asp:Label ID="CittàLabel" runat="server" Text='<%#", da " + Eval("Citta")%>' />
-                                </asp:LinkButton>
-                            </div>
-                            <div class="thepet" style="background-image: url('../Images/SfondoTabellaNews.png'); border-style: none solid solid solid; border-width: 1px; border-color: #ffffff; border-radius: 0 0 5px 5px">
-                                <table style="margin-top: 0;">
-                                    <tr >
-                                        <td>
-                                            <asp:Label ID="PreghieraLabel" runat="server" Text='<%# Eval("Preghiera")%>' />
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </ItemTemplate>
-                        <SelectedItemTemplate>
-                            <div class="mypets">
-                                <asp:Label ID="dataLabel" runat="server" Text='<%# Eval("Data", "{0: dddd dd MMM yyyy}")%>' CssClass="Data" />-
+
+            </td>
+            
+        </tr>
+        </thead>
+        <tr>
+            <td style="width: 250px; vertical-align: top">
+                <img style="border: none; box-shadow: none" src="<%: ResolveUrl("~/Images/Madonna.png")%>" />
+            </td>
+            <td style="vertical-align: top">
+                <asp:ListView ID="ListView1" runat="server" DataKeyNames="id" DataSourceID="SqlDataSource1">
+                    <EmptyDataTemplate>
+                        <span>Non è stato restituito alcun dato.</span>
+                    </EmptyDataTemplate>
+                    <ItemTemplate>
+                        <div class="mypets">
+                            <asp:LinkButton ID="LinkButton1" CssClass="linkap" CommandName="Select" runat="server">
+                                <asp:Label ID="dataLabel" Font-Bold="true" runat="server" Text='<%# Eval("Data", "{0: dddd dd MMM yyyy}")%>' />-
+                                    <asp:Label ID="NomeLabel" runat="server" Text='<%# Eval("Nome")%>' CssClass="Nome" />
+                                <asp:Label ID="CittàLabel" runat="server" Text='<%#", da " + Eval("Citta")%>' />
+                            </asp:LinkButton>
+                        </div>
+                        <div class="thepet" style="background-image: url('../Images/SfondoTabellaNews.png'); border-style: none solid solid solid; border-width: 1px; border-color: #ffffff; border-radius: 0 0 5px 5px">
+                            <table style="margin-top: 0;">
+                                <tr>
+                                    <td>
+                                        <asp:Label ID="PreghieraLabel" runat="server" Text='<%# Eval("Preghiera")%>' />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </ItemTemplate>
+                    <SelectedItemTemplate>
+                        <div class="mypets">
+                            <asp:Label ID="dataLabel" runat="server" Text='<%# Eval("Data", "{0: dddd dd MMM yyyy}")%>' CssClass="Data" />-
                                 <asp:Label ID="NomeLabel" runat="server" Text='<%# Eval("Nome")%>' CssClass="Nome" />, da
                                 <asp:Label ID="CittàLabel" runat="server" Text='<%# Eval("Citta")%>' />
-                            </div>
-                            <div class="thepet" style="border-style: none solid solid solid; border-width: 1px; border-color: #ffffff; border-radius: 0 0 5px 5px">
-                                <table>
-                                    <tr>
-                                        <td style="vertical-align: top; padding: 5px 10px 5px 10px;">
-                                            <asp:Label ID="PreghieraLabel" runat="server" Text='<%# Eval("Preghiera")%>' />
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </SelectedItemTemplate>
-                        <LayoutTemplate>
-                            <div id="itemPlaceholderContainer" runat="server" style="">
-                                <span runat="server" id="itemPlaceholder" />
-                            </div>
-                            <div style="">
-                            </div>
-                        </LayoutTemplate>
-                    </asp:ListView>
-                </td>
-            </tr>
-        </table>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-                ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
-                ProviderName="<%$ ConnectionStrings:DefaultConnection.ProviderName %>" 
-                SelectCommand="SELECT * FROM [FedPreg] WHERE [Pubblica] = 1 ORDER BY [Data] DESC">
-            </asp:SqlDataSource>
+                        </div>
+                        <div class="thepet" style="border-style: none solid solid solid; border-width: 1px; border-color: #ffffff; border-radius: 0 0 5px 5px">
+                            <table>
+                                <tr>
+                                    <td style="vertical-align: top; padding: 5px 10px 5px 10px;">
+                                        <asp:Label ID="PreghieraLabel" runat="server" Text='<%# Eval("Preghiera")%>' />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </SelectedItemTemplate>
+                    <LayoutTemplate>
+                        <div class="tbl2" id="itemPlaceholderContainer" runat="server" style="">
+                            <span runat="server" id="itemPlaceholder" />
+                        </div>
+                        <div style="">
+                        </div>
+                    </LayoutTemplate>
+                </asp:ListView>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server"
+                    ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"
+                    ProviderName="<%$ ConnectionStrings:DefaultConnection.ProviderName %>"
+                    SelectCommand="SELECT * FROM [FedPreg] WHERE [Pubblica] = 1 ORDER BY [Data] DESC"></asp:SqlDataSource>
+            </td>
+        </tr>
+    </table>
 
 </asp:Content>
 

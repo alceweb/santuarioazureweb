@@ -23,19 +23,19 @@
                 <asp:ListView ID="ListView1" runat="server" SelectedIndex="0" DataKeyNames="Id" DataSourceID="SqlDataSource2">
                     <ItemTemplate>
                         <span style="">Id:
-            <asp:Label CssClass="NewsLabel" ID="IdLabel" runat="server" Text='<%# Eval("Id") %>' />
+                            <asp:Label CssClass="NewsLabel" ID="IdLabel" runat="server" Text='<%# Eval("Id") %>' />
                             Data:
-            <asp:Label CssClass="NewsLabel" ID="DataLabel" runat="server" Text='<%# Eval("Data", "{0:dd-MMM-yy}") %>' />
+                            <asp:Label CssClass="NewsLabel" ID="DataLabel" runat="server" Text='<%# Eval("Data", "{0:dd-MMM-yy}") %>' />
                             Data inizio pubblicazione:
-            <asp:Label CssClass="NewsLabel" ID="DataILabel" runat="server" Text='<%# Eval("DataInizio", "{0:dd-MMM-yy hh:mm}") %>' />
+                            <asp:Label CssClass="NewsLabel" ID="DataILabel" runat="server" Text='<%# Eval("DataInizio", "{0:dd-MMM-yy HH:mm}") %>' />
                             Data fine pubblicazione:
-            <asp:Label CssClass="NewsLabel" ID="DataFLabel" runat="server" Text='<%# Eval("DataFine", "{0:dd-MMM-yy hh:mm}") %>' />
+                           <asp:Label CssClass="NewsLabel" ID="DataFLabel" runat="server" Text='<%# Eval("DataFine", "{0:dd-MMM-yy HH:mm}") %>' />
                             <br />
                             <br />
                             Titolo:
-            <asp:Label CssClass="NewsLabel" ID="TitoloLabel" runat="server" Text='<%# Eval("Titolo") %>' />
+                            <asp:Label CssClass="NewsLabel" ID="TitoloLabel" runat="server" Text='<%# Eval("Titolo") %>' />
                             DescrizioneBreve:
-                    <asp:Label CssClass="NewsLabel" ID="DescrizioneBreveLabel" runat="server" Text='<%# Eval("DescrizioneBreve") %>' />
+                            <asp:Label CssClass="NewsLabel" ID="DescrizioneBreveLabel" runat="server" Text='<%# Eval("DescrizioneBreve") %>' />
                             <asp:Label ID="Label1" runat="server" Text="Pubblica: "></asp:Label><asp:CheckBox ID="PubblicaCheckBox" runat="server" Checked='<%# Eval("Pubblica") %>' Enabled="false" />
                             <br />
                             <br />
@@ -72,7 +72,7 @@
                                     showsTime: true,
                                     ifFormat: "%d/%m/%Y %H:%M",
                                     daFormat: "%l;%M %p, %e %m",
-                                    align: "BR",
+                                    align: "CL",
                                     electric: false,
                                     singleClick: true,
                                     displayArea: ".siblings('.dtcDisplayArea')",

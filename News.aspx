@@ -18,7 +18,7 @@
             <br />
             <asp:Label ID="DescrizioneBreveLabel" CssClass="NewDescrizioneBreve" runat="server" Text='<%# Eval("DescrizioneBreve") %>' /><br /><br />
                 <a class="linka" href='<%# "NewsGalleria.aspx?id=" + Eval("Id")  %>'>
-            <img class="NewsImg" style="float:left; margin-right: 20px;" src='<%# "NewsImg/" + Eval("ID") + "/" + Eval("ID") + ".jpg" %>' /></a>
+            <img class="NewsImg1" src='<%# "NewsImg/" + Eval("ID") + "/" + Eval("ID") + ".jpg" %>' /></a>
                 </a>
                     <asp:Label CssClass="NewsDescrizione" ID="DescrizioneLabel" runat="server" Text='<%# Eval("Descrizione") %>' />
                 <br /><br />
@@ -36,11 +36,6 @@
                 </tr>
                 <tr id="Tr3" runat="server">
                     <td id="Td2" runat="server" style="">
-                        <asp:DataPager ID="DataPager1" runat="server" PageSize="10">
-                            <Fields>
-                                <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="True" ShowLastPageButton="True" />
-                            </Fields>
-                        </asp:DataPager>
                     </td>
                 </tr>
             </table>

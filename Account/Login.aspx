@@ -2,9 +2,13 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <hgroup class="title">
-    </hgroup>
+    <table class="tbl3">
+        <tr>
+            <td>
     <section id="loginForm">
+    <hgroup class="title">
+        <h1><%: Title %></h1>
+    </hgroup>
         <h2>Utilizzare un account locale per eseguire l'accesso.</h2>
         <asp:Login runat="server" ViewStateMode="Disabled" RenderOuterTable="false">
             <LayoutTemplate>
@@ -33,9 +37,12 @@
                 </fieldset>
             </LayoutTemplate>
         </asp:Login>
+        <p >
+            <asp:HyperLink ID="PasswordResetLink" ForeColor="red" runat="server" NavigateUrl="~/ResetPasswordForm.aspx">Password dimenticata!</asp:HyperLink>
+        </p>
         <p>
-            <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Esegui registrazione</asp:HyperLink>
-            se non è disponibile un account.<br />
+            <asp:HyperLink runat="server" ID="RegisterHyperLink" >Esegui registrazione</asp:HyperLink>
+            se non hai ancora un nome utente per accedere.<br />
             La registrazione server per:
         </p>
         <ul>
@@ -46,6 +53,10 @@
         </ul>
 
     </section>
+
+            </td>
+        </tr>
+    </table>
 
     <section id="socialLoginForm">
 <%--        <h2>Utilizzare un altro servizio per eseguire l'accesso.</h2>

@@ -52,7 +52,7 @@
             <td runat="server" style=""></td>
         </ItemTemplate>
         <LayoutTemplate>
-            <table class="tbl3" runat="server">
+            <table runat="server">
                 <tr runat="server">
                     <td runat="server">
                         <table id="groupPlaceholderContainer" runat="server" border="0" style="">

@@ -1,12 +1,14 @@
 ﻿<%@ Page Title="Registrazione" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Register.aspx.cs" Inherits="Account_Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <hgroup class="title">
+    <table class="tbl3">
+        <tr>
+            <td>
+     <hgroup class="title">
         <h1><%: Title %></h1>
-        <h2>Utilizzare il form seguente per creare un nuovo account.</h2>
     </hgroup>
-
-    <asp:CreateUserWizard runat="server" ID="RegisterUser" ViewStateMode="Disabled" OnCreatedUser="RegisterUser_CreatedUser">
+        <h2>Utilizzare il form seguente per creare un nuovo account.</h2>
+   <asp:CreateUserWizard runat="server" ID="RegisterUser" ViewStateMode="Disabled" OnCreatedUser="RegisterUser_CreatedUser">
         <LayoutTemplate>
             <asp:PlaceHolder runat="server" ID="wizardStepPlaceholder" />
             <asp:PlaceHolder runat="server" ID="navigationPlaceholder" />
@@ -59,4 +61,8 @@
             </asp:CreateUserWizardStep>
         </WizardSteps>
     </asp:CreateUserWizard>
+
+            </td>
+        </tr>
+    </table>
 </asp:Content>

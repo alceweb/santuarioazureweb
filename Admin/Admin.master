@@ -57,6 +57,11 @@
                         <asp:MenuItem Text="Ramo fiorito" Value="Ramo fiorito">
                             <asp:MenuItem Text="Gestisci" Value="Gestisci" NavigateUrl="~/Admin/RamoAdmin.aspx"></asp:MenuItem>
                         </asp:MenuItem>
+                        <asp:MenuItem Text="Utenti" Value="Utenti">
+                            <asp:MenuItem NavigateUrl="~/Admin/Statistiche.aspx" Text="Statistiche" Value="Statistiche"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/ResetPsw.aspx" Text="Reset password" Value="Reset password"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/AssegnaRuoli.aspx" Text="Assegna ruoli" Value="Assegna ruoli"></asp:MenuItem>
+                        </asp:MenuItem>
                     </Items>
                     <StaticHoverStyle BackColor="#a7987c" ForeColor="White" />
                     <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />

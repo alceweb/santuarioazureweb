@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Net.Mail;
 
-public partial class Centro : System.Web.UI.Page
+public partial class ResetPasswordForm : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -25,9 +25,9 @@ public partial class Centro : System.Web.UI.Page
         mMailMessage.To.Add(new MailAddress(to));
         mMailMessage.To.Add(new MailAddress("info@santuariodicaravaggio.org"));
         //L'oggetto 
-        mMailMessage.Subject = "Richiesta informazioni da sito web";
+        mMailMessage.Subject = "Richiesta di reset password";
         //Il corpo 
-        mMailMessage.Body = "Richiesta di informazioni ricevuta tramite il sito www.santuariodicaravaggio.eu<br/><br/><strong>Messaggio inviato da:</strong> " + NomeTextBox.Text + " " + CognomeTextBox.Text + "<br/><strong>Mail:</strong> " + MailTextBox.Text + "<br/><strong>Tel:</strong> " + TelTextBox.Text + "<br/><br/><strong>Testo del messaggio:</strong> <br/>" + RichiestaTtBox1.Text;
+        mMailMessage.Body = "Richiesta di reset password ricevuta tramite il sito www.santuariodicaravaggio.eu<br/><br/><strong>Messaggio inviato da:</strong> " + NomeTextBox.Text + " " + CognomeTextBox.Text + "<br/><strong>Mail:</strong> " + MailTextBox.Text + "<br/><strong>Utente da resettare:</strong> " + UserTextBox.Text + "<br/><br/>";
         //Setto la modalità testo, per il contenuto del messaggio. Sarebbe possibile inviare anche dell'HTML mettendo true 
         mMailMessage.IsBodyHtml = true;
         //Setto la priorità 
@@ -36,6 +36,6 @@ public partial class Centro : System.Web.UI.Page
         SmtpClient mSmtpClient = new SmtpClient();
         //Invio il messaggio 
         mSmtpClient.Send(mMailMessage);
-        Response.Redirect("FormResponse.aspx");
+        Response.Redirect("FormRstPswResponse.aspx");
     }
 }

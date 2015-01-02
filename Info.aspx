@@ -38,7 +38,7 @@
             </tr>
         </table><hr />
     <h3>Orari S. Messe e benedizioni</h3>
-    <table class="tbl" >
+    <table class="tbl1" >
         <tr>
             <th colspan=3>
                 Orario feriale
@@ -234,7 +234,5 @@
 
         <br />
         <br />
-
-
 </asp:Content>
 
