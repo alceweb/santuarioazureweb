@@ -86,7 +86,7 @@
                                     <h3>
                                         <a class="linka" href='<%: ResolveUrl("~/EleNews.aspx") %>'>Eventi</a><br />
                                         <a class="linka" href="<%: ResolveUrl("~/Donazioni.aspx") %>">Aiuta il Santuario</a><br />
-                                        <a class="linka" href='<%: ResolveUrl("~/Lumen.aspx") %>'>Candele</a><br />
+<%--                                        <a class="linka" href='<%: ResolveUrl("~/Lumen.aspx") %>'>Candele</a><br />--%>
                                         <a class="linka" href="<%: ResolveUrl("~/Pellegrinaggi.aspx") %>">Pellegrinaggi</a><br />
                                         <a class="linka" href="<%: ResolveUrl("~/Scholae.aspx") %>">Scholae Cantorum</a><br />
                                         <a class="linka" href="<%: ResolveUrl("~/Preghiere/Elenco.aspx") %>">Preghiere</a><br />

@@ -53,7 +53,7 @@
                 Mattino</td>
             <td>
 
-                ore 07.30<br />
+                ore 07.00<br />
                 ore 08.30<br />
                 ore 10.00</td>
         </tr>
@@ -136,7 +136,7 @@
                 ore 07.00<br />
                 ore 08.30<br />
                 ore 10.00<br />
-                ore 11.00</td>
+                ore 11.30</td>
         </tr>
         <tr>
             <td>

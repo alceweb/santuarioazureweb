@@ -160,11 +160,12 @@
                 <hr />
                 <asp:Button ID="LinkButton1" OnClick="LinkButton1_Click" Visible="false" runat="server" Text="Gestisci immagine principale"></asp:Button>
                 <asp:Button ID="LinkButton2" OnClick="LinkButton2_Click" runat="server" Text="Gestisci galleria"></asp:Button>
+            Solo immagini .jpg dimesione consigliata 640x480
                 <asp:Panel ID="pnlImg" runat="server">
                     <h2>Immagine principale</h2>
                     <p>
                         <asp:Image ID="Image2" CssClass="NewsImg" runat="server" />
-                        <asp:FileUpload ID="FileUpload2" runat="server" />
+                        <asp:FileUpload ID="FileUpload2" runat="server" BackColor="#CCC2BA"  />
                         <asp:Button ID="btnDownload2" OnClick="btnDownload2_Click" runat="server" Text="Download" /><br />
                         <asp:Label ID="LblUploadOk2" runat="server"></asp:Label>
                     </p>
@@ -172,7 +173,7 @@
                 </asp:Panel>
                 <asp:Panel ID="pnlGalleria" Visible="false" runat="server">
                     <h2>Immagini galleria</h2>
-                    <asp:FileUpload ID="FileUpload1" AllowMultiple="true" runat="server" />
+                    <asp:FileUpload ID="FileUpload1" AllowMultiple="true" runat="server" BackColor="#CCC2BA" />
                     <asp:Button ID="btnDownload" OnClick="btnDownload_Click" Text="Dowload" runat="server" /><br />
                     <asp:Label ID="LblUploadOk" runat="server"></asp:Label>
                     <asp:Repeater ID="lista" runat="server" EnableTheming="False">

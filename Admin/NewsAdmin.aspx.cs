@@ -20,14 +20,14 @@ public partial class Admin_NewsAdmin : System.Web.UI.Page
         String path = Server.MapPath("~/NewsImg/" + n + "/");
         if(Directory.Exists(path))
         {
-            string[] immagini = System.IO.Directory.GetFiles(Server.MapPath(cartella), "*.*");
+            string[] immagini = System.IO.Directory.GetFiles(Server.MapPath(cartella), "*.jpg");
             lista.DataSource = immagini;
             lista.DataBind();
         }
         else
         {
             Directory.CreateDirectory(path);
-            string[] immagini = System.IO.Directory.GetFiles(Server.MapPath(cartella), "*.*");
+            string[] immagini = System.IO.Directory.GetFiles(Server.MapPath(cartella), "*.jpg");
             lista.DataSource = immagini;
             lista.DataBind();
         }

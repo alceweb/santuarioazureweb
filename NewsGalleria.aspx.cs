@@ -10,7 +10,7 @@ public partial class NewsGalleria : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         string cartella = "~/NewsImg/";
-        string[] immagini = System.IO.Directory.GetFiles(Server.MapPath(cartella), Request.QueryString["ID"] + "/*.*");
+        string[] immagini = System.IO.Directory.GetFiles(Server.MapPath(cartella), Request.QueryString["ID"] + "/*.jpg");
         lista.DataSource = immagini;
         lista.DataBind();
     }
