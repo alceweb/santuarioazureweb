@@ -32,7 +32,7 @@
             </div>
         </header>
         <div id="body">
-            <h2>Gestione contenuti dinamici</h2>
+            <h2><%: Page.Title %></h2>
             <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
             <div class="float-left">
                 <div>

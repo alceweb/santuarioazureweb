@@ -65,8 +65,9 @@
                     <h4>"Santa Maria del Fonte in Caravaggio
 L'Apparizione e il Santuario "</h4>
                     <p>Testi di Roberto Ziglioli Fotografie di Luca e Pepi Merisio</p>
-                    <p><a href="../Riservata/Paypal.aspx"> Acquista nel negozio on-line</a><br />
-                        Oppure è possibile acquistare il volume al costo di € 20,00 presso la Cancelleria del Santuario.</p>
+                    <p></p>
+                    <p><%--<a href="../Riservata/Paypal.aspx"> Acquista nel negozio on-line</a><br />--%>
+                        Il volume si può acquistare  al costo di € 20,00 presso la Cancelleria del Santuario.</p>
                 </td>
                 <td style="width: 210px">
                     <img alt="" src="apparizione_e_santuario.jpg" />

@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.master" AutoEventWireup="true" CodeFile="ResetPsw.aspx.cs" Inherits="Admin_ResetPsw" %>
+﻿<%@ Page Title="Reset password" Language="C#" MasterPageFile="~/Admin/Admin.master" AutoEventWireup="true" CodeFile="ResetPsw.aspx.cs" Inherits="Admin_ResetPsw" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder" Runat="Server">
-  <h3>Reset password utenti</h3>
+  <h3></h3>
 
   <asp:Label id="Msg" runat="server" ForeColor="maroon" /><br />
 

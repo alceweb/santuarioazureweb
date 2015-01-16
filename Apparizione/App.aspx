@@ -9,7 +9,7 @@
                     <h2>Apparizione&nbsp; - 26 maggio 1432 -</h2>
     <% Response.WriteFile("Menu.html"); %>
 
-    <div style="display:table" >
+    <div  class="div1"  >
 
                     <p>
                         <span>
@@ -27,7 +27,7 @@
                     <p>
                         Questo è, nel linguaggio proprio dell&#39;epoca, il messaggio 
 			essenziale portato a Giannetta Varoli dalla Vergine Maria il 26 
-			maggio 1432<img alt="" height="161" src="Immagini/Porta.jpg" style="float: right" width="134" />
+			maggio 1432<img title="" height="161" src="Immagini/Porta.jpg" style="float: right" width="134" />
                         quando le apparve al prato Mazzolengo presso Caravaggio 
 			alle ore cinque della sera.
                     </p>

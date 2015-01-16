@@ -7,14 +7,14 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
     			<h2>Nuove apparizioni</h2>
     <% Response.WriteFile("Menu.html"); %>
-    <div style="display:table" >
+    <div class="div1" >
 
 			<p>
 					<p style="text-align: justify;"><em><strong>1479<br />
 					<br />
 					</strong></em>Tenuto conto della accuratezza con la quale 
 					Francesco Salvatico, rappresentante del duca di Milano in 
-						<img alt="Il dipinto della Madonna di Caravaggio nel Santuario di Montagnaga di Piné, che ricorda l'Apparizione della Vergine alla pastorella Domenica Targa nel 1729" border="0" height="235" hspace="10" src="Immagini/120_s.jpg" width="150" style="float: right" />Caravaggio e Gera d’Adda, con lettera del 26 aprile 1479 
+						<img title="Il dipinto della Madonna di Caravaggio nel Santuario di Montagnaga di Piné, che ricorda l'Apparizione della Vergine alla pastorella Domenica Targa nel 1729" border="0" height="235" hspace="10" src="Immagini/120_s.jpg" width="150" style="float: right" />Caravaggio e Gera d’Adda, con lettera del 26 aprile 1479 
 					informa ufficialmente Bona di Savoia e Gian Galeazzo Maria 
 					Visconti dei fatti straordinari accaduti alla “Fontana” nei 
 					giorni tra il 12 e il 26 del mese, continua ad essere 
@@ -53,7 +53,7 @@
 					certe devote persone?<br />
 					<br />
 					<strong>1630</strong></em><br />
-						<img alt="Cartolina" border="0" height="239" hspace="10" src="Immagini/121_p67_s.jpg" width="150" style="float: left" /><br />
+						<img title="Cartolina" border="0" height="239" hspace="10" src="Immagini/121_p67_s.jpg" width="150" style="float: left" /><br />
 					La sera del 26 maggio a Gandos, località a circa cento passi 
 					a levante di Galleno, frazione di Corteno in Valle Camonica, 
 					mentre infieriva la peste in tutto il territorio lombardo la 
@@ -80,7 +80,7 @@
 					né può esserlo.&nbsp;<br />
 					<strong><em><br />
 					1729</em></strong><br />
-						<img alt="'Prato dell'Apparizione' " border="0" height="196" hspace="10" src="Immagini/122_s.jpg" width="150" style="float: right" /><br />
+						<img title="'Prato dell'Apparizione' " border="0" height="196" hspace="10" src="Immagini/122_s.jpg" width="150" style="float: right" /><br />
 					Una donna semplice, la pastorella Domenica Targa di 
 					Montagnaga di Pine’ (TN), vivamente devota della Ma­donna di 
 					Caravaggio, avendo fatto voto di venire pellegrina al 

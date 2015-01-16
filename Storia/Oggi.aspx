@@ -7,13 +7,10 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
 	<h2>Il santuario, oggi</h2>
         <% Response.WriteFile("Menu.html");%>
-
+    <div class="div1">
 		<table cellpadding="0" cellspacing="0">
 			<tr>
 				<td>
-				<table align="right" border="0" cellpadding="0" cellspacing="0">
-					<tr>
-						<td valign="top">
 						<p style="text-align: justify;">A partire dalla 
 						monumentale Porta Nuova, che ha nel suo fastigio il 
 						gruppo marmoreo della Vergine che appare a Giannetta 
@@ -29,6 +26,7 @@
 						statale e della ferrovia.<br />
 						Dalle mura del Borgo all’altezza della Chiesa e convento 
 						di san Bernardino, fino al 1694 c’era solo un viottolo 
+							<img title="La facciata occidentale del Santuario" style="float:right" border="0" height="215" src="OggiImg/23_s.jpg" width="150" />
 						acquitrinoso. Da Caravaggio ci si recava al Santuario 
 						uscendo da Porta Vicinato e percorrendo una strada di 
 						una certa ampiezza in diagonale (detta “stradone 
@@ -39,27 +37,8 @@
 						Nel lato ovest del porticato antistante si può ancora 
 						vedere l’arco e le fiancate e i cardini del portone di 
 						chiusura del quadrilatero dei portici.<br />
-						&nbsp;</p>
-						</td>
-						<td valign="top">
-						<div align="center">
-							<img alt="La facciata occidentale del Santuario" border="0" height="215" hspace="10" src="OggiImg/23_s.jpg" width="150" /><br />
-							&nbsp;</div>
-						</td>
-					</tr>
-				</table>
-				</td>
-			</tr>
-			<tr>
-				<td>
-				<table align="right" border="0" cellpadding="0" cellspacing="0">
-					<tr>
-						<td valign="top">
-						<p style="text-align: justify;"><br />
-						<img alt="La planimetria attuale del Santuario con la corona di portici " border="0" height="150" hspace="10" src="OggiImg/cartina_tutto_santuario_s.jpg" width="222" /><br />
-						&nbsp;</p>
-						</td>
-						<td style="text-align: justify;" valign="top">Il 
+						&nbsp;
+						</p>
 						completamento del viale e l’inaugurazione dell’arco di 
 						Porta Nuova avvengono nel 1710.<span class="Apple-converted-space">&nbsp;</span><br />
 						L’amministrazione del Santuario (l’antica<span class="Apple-converted-space">&nbsp;</span><em>Schola 
@@ -73,20 +52,11 @@
 						ottenuta dal Santuario di Caravaggio, tra il 1999 e il 
 						2000, viene realizzato un imponente rifacimento (un 
 						“restauro conservativo”) dell’alberatura e dell’arredo 
-						del viale.<span class="Apple-converted-space">&nbsp;</span><br />
-						&nbsp;</td>
-					</tr>
-				</table>
-				</td>
-			</tr>
-			<tr>
-				<td>
-				<table align="right" border="0" cellpadding="0" cellspacing="0">
-					<tr>
-						<td valign="top">
-						<p style="text-align: justify;"><strong><em><br />
+						del viale.<br />
+						&nbsp;
+						<p style="text-align: justify;"><strong><em>
 						I portici</em></strong><br />
-						<em>&nbsp;</em><br />
+						<img title="La planimetria attuale del Santuario con la corona di portici " style="float:left"  border="0" height="150" src="OggiImg/cartina_tutto_santuario_s.jpg" width="222" />
 						Una chiostra di portici circonda la Basilica quasi ad 
 						abbracciarla. Costituiscono un suggestivo spazio coperto 
 						di complessivi 800 metri.<br />
@@ -126,18 +96,12 @@
 						giubileo episcopale di Papa Pio XII. Il piazzale è di 
 						norma riservato alle celebrazioni all’aperto e alla 
 						benedizione degli ammalati.</p>
-						</td>
-						<td valign="top">
-						<div style="text-align: justify;">
+							<img title="I portici costruiti per l'accoglienza anche notturna dei pellegrini" border="0" height="150" hspace="10" src="OggiImg/059_s.jpg" width="228" /><br />
 							<br />
-							<br />
-							<br />
-							<img alt="I portici costruiti per l'accoglienza anche notturna dei pellegrini" border="0" height="150" hspace="10" src="OggiImg/059_s.jpg" width="228" /><br />
-							<br />
-							<img alt="I portici costruiti per l'accoglienza anche notturna dei pellegrini" border="0" height="150" hspace="10" src="OggiImg/058_s.jpg" width="226" /><br />
-							&nbsp;</div>
-						</td>
-					</tr>
+							<img title="I portici costruiti per l'accoglienza anche notturna dei pellegrini" border="0" height="150" hspace="10" src="OggiImg/058_s.jpg" width="226" /><br />
+					</td>
+
+			</tr>
 					<tr>
 						<td colspan="2" style="text-align: justify;" valign="top">
 						<br />
@@ -149,22 +113,16 @@
 			</tr>
 			<tr>
 				<td>
-				<table align="right" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<table border="0" cellpadding="0" cellspacing="0" >
 					<tr>
-						<td valign="top" width="33%">
-						<p style="text-align: center;">
-						<img alt="La grande suggestione del Santuario sotto la neve" border="0" height="183" hspace="10" src="OggiImg/053_s.jpg" width="150" /><br />
-						&nbsp;&nbsp;</p>
+						<td valign="top">
+						<img title="La grande suggestione del Santuario sotto la neve" border="0" height="183" hspace="10" src="OggiImg/053_s.jpg" width="150" /><br />
 						</td>
-						<td valign="top" width="33%">
-						<div style="text-align: center;">
-							<img alt="Contrasti di colori estivi al Santuario" border="0" height="183" hspace="10" src="OggiImg/055_s.jpg" width="150" /><br />
-							&nbsp;</div>
+						<td valign="top" >
+							<img title="Contrasti di colori estivi al Santuario" border="0" height="183" hspace="10" src="OggiImg/055_s.jpg" width="150" /><br />
 						</td>
-						<td valign="top" width="33%">
-						<div style="text-align: center;">
-							<img alt="Atmosfera crepuscolare al Santuario" border="0" height="183" hspace="10" src="OggiImg/luna_s.jpg" width="150" /><br />
-							&nbsp;</div>
+						<td valign="top" >
+							<img title="Atmosfera crepuscolare al Santuario" border="0" height="183" hspace="10" src="OggiImg/luna_s.jpg" width="150" /><br />
 						</td>
 					</tr>
 				</table>
@@ -218,15 +176,15 @@
 				<table align="right" border="0" cellpadding="0" cellspacing="0">
 					<tr>
 						<td valign="top">
-						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<table border="0" cellpadding="0" cellspacing="0" >
 							<tr>
 								<td style="text-align: justify;">&nbsp;</td>
 							</tr>
 							<tr>
 								<td>
-								<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" >
 									<tr>
-										<td style="text-align: justify;" valign="top" width="41%">
+										<td style="text-align: justify;" valign="top">
 										<strong><em>La cupola</em></strong><br />
 										<strong>&nbsp;</strong><br />
 										Dalla documentazione finora nota non si 
@@ -242,13 +200,13 @@
 										per le otto invetriate e i quattro occhi 
 										delle finestre della lanterna. La cupola 
 										verrà ricoperta in rame solo nel 1722.</td>
-										<td valign="top" width="29%">
+										<td valign="top" >
 										<p style="text-align: justify;"><br />
 										&nbsp;</p>
-										<table align="left" border="0" cellpadding="0" cellspacing="0" width="26%">
+										<table align="left" border="0" cellpadding="0" cellspacing="0">
 											<tr>
 												<td>
-												<img alt="La lanterna con la festa degli angeli musicanti" border="0" height="225" hspace="10" src="OggiImg/057_s.jpg" width="150" /></td>
+												<img title="La lanterna con la festa degli angeli musicanti" border="0" height="225" hspace="10" src="OggiImg/057_s.jpg" width="150" /></td>
 											</tr>
 											<tr>
 												<td>
@@ -258,15 +216,15 @@
 											</tr>
 										</table>
 										</td>
-										<td valign="top" width="30%">
+										<td valign="top">
 										<div align="center">
 											<p style="text-align: justify;">
 											<br />
 											&nbsp;</p>
-											<table align="left" border="0" cellpadding="0" cellspacing="0" width="26%">
+											<table align="left" border="0" cellpadding="0" cellspacing="0" >
 												<tr>
 													<td>
-													<img alt="La cupola, con la 'Apoteosi e Gloria di Maria', affrescata da Giovanni Moriggia a partire dal 1851" border="0" height="183" hspace="10" src="OggiImg/10_p52_s.jpg" width="150" /></td>
+													<img title="La cupola, con la 'Apoteosi e Gloria di Maria', affrescata da Giovanni Moriggia a partire dal 1851" border="0" height="183" hspace="10" src="OggiImg/10_p52_s.jpg" width="150" /></td>
 												</tr>
 												<tr>
 													<td>
@@ -321,16 +279,16 @@
 						si ispirò agli studi per l’altare della Confessione 
 						della Basilica Vaticana, fu portato a compimento nel 
 						1750 dall’ingegner Carlo Giuseppe Merlo di Milano.</p>
-						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<table border="0" cellpadding="0" cellspacing="0" >
 							<tr>
 								<td>
 								<div style="text-align: justify;">
-									<img alt="L'interno del Santuario con il grandioso altare settecentesco, visto dal lato orientale con il Sacro Speco" border="0" height="188" hspace="10" src="OggiImg/12_p48_s.jpg" width="150" /><br />
+									<img title="L'interno del Santuario con il grandioso altare settecentesco, visto dal lato orientale con il Sacro Speco" border="0" height="188" hspace="10" src="OggiImg/12_p48_s.jpg" width="150" /><br />
 									&nbsp;</div>
 								</td>
 								<td>
 								<div style="text-align: justify;">
-									<img alt="L'interno del Santuario con il grandioso altare settecentesco portato a compimento dall'architetto Merlo, visto dal lato occidentale" border="0" height="188" hspace="10" src="OggiImg/13_s.jpg" width="150" /><br />
+									<img title="L'interno del Santuario con il grandioso altare settecentesco portato a compimento dall'architetto Merlo, visto dal lato occidentale" border="0" height="188" hspace="10" src="OggiImg/13_s.jpg" width="150" /><br />
 									&nbsp;&nbsp;</div>
 								</td>
 							</tr>
@@ -342,7 +300,7 @@
 							<br />
 							<br />
 							<br />
-							<img alt="Pianta del Santuario" border="0" height="322" hspace="10" src="OggiImg/pianta_basilica_s.jpg" width="149" /><br />
+							<img title="Pianta del Santuario" border="0" height="322" hspace="10" src="OggiImg/pianta_basilica_s.jpg" width="149" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -384,14 +342,14 @@
 						<div style="text-align: justify;">
 							<br />
 							<br />
-							<img alt="Sotto l'altare è posto il cuore del Santuario: il Sacro Speco" border="0" height="225" hspace="10" src="OggiImg/061_s.jpg" width="150" /><br />
+							<img title="Sotto l'altare è posto il cuore del Santuario: il Sacro Speco" border="0" height="225" hspace="10" src="OggiImg/061_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 						<td valign="top">
 						<div style="text-align: justify;">
 							<br />
 							<br />
-							<img alt="Il Sacro Speco con la scena dell'Apparizione nelle statue lignee di Leopoldo Moroder di Ortisei (1932)" border="0" height="225" hspace="10" src="OggiImg/062_s.jpg" width="150" /><br />
+							<img title="Il Sacro Speco con la scena dell'Apparizione nelle statue lignee di Leopoldo Moroder di Ortisei (1932)" border="0" height="225" hspace="10" src="OggiImg/062_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -433,21 +391,21 @@
 					</tr>
 					<tr>
 						<td style="text-align: center;" valign="top">
-						<img alt="L'interno dell'attuale Sacro Fonte con i mosaici di Busini e sculture di Ferraroni" border="0" height="150" hspace="10" src="OggiImg/img_0878_s.jpg" width="225" /></td>
+						<img title="L'interno dell'attuale Sacro Fonte con i mosaici di Busini e sculture di Ferraroni" border="0" height="150" hspace="10" src="OggiImg/img_0878_s.jpg" width="225" /></td>
 						<td style="text-align: center;">
-						<img alt="L'interno dell'attuale Sacro Fonte con i mosaici di Busini e sculture di Ferraroni" border="0" height="150" hspace="10" src="OggiImg/img_0881_s.jpg" width="227" /></td>
+						<img title="L'interno dell'attuale Sacro Fonte con i mosaici di Busini e sculture di Ferraroni" border="0" height="150" hspace="10" src="OggiImg/img_0881_s.jpg" width="227" /></td>
 					</tr>
 					<tr>
 						<td colspan="3" valign="top">
-						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<table border="0" cellpadding="0" cellspacing="0" >
 							<tr>
 								<td style="text-align: justify;">&nbsp;</td>
 							</tr>
 							<tr>
 								<td>
-								<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								<table border="0" cellpadding="0" cellspacing="0"  >
 									<tr>
-										<td colspan="2" style="text-align: justify;" width="58%">
+										<td colspan="2" style="text-align: justify;" >
 										<em><br />
 										La “ghigliottina” s’inceppa, un 
 										catenaccio si spezza.<span class="Apple-converted-space">&nbsp;</span></em><br />
@@ -487,10 +445,10 @@
 										&nbsp;</td>
 									</tr>
 									<tr>
-										<td style="text-align: center;" width="50%">
-										<img alt="La ghigliottina" border="0" height="150" hspace="10" src="OggiImg/img_0872_s.jpg" width="225" /></td>
-										<td style="text-align: center;" width="50%">
-										<img alt="Il catenaccio spezzato" border="0" height="150" hspace="10" src="OggiImg/img_0867_s.jpg" width="225" /></td>
+										<td style="text-align: center;" >
+										<img title="La ghigliottina" border="0" height="150" hspace="10" src="OggiImg/img_0872_s.jpg" width="225" /></td>
+										<td style="text-align: center;" >
+										<img title="Il catenaccio spezzato" border="0" height="150" hspace="10" src="OggiImg/img_0867_s.jpg" width="225" /></td>
 									</tr>
 								</table>
 								<p style="text-align: justify;">&nbsp;</p>
@@ -665,27 +623,27 @@
 						Madonna: quello di destra è opera di Camillo Procaccini 
 						(1551 - 1629), quello di sinistra di Giovanni Stefano 
 						Danedi, detto il Montalto (1609 - 1690).</p>
-						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<table border="0" cellpadding="0" cellspacing="0"  >
 							<tr>
-								<td width="53%">
+								<td >
 								<div style="text-align: center;">
-									<img alt="Arredi lignei opera di Michelangelo e Giacomo Carminati situati nella sontuosa Sagrestia nuova" border="0" height="174" hspace="10" src="OggiImg/081b_s.jpg" width="150" /></div>
+									<img title="Arredi lignei opera di Michelangelo e Giacomo Carminati situati nella sontuosa Sagrestia nuova" border="0" height="174" hspace="10" src="OggiImg/081b_s.jpg" width="150" /></div>
 								</td>
-								<td width="47%">
+								<td >
 								<div style="text-align: center;">
-									<img alt="Arredi lignei opera di Michelangelo e Giacomo Carminati situati nella sontuosa Sagrestia nuova" border="0" height="174" hspace="10" src="OggiImg/081a_s.jpg" width="150" /></div>
+									<img title="Arredi lignei opera di Michelangelo e Giacomo Carminati situati nella sontuosa Sagrestia nuova" border="0" height="174" hspace="10" src="OggiImg/081a_s.jpg" width="150" /></div>
 								</td>
 							</tr>
 							<tr>
 								<td>
 								<div style="text-align: center;">
 									<br />
-									<img alt="Arredi lignei opera di Michelangelo e Giacomo Carminati situati nella sontuosa Sagrestia nuova" border="0" height="174" hspace="10" src="OggiImg/081c_s.jpg" width="150" /></div>
+									<img title="Arredi lignei opera di Michelangelo e Giacomo Carminati situati nella sontuosa Sagrestia nuova" border="0" height="174" hspace="10" src="OggiImg/081c_s.jpg" width="150" /></div>
 								</td>
 								<td>
 								<div style="text-align: center;">
 									<br />
-									<img alt="Arredi lignei opera di Michelangelo e Giacomo Carminati situati nella sontuosa Sagrestia nuova" border="0" height="174" hspace="10" src="OggiImg/081d_s.jpg" width="150" /></div>
+									<img title="Arredi lignei opera di Michelangelo e Giacomo Carminati situati nella sontuosa Sagrestia nuova" border="0" height="174" hspace="10" src="OggiImg/081d_s.jpg" width="150" /></div>
 								</td>
 							</tr>
 							<tr>
@@ -701,17 +659,17 @@
 							</tr>
 						</table>
 						<p style="text-align: justify;">&nbsp;</p>
-						<table border="0" cellpadding="0" cellspacing="0" width="100%">
+						<table border="0" cellpadding="0" cellspacing="0"  >
 							<tr>
 								<td valign="top">
 								<div align="center">
-									<img alt="'Deposizione' dipinta da A. Bergognone, grande tavola in cornice dell'epoca (secolo XVI) " border="0" height="130" hspace="10" src="OggiImg/07_s.jpg" width="210" /></div>
+									<img title="'Deposizione' dipinta da A. Bergognone, grande tavola in cornice dell'epoca (secolo XVI) " border="0" height="130" hspace="10" src="OggiImg/07_s.jpg" width="210" /></div>
 								<div align="center">
 									&nbsp;</div>
 								</td>
 								<td valign="top">
 								<div align="center">
-									<img alt="L'intaglio dei Carminati sulla balconata della Cantoria" border="0" height="97" hspace="10" src="OggiImg/079_s.jpg" width="138" /><br />
+									<img title="L'intaglio dei Carminati sulla balconata della Cantoria" border="0" height="97" hspace="10" src="OggiImg/079_s.jpg" width="138" /><br />
 									<br />
 									&nbsp;</div>
 								</td>
@@ -726,17 +684,17 @@
 						<p style="text-align: justify;"><br />
 						<br />
 						<br />
-						<img alt="La sontuosa Sagrestia nuova con gli arredi lignei opera di Michelangelo e Giacomo Carminati" border="0" height="212" hspace="10" src="OggiImg/08_s.jpg" width="150" /><br />
+						<img title="La sontuosa Sagrestia nuova con gli arredi lignei opera di Michelangelo e Giacomo Carminati" border="0" height="212" hspace="10" src="OggiImg/08_s.jpg" width="150" /><br />
 						<br />
 						<strong><em>
-						<img alt="La sontuosa Sagrestia nuova con gli arredi lignei opera di Michelangelo e Giacomo Carminati" border="0" height="154" hspace="10" src="OggiImg/06_s.jpg" width="150" /><br />
+						<img title="La sontuosa Sagrestia nuova con gli arredi lignei opera di Michelangelo e Giacomo Carminati" border="0" height="154" hspace="10" src="OggiImg/06_s.jpg" width="150" /><br />
 						</em></strong>
 						<a href="javascript:apri('santuariooggi_25.htm',586,630)" style="text-decoration: none; color: rgb(51, 51, 51);">
 						<strong><em><br />
 						</em></strong></a>
-						<img alt="Gli stucchi del soffitto incorniciano gli affreschi di Giuseppe Procaccini di fine Seicento " border="0" height="212" hspace="10" src="OggiImg/15_s.jpg" width="150" /><br />
+						<img title="Gli stucchi del soffitto incorniciano gli affreschi di Giuseppe Procaccini di fine Seicento " border="0" height="212" hspace="10" src="OggiImg/15_s.jpg" width="150" /><br />
 						<br />
-						<img alt="Un'antica tela raffigurante l'Apparizione a Giannetta" border="0" height="238" hspace="10" src="OggiImg/09_p60_s.jpg" width="150" /><br />
+						<img title="Un'antica tela raffigurante l'Apparizione a Giannetta" border="0" height="238" hspace="10" src="OggiImg/09_p60_s.jpg" width="150" /><br />
 						&nbsp;</p>
 						</td>
 					</tr>
@@ -814,13 +772,13 @@
 					</tr>
 					<tr>
 						<td style="text-align: center;" valign="top">
-						<img alt="Alcune delle cappelle della navata occidentale recentemente restaurate" border="0" height="303" hspace="10" src="OggiImg/077_s.jpg" width="150" /><br />
+						<img title="Alcune delle cappelle della navata occidentale recentemente restaurate" border="0" height="303" hspace="10" src="OggiImg/077_s.jpg" width="150" /><br />
 						&nbsp;</td>
 						<td style="text-align: center;" valign="top">
-						<img alt="Alcune delle cappelle della navata occidentale recentemente restaurate" border="0" height="303" hspace="10" src="OggiImg/076_s.jpg" width="150" /></td>
+						<img title="Alcune delle cappelle della navata occidentale recentemente restaurate" border="0" height="303" hspace="10" src="OggiImg/076_s.jpg" width="150" /></td>
 						<td valign="top">
 						<div style="text-align: center;">
-							<img alt="Alcune delle cappelle della navata occidentale recentemente restaurate" border="0" height="185" hspace="10" src="OggiImg/078_s.jpg" width="150" /><br />
+							<img title="Alcune delle cappelle della navata occidentale recentemente restaurate" border="0" height="185" hspace="10" src="OggiImg/078_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -891,7 +849,7 @@
 							<br />
 							<br />
 							<br />
-							<img alt="Nella navata occidentale il monumentale organo con 5600 canne distribuite sulla cupola, sulla cantoria e nell'ampia cassa" border="0" height="221" hspace="10" src="OggiImg/16_s.jpg" width="150" /><br />
+							<img title="Nella navata occidentale il monumentale organo con 5600 canne distribuite sulla cupola, sulla cantoria e nell'ampia cassa" border="0" height="221" hspace="10" src="OggiImg/16_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -899,5 +857,6 @@
 				</td>
 			</tr>
 		</table>
+    </div>
 </asp:Content>
 

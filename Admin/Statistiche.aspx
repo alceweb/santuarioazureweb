@@ -1,12 +1,33 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.master" AutoEventWireup="true" CodeFile="Statistiche.aspx.cs" Inherits="Admin_Statistiche" %>
+﻿<%@ Page Title="Statistiche" Language="C#" MasterPageFile="~/Admin/Admin.master" AutoEventWireup="true" CodeFile="Statistiche.aspx.cs" Inherits="Admin_Statistiche" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder" Runat="Server">
+    <span style="padding-left:20px">
     <asp:DropDownList ID="UsersDropDownList" runat="server" AutoPostBack="True" DataSourceID="SqlDataSourceUsers" DataTextField="UserName" DataValueField="UserId" CssClass="NewsLabel"></asp:DropDownList>
     <asp:SqlDataSource ID="SqlDataSourceUsers" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [Users] ORDER BY [UserName]"></asp:SqlDataSource>
+    </span>
+    <span class="float-right">Oggi si sono connessi:
+                                    <asp:ListView ID="ListView2" runat="server" DataSourceID="SqlDataSourceCount">
+                                        <ItemSeparatorTemplate>
+                                            <span style="color:green">-</span>
+                                        </ItemSeparatorTemplate>
+                                        <ItemTemplate>
+                                            <tr style="">
+                                                <td>
+                                                    <asp:Label ForeColor="Green" ID="numeroLabel" runat="server" Text='<%# Eval("UserName") %>' />
+                                                </td>
+                                            </tr>
+                                        </ItemTemplate>
+                                    </asp:ListView>
+                                    <asp:SqlDataSource ID="SqlDataSourceCount" runat="server" 
+                                        ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
+                                        SelectCommand="select Users.UserName from Users Left Join Memberships on Memberships.UserId=Users.UserId where Memberships.LastLoginDate > convert(date, getdate())">
+                                    </asp:SqlDataSource>
+
+    </span>
     <hr />
     <asp:ListView ID="ListView1" runat="server" DataKeyNames="UserId" DataSourceID="SqlDataSource1" GroupItemCount="3">
         <EmptyItemTemplate>

@@ -7,6 +7,8 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
 	<h2>Un museo e la pinacoteca: a quando?</h2>
         <% Response.WriteFile("Menu.html");%>
+    <div class="div1">
+
 		<table cellpadding="0" cellspacing="0">
 			<tr>
 				<td>
@@ -114,19 +116,19 @@
 								<tr>
 									<td>
 									<div style="text-align: justify; ">
-										<img alt="Madonna con Bambino (scuola bolognese)" border="0" height="183" hspace="10" src="MuseoImg/28-a_s.jpg" width="150" /><br />
+										<img title="Madonna con Bambino (scuola bolognese)" border="0" height="183" hspace="10" src="MuseoImg/28-a_s.jpg" width="150" /><br />
 										&nbsp;</div>
 									</td>
 								</tr>
 								<tr>
 									<td style="text-align: justify; ">
-									<img alt="Figure di profeti" border="0" height="178" hspace="10" src="MuseoImg/141_s.jpg" width="150" /><br />
+									<img title="Figure di profeti" border="0" height="178" hspace="10" src="MuseoImg/141_s.jpg" width="150" /><br />
 									<br />
-									<img alt="Figure di profeti" border="0" height="178" hspace="10" src="MuseoImg/142_s.jpg" width="150" /><br />
+									<img title="Figure di profeti" border="0" height="178" hspace="10" src="MuseoImg/142_s.jpg" width="150" /><br />
 									<br />
-									<img alt="Adamo ed Eva cacciati dal paradiso terrestre" border="0" height="118" hspace="10" src="MuseoImg/143_s.jpg" width="150" /><br />
+									<img title="Adamo ed Eva cacciati dal paradiso terrestre" border="0" height="118" hspace="10" src="MuseoImg/143_s.jpg" width="150" /><br />
 									<br />
-									<img alt="Abigail implora il perdono di Davide per il marito Nabal" border="0" height="118" hspace="10" src="MuseoImg/144_s.jpg" width="150" /></td>
+									<img title="Abigail implora il perdono di Davide per il marito Nabal" border="0" height="118" hspace="10" src="MuseoImg/144_s.jpg" width="150" /></td>
 								</tr>
 								<tr>
 									<td>
@@ -156,31 +158,31 @@
 									<tr valign="top">
 										<td>
 										<h5 style="text-align: center; ">
-										<img alt="Croce processionale a doppia faccia ornata dalle immagini della Vergine Maria e santi" border="0" height="276" hspace="10" src="MuseoImg/161_s.jpg" width="150" /><br />
+										<img title="Croce processionale a doppia faccia ornata dalle immagini della Vergine Maria e santi" border="0" height="276" hspace="10" src="MuseoImg/161_s.jpg" width="150" /><br />
 										&nbsp;</h5>
 										</td>
 										<td>
 										<div align="center">
 											<h5 style="text-align: center; ">
-											<img alt="v" border="0" height="276" hspace="10" src="MuseoImg/159_s.jpg" width="150" /><br />
+											<img title="v" border="0" height="276" hspace="10" src="MuseoImg/159_s.jpg" width="150" /><br />
 											&nbsp;</h5>
 										</div>
 										</td>
 										<td>
 										<div style="text-align: center; ">
-											<img alt="Particolare calice" border="0" height="226" hspace="10" src="MuseoImg/151_s.jpg" width="150" /><br />
+											<img title="Particolare calice" border="0" height="226" hspace="10" src="MuseoImg/151_s.jpg" width="150" /><br />
 											&nbsp;</div>
 										</td>
 									</tr>
 									<tr valign="top">
 										<td style="text-align: center; ">
-										<img alt="Calice" border="0" height="276" hspace="10" src="MuseoImg/153_s.jpg" width="150" /><br />
+										<img title="Calice" border="0" height="276" hspace="10" src="MuseoImg/153_s.jpg" width="150" /><br />
 										&nbsp;</td>
 										<td style="text-align: center; ">
-										<img alt="Calici" border="0" height="226" hspace="10" src="MuseoImg/150_s.jpg" width="150" /><br />
+										<img title="Calici" border="0" height="226" hspace="10" src="MuseoImg/150_s.jpg" width="150" /><br />
 										&nbsp;</td>
 										<td style="text-align: center; ">
-										<img alt="Ampolla d'argento da Messa in stile neoclassico" border="0" height="226" hspace="10" src="MuseoImg/160_s.jpg" width="150" /><br />
+										<img title="Ampolla d'argento da Messa in stile neoclassico" border="0" height="226" hspace="10" src="MuseoImg/160_s.jpg" width="150" /><br />
 										&nbsp;</td>
 									</tr>
 								</table>
@@ -292,14 +294,14 @@
 												<tr>
 													<td>
 													<div align="center">
-														<img alt="Alcuni dei pellegrinaggi giubilari: i bambini" border="0" height="228" hspace="10" src="MuseoImg/giubileo_1_s.jpg" width="150" /><br />
+														<img title="Alcuni dei pellegrinaggi giubilari: i bambini" border="0" height="228" hspace="10" src="MuseoImg/giubileo_1_s.jpg" width="150" /><br />
 														&nbsp;</div>
 													</td>
 												</tr>
 												<tr>
 													<td>
 													<div align="center">
-														<img alt="Tra i pellegrinaggi giubilari, quello della Federazione italiana tradizioni popolari" border="0" height="125" hspace="10" src="MuseoImg/giubileo_2_s.jpg" width="150" /><br />
+														<img title="Tra i pellegrinaggi giubilari, quello della Federazione italiana tradizioni popolari" border="0" height="125" hspace="10" src="MuseoImg/giubileo_2_s.jpg" width="150" /><br />
 														&nbsp;</div>
 													</td>
 												</tr>
@@ -366,5 +368,6 @@
 				</td>
 			</tr>
 		</table>
+    </div>
 </asp:Content>
 

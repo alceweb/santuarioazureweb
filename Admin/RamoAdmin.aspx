@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/Admin.master" AutoEventWireup="true" CodeFile="RamoAdmin.aspx.cs" Inherits="Admin_RamoAdmin" %>
+﻿<%@ Page Title="Gestione Ramo Fiorito" Language="C#" MasterPageFile="~/Admin/Admin.master" AutoEventWireup="true" CodeFile="RamoAdmin.aspx.cs" Inherits="Admin_RamoAdmin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <script src="jquery-1.6.2.min.js"></script>
@@ -13,7 +13,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder" Runat="Server">
-    <h2>Il ramo fiorito</h2>
+    <h2></h2>
     <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="SqlDataSource1" InsertItemPosition="FirstItem">
          <ItemTemplate>
             <tr style="">
@@ -90,19 +90,29 @@
                                 });
                             });
                         </script>
-            <tr style="background-image: url('http://localhost:3517/santuarioazureweb/Images/SfondoTabellaNews.png')">
-                <td>
-                    <asp:LinkButton ID="InsertButton" runat="server" CommandName="Insert" ForeColor="Green"  Text="Inserisci" />
+            <tr>
+                <td colspan="4">
+                    <h3 style="text-align:center">Aggiungi nuovo</h3>
+                </td>
+            </tr>
+            <tr style="background-color: #9B8373">
+                <td><br />
+                    <asp:LinkButton ID="InsertButton" runat="server" CommandName="Insert" ForeColor="Green"  Text="Aggiungi" />
                     <asp:LinkButton ID="CancelButton" runat="server" CommandName="Cancel" ForeColor="Red"  Text="Annulla" />
                 </td>
                 <td colspan="2">
-                    <asp:TextBox ID="DataTextBox" Width="150px" CssClass="Calender" runat="server" Text='<%# Bind("Data", "{0:dd MMMM yyyy}") %>' />
+                    Inserisci la data <asp:TextBox ID="DataTextBox" Width="150px" CssClass="Calender" runat="server" Text='<%# Bind("Data", "{0:dd MMMM yyyy}") %>' />
 
                 </td>
                 <td>
                 </td>
             </tr>
-        </InsertItemTemplate>
+             <tr>
+                <td colspan="4">
+                    <h3 style="text-align:center">Modifica</h3>
+                </td>
+            </tr>
+       </InsertItemTemplate>
         <SelectedItemTemplate>
             <tr style="">
                 <td>

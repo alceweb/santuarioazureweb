@@ -7,6 +7,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
 	<h2>Schola Sanctae Mariae</h2>
         <% Response.WriteFile("Menu.html");%>
+    <div class="div1">
 
 		<table cellpadding="0" cellspacing="0">
 			<tr>
@@ -40,7 +41,7 @@
 						</td>
 						<td valign="top">
 						<div style="text-align: justify; ">
-							<img alt="In compagnia di tanti santi protettori il donatore esprime la propria riconoscenza alla Madonna di Caravaggio" border="0" height="197" hspace="10" src="StoriaImg/94_s.jpg" width="150" /><br />
+							<img title="In compagnia di tanti santi protettori il donatore esprime la propria riconoscenza alla Madonna di Caravaggio" border="0" height="197" hspace="10" src="StoriaImg/94_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -77,7 +78,7 @@
 					<tr>
 						<td valign="top">
 						<p style="text-align: justify; "><br />
-						<img alt="Il vescovo di Cremona concede 40 giorni di indulgenza ai membri del Consorzio di Santa Maria per il compimento di opere di misericordia e a chi offrirà loro sostegno (pergamena 1331) " border="0" height="150" hspace="10" src="StoriaImg/IMG_0849_s.jpg" width="228" /><br />
+						<img title="Il vescovo di Cremona concede 40 giorni di indulgenza ai membri del Consorzio di Santa Maria per il compimento di opere di misericordia e a chi offrirà loro sostegno (pergamena 1331) " border="0" height="150" hspace="10" src="StoriaImg/IMG_0849_s.jpg" width="228" /><br />
 						&nbsp;</p>
 						</td>
 						<td style="text-align: justify; " valign="top"><em>Dalle 
@@ -249,9 +250,9 @@
 						<div align="center">
 							<p style="text-align: justify; "><br />
 							<br />
-							<img alt="'L'ingegnero' Pellegrino Tibaldi presenta ai deputati della Schola di Santa Maria il proprio progetto per il nuovo santuario " border="0" height="150" hspace="10" src="StoriaImg/18-b_s.jpg" width="227" />&nbsp;<br />
+							<img title="'L'ingegnero' Pellegrino Tibaldi presenta ai deputati della Schola di Santa Maria il proprio progetto per il nuovo santuario " border="0" height="150" hspace="10" src="StoriaImg/18-b_s.jpg" width="227" />&nbsp;<br />
 							<br />
-							<img alt="I deputati della Schola di Santa Maria presentano alla Madonna il modello della 'nuova chiesa' " border="0" height="150" hspace="10" src="StoriaImg/18-a_s.jpg" width="224" /><br />
+							<img title="I deputati della Schola di Santa Maria presentano alla Madonna il modello della 'nuova chiesa' " border="0" height="150" hspace="10" src="StoriaImg/18-a_s.jpg" width="224" /><br />
 							&nbsp;</p>
 						</div>
 						</td>
@@ -330,7 +331,7 @@
 						<div align="center">
 							<p><br />
 							<br />
-							<img alt="Antichi libri corali (secoloXVI)" border="0" height="202" hspace="10" src="StoriaImg/IMG_0799_s.jpg" width="150" /><br />
+							<img title="Antichi libri corali (secoloXVI)" border="0" height="202" hspace="10" src="StoriaImg/IMG_0799_s.jpg" width="150" /><br />
 							&nbsp;</p>
 							<p><br />
 							</p>
@@ -341,5 +342,6 @@
 				</td>
 			</tr>
 		</table>
+    </div>
 </asp:Content>
 

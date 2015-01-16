@@ -7,8 +7,8 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
         <h2>La Beata Giannetta</h2>
     <% Response.WriteFile("Menu.html"); %>
-    <div style="display:table" >
-        <img alt="Una rara stampa dei primi anni del Settecento in cui è raffigurata una serie di miracoli cari alla tradizione popolare" border="0" height="190" hspace="10" src="http://www.santuariodicaravaggio.it/img/capitolo_3/92_p20_s.jpg" width="150" style="float: right" /><p style="text-align: justify;">
+    <div class="div1"  >
+        <img title="Una rara stampa dei primi anni del Settecento in cui è raffigurata una serie di miracoli cari alla tradizione popolare" border="0" height="190" hspace="10" src="http://www.santuariodicaravaggio.it/img/capitolo_3/92_p20_s.jpg" width="150" style="float: right" /><p style="text-align: justify;">
             E’ il personaggio 
 			più caro alla devozione popolare. Per animi semplici 
 			è naturale identificarsi in questa donna &quot;tribolata&quot; 
@@ -34,7 +34,7 @@
 			dell’Apparizione della Vergine - “il lunedì 26 del 
 			mese di maggio verso l’ora ventunesima” (le cinque 
 			della sera) – ma non a chi. Però la scritta 
-			latinadella Madonna con Bambino ne<img alt="Raffigurazione dell'immagine dell'Apparizione tratta da Il Sacro Fonte di M. V. N.ra Sig.ra di Caravaggio, di Franco Belluomo, 1645" border="0" height="233" hspace="10" src="http://www.santuariodicaravaggio.it/img/capitolo_3/img_0860_s.jpg" width="150" style="float: left" />l Sacro Fonte, 
+			latinadella Madonna con Bambino ne<img title="Raffigurazione dell'immagine dell'Apparizione tratta da Il Sacro Fonte di M. V. N.ra Sig.ra di Caravaggio, di Franco Belluomo, 1645" border="0" height="233" hspace="10" src="http://www.santuariodicaravaggio.it/img/capitolo_3/img_0860_s.jpg" width="150" style="float: left" />l Sacro Fonte, 
 			testimonianza storica tra le più antiche, ci svela 
 			il nome della veggente: Giannetta, la “più felice 
 			tra tutte le donne”.<br />
@@ -59,7 +59,7 @@
 			&quot;carismatici&quot;, anche donne, ma non ci sono prove che 
 			ci rendano certo il viaggio di Giannetta a Milano, 
 			mentre si ha prova documentata dell&#39;interesse dei 
-			Visconti e degli Sforza per il Santuario.<img alt="Particolare del gruppo dell'Apparizione collocato nel Sacro Speco" border="0" height="214" hspace="10" src="http://www.santuariodicaravaggio.it/img/capitolo_3/90_p22_s.jpg" width="150" style="float: right" /><br />
+			Visconti e degli Sforza per il Santuario.<img title="Particolare del gruppo dell'Apparizione collocato nel Sacro Speco" border="0" height="214" hspace="10" src="http://www.santuariodicaravaggio.it/img/capitolo_3/90_p22_s.jpg" width="150" style="float: right" /><br />
             Nella prima storia a stampa di Paolo Morigi del 1599 
 			si parla ancora dell’andata di Giannetta a 
 			Costantinopoli.<br />
@@ -97,7 +97,7 @@
 			&quot;beata Giannetta&quot;</em></strong><br />
             <strong>&nbsp;</strong><br />
             <strong><em>
-                <img alt="'Estasi' sul volto di Giannetta nel Sacro Speco mentre ascolta le parole della Vergine " border="0" height="226" hspace="10" src="http://www.santuariodicaravaggio.it/img/capitolo_3/giannetta_nel_sacro_speco_s.jpg" width="150" style="float: left" /></em></strong>Giannetta la vide una sola volta, la Vergine?<br />
+                <img title="'Estasi' sul volto di Giannetta nel Sacro Speco mentre ascolta le parole della Vergine " border="0" height="226" hspace="10" src="http://www.santuariodicaravaggio.it/img/capitolo_3/giannetta_nel_sacro_speco_s.jpg" width="150" style="float: left" /></em></strong>Giannetta la vide una sola volta, la Vergine?<br />
             Saputo che il duca di Milano la vuole incontrare, 
 			Gian­netta è turbata e passa la notte in preghiera; 
 			e, narra Paolo Morigi nel 1599:<em>...vicino<span class="Apple-converted-space">&nbsp;</span>all&#39;alba 
@@ -128,7 +128,7 @@
             Non sappiamo se Giannetta avesse figli; non sappiamo 
 			con certezza se risiedesse in porta Vicinato come 
 			vuole la tradizione caravaggina, anche se è molto 
-			probabile; non sappiamo se era tanto povera.<img alt="Una grande tela ex voto del 1684" border="0" height="189" hspace="10" src="http://www.santuariodicaravaggio.it/img/capitolo_3/93_s.jpg" width="150" style="float: right" /><br />
+			probabile; non sappiamo se era tanto povera.<img title="Una grande tela ex voto del 1684" border="0" height="189" hspace="10" src="http://www.santuariodicaravaggio.it/img/capitolo_3/93_s.jpg" width="150" style="float: right" /><br />
             II ramo dei Vacca di Caravaggio conta, nel 
 			Quattrocento e nel Cinquecento oltre che degli 
 			impresari edili, maestri carpentieri e muratori che 

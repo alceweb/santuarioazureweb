@@ -7,7 +7,7 @@
     <h2><%: Title %></h2><hr />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
-    <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="SqlDataSource1" GroupItemCount="3" InsertItemPosition="FirstItem">
+    <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="SqlDataSource1" InsertItemPosition="FirstItem">
         <EmptyDataTemplate>
             <table runat="server" style="">
                 <tr>
@@ -15,12 +15,17 @@
                 </tr>
             </table>
         </EmptyDataTemplate>
-        <GroupTemplate>
-            <tr id="itemPlaceholderContainer" runat="server">
-                <td id="itemPlaceholder" runat="server"></td>
-            </tr>
-        </GroupTemplate>
         <InsertItemTemplate>
+            <tr style="color:red">
+                <td></td>
+            <td runat="server">
+                        <asp:ValidationSummary ID="ValSum" runat="server"
+                            HeaderText="ATTENZIONE!!!<br/>Tutti i campi sono obbligatori<br/>Devi inserire questi campi:" CssClass="tbl2"></asp:ValidationSummary>
+
+            </td>
+
+            </tr>
+
             <td runat="server" style="">Nome:
             </td>
             <td>
@@ -42,11 +47,27 @@
             <tr>
                 <td></td>
                 <td>
-                    <asp:Button ID="InsertButton" ForeColor="Green" runat="server" OnClientClick="return confirm('Stai inviando la tua preghiera. Verrà valutata dal persobale addetto prima della pubblicazione sul sito')" CommandName="Insert" Text="Invia la preghiera" />
-                    <asp:Button ID="CancelButton" ForeColor="Red" runat="server" CommandName="Cancel" Text="Cancella" />
+                    <asp:Button ID="InsertButton" ForeColor="Green" runat="server" CommandName="Insert" Text="Invia la preghiera" PostBackUrl="~/Riservata/PreghiAddOk.aspx" />
+                    <asp:Button ID="CancelButton" ForeColor="Red" runat="server" CommandName="Cancel" Text="Cancella" CausesValidation="False" />
+
                 </td>
             </tr>
             </td>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidatorNome" runat="server"
+        ControlToValidate="NomeTextBox"
+        ErrorMessage="Nome!"
+        Display="None"
+        Width="10px"/>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidatorCittà" runat="server"
+        ControlToValidate="CittaTextBox"
+        ErrorMessage="Città!"
+        Display="None"
+        Width="10px"/>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidatorPreghiera" runat="server"
+        ControlToValidate="PreghieraTextBox"
+        ErrorMessage="Preghiera!"
+        Display="None"
+        Width="10px"/>
         </InsertItemTemplate>
         <ItemTemplate>
             <td runat="server" style=""></td>
@@ -55,8 +76,8 @@
             <table runat="server">
                 <tr runat="server">
                     <td runat="server">
-                        <table id="groupPlaceholderContainer" runat="server" border="0" style="">
-                            <tr id="groupPlaceholder" runat="server">
+                        <table id="itemPlaceholderContainer" runat="server" border="0" style="">
+                            <tr id="itemPlaceholder" runat="server">
                             </tr>
                         </table>
                     </td>
@@ -90,7 +111,7 @@
     <%-- Lista preghiere ultima settimana --%>
     <asp:ListView ID="ListView2" runat="server" DataSourceID="SqlDataSource2" DataKeyNames="Id">
         <AlternatingItemTemplate>
-            <tr style="background-image: url('../Images/SfondoTabellaNews.png')">
+            <tr style="background-color:rgba(171, 153, 142, 0.43)"  >
                 <td>
                     <asp:Label ID="DataLabel" runat="server" Text='<%# Eval("Data", "{0: dddd dd-MM-yy}") %>' />
                 </td>
@@ -113,7 +134,7 @@
             </table>
         </EmptyDataTemplate>
         <ItemTemplate>
-            <tr style="">
+            <tr >
                 <td >
                     <asp:Label ID="DataLabel" runat="server" Text='<%# Eval("Data", "{0: dddd dd-MM-yy}") %>' />
                 </td>

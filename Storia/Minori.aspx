@@ -7,6 +7,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
 	<h2>I Santuari &quot;minori&quot;</h2>
         <% Response.WriteFile("Menu.html");%>
+    <div class="div1">
 		<table cellpadding="0" cellspacing="0">
 			<tr>
 				<td>
@@ -76,9 +77,9 @@
 						<td valign="top">
 						<p align="center"><br />
 						<br />
-						<img alt="Immagine invernale del Santuario di Pumenengo, detto 'la Rotonda'" border="0" height="151" hspace="10" src="MinoriImg/124_p132_s.jpg" width="150" /><br />
+						<img title="Immagine invernale del Santuario di Pumenengo, detto 'la Rotonda'" border="0" height="151" hspace="10" src="MinoriImg/124_p132_s.jpg" width="150" /><br />
 						<br />
-						<img alt="Affresco della miracolosa guarigione avvenuta nel 1585 " border="0" height="161" hspace="10" src="MinoriImg/123_p132_s.jpg" width="150" /><br />
+						<img title="Affresco della miracolosa guarigione avvenuta nel 1585 " border="0" height="161" hspace="10" src="MinoriImg/123_p132_s.jpg" width="150" /><br />
 						&nbsp;</p>
 						</td>
 					</tr>
@@ -172,7 +173,7 @@
 							<br />
 							<br />
 							<br />
-							<img alt="Il settecentesco Santuario di Codogno che ricorda il miracolo del 1707 " border="0" height="224" hspace="10" src="MinoriImg/125_p75_s.jpg" width="150" /><br />
+							<img title="Il settecentesco Santuario di Codogno che ricorda il miracolo del 1707 " border="0" height="224" hspace="10" src="MinoriImg/125_p75_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -298,11 +299,11 @@
 						<div align="center">
 							<p><br />
 							<br />
-							<img alt="Un raro affresco ex-voto del 1698 all'esterno di un'abitazione di Calcio" border="0" hspace="10" src="MinoriImg/126_p71_s.jpg" width="150" /><br />
+							<img title="Un raro affresco ex-voto del 1698 all'esterno di un'abitazione di Calcio" border="0" hspace="10" src="MinoriImg/126_p71_s.jpg" width="150" /><br />
 							<br />
-							<img alt="Il paliotto dell'altare maggiore nella chiesa di S. Giovanni a Caravaggio, opera del 1710 di Pietro Solari" border="0" height="226" hspace="10" src="MinoriImg/127_p69_s.jpg" width="150" /><br />
+							<img title="Il paliotto dell'altare maggiore nella chiesa di S. Giovanni a Caravaggio, opera del 1710 di Pietro Solari" border="0" height="226" hspace="10" src="MinoriImg/127_p69_s.jpg" width="150" /><br />
 							<br />
-							<img alt="Una delle innumerevoli 'santelle' della Madonna di Caravaggio sparse in tutta italia e nel mondo: qui siamo in Valle Imagna" border="0" height="151" hspace="10" src="MinoriImg/128_p77_s.jpg" width="150" /><br />
+							<img title="Una delle innumerevoli 'santelle' della Madonna di Caravaggio sparse in tutta italia e nel mondo: qui siamo in Valle Imagna" border="0" height="151" hspace="10" src="MinoriImg/128_p77_s.jpg" width="150" /><br />
 							<br />
 							<br />
 							<br />
@@ -319,5 +320,7 @@
 				</td>
 			</tr>
 		</table>
+
+    </div>
 </asp:Content>
 

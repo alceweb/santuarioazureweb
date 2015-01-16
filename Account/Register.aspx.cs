@@ -25,4 +25,16 @@ public partial class Account_Register : Page
         }
         Response.Redirect(continueUrl);
     }
+    protected void LinkButton1_Click(object sender, EventArgs e)
+    {
+        PnlPri.Visible = false;
+        RegisterUser.Visible = true;
+        LinkButton2.Visible = false;
+        LinkButton1.Visible = false;
+    }
+    protected void LinkButton2_Click(object sender, EventArgs e)
+    {
+        PnlPri.Visible = true;
+        LinkButton1.Visible = true;
+    }
 }

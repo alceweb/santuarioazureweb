@@ -7,6 +7,8 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
 	<h2>Opere e giorni</h2>
         <% Response.WriteFile("Menu.html");%>
+    <div class="div1">
+
 		<table border="0" cellpadding="0" cellspacing="0">
 			<tr>
 				<td valign="top">
@@ -91,7 +93,7 @@
 						<div style="text-align: justify; ">
 							<br />
 							<br />
-							<img alt="I marmi del Sacro Fonte sono di Pietro Ferraroni " border="0" height="150" hspace="10" src="OpereImg/img_0881_s.jpg" width="227" /><br />
+							<img title="I marmi del Sacro Fonte sono di Pietro Ferraroni " border="0" height="150" hspace="10" src="OpereImg/img_0881_s.jpg" width="227" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -178,7 +180,7 @@
 						<div align="center">
 							<p style="text-align: justify; "><br />
 							<br />
-							<img alt="La cappella del Centro di spiritualità. Fregi, sculture, vetrate e arredi sono opera di Mario Toffetti" border="0" height="150" hspace="10" src="OpereImg/129_p130_s.jpg" width="227" /><br />
+							<img title="La cappella del Centro di spiritualità. Fregi, sculture, vetrate e arredi sono opera di Mario Toffetti" border="0" height="150" hspace="10" src="OpereImg/129_p130_s.jpg" width="227" /><br />
 							&nbsp;</p>
 						</div>
 						</td>
@@ -314,5 +316,6 @@
 				</td>
 			</tr>
 		</table>
+    </div>
 </asp:Content>
 

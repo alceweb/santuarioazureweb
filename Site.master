@@ -46,10 +46,23 @@
                                 </ul>
                             </AnonymousTemplate>
                             <LoggedInTemplate>
-                                <p>
-                                    Hello, <a id="A1" runat="server" class="username" href="~/Account/Manage" title="Manage your account">
+                                <p >
+                                    <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
+                                        <ItemTemplate>
+                                            <tr style="">
+                                                <td>
+                                                    <asp:Label ID="numeroLabel" runat="server" Text='<%# Eval("accessi") %>' />
+                                                </td>
+                                            </tr>
+                                        </ItemTemplate>
+                                    </asp:ListView>
+                                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                                        ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
+                                        SelectCommand="select count(memberships.UserId) as accessi from Memberships Left Join Users on Memberships.UserId=Users.UserId where Memberships.LastLoginDate > convert(date, getdate())">
+                                    </asp:SqlDataSource>
+                                     - Hello, <a id="A1" runat="server" class="username" href="~/Account/Manage" title="Manage your account">
                                         <asp:LoginName ID="LoginName1" runat="server" CssClass="username" />
-                                    </a>!
+                                    </a>.
                                 <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutText="Disconnetti" LogoutPageUrl="~/" />
                                 </p>
                             </LoggedInTemplate>
@@ -70,15 +83,15 @@
             <section class="content-wrapper main-content clear-fix">
                             <div class="menul">
                                 <div>
-                                    <a href="http://www.verbumradio.com/caravaggio.m3u" class="link2 homeMenu">Le celebrazioni<br />
-                                        <img src="<%: ResolveUrl("~/Images/Tumb7.png")%>" /></a><br />
-                                    <a href="<%: ResolveUrl("~/centro.aspx")%>" class="link2 homeMenu">Centro di spiritualità<br />
+                                    <a href="http://www.verbumradio.com/caravaggio.m3u" >Ascolta le celebrazioni<br />
+                                        <img src="<%: ResolveUrl("~/Images/Verbum.jpg")%>" /></a><br />
+                                    <a href="<%: ResolveUrl("~/centro.aspx")%>" >Centro di spiritualità<br />
                                         <img src="<%: ResolveUrl("~/Images/Tumb2.png")%>" /></a><br />
-                                    <a href="<%: ResolveUrl("~/VirtualTour/Main.aspx")%>" class="link2 homeMenu">Virtual tour<br />
+                                    <a href="<%: ResolveUrl("~/VirtualTour/Main.aspx")%>" >Virtual tour<br />
                                         <img src="<%: ResolveUrl("~/Images/ioeal.jpg")%>" /></a><br />
-                                    <a href="<%: ResolveUrl("~/Pubblicazioni/Main.aspx")%>" class="link2 homeMenu">Pubblicazioni<br />
+                                    <a href="<%: ResolveUrl("~/Pubblicazioni/Main.aspx")%>" >Pubblicazioni<br />
                                         <img src="<%: ResolveUrl("~/Images/Tumb5.png")%>" /></a><br />
-                                    <a href="<%: ResolveUrl("~/Preghiere/Elenco.aspx") %>" class="link2 homeMenu">Lascia una preghiera<br />
+                                    <a href="<%: ResolveUrl("~/Preghiere/Elenco.aspx") %>" >Lascia una preghiera<br />
                                         <img src="<%: ResolveUrl("~/Images/Tumb1.png")%>" /></a>
                                 </div>
                             </div>

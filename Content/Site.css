@@ -14,8 +14,23 @@ body{
     border-top: solid 10px #000;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
 }
-
-
+.div1 {
+    display: table;
+    text-shadow: 0px 0px 3px #fff;
+    text-align: justify;
+    background-color: #DCDCDC;
+    padding: 15px;
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 10px #2E1B0C;
+}
+    .div1 img {
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 10px #2E1B0C;
+    border-radius:5px;
+    margin:5px;
+    }
 a {
     color: #333;
     outline: none;
@@ -324,11 +339,11 @@ ul#menu {
     font-size:0.93em;
     padding-left:15px;
     padding-top:10px;
-    display:block;
+    display:inline-block;
 }
 .menul a {
     color: #3D2815;
-    transition: all 1s ease;  
+    transition: all 1s ease;
 }
 .menul span {
     color: #3D2815;    
@@ -351,6 +366,9 @@ ul#menu {
     width: 150px;
     transition: all 1s ease;
     border:none;
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.75);
 }
 .link2 {
     font-size:0.85em;
@@ -382,6 +400,8 @@ ul#menu {
     transition: 1s all ease;
 }
 .NewsA:hover{
+    -webkit-box-shadow: 0px 25px 30px #443021;
+    -moz-box-shadow:    0px 25px 30px #443021;
     box-shadow: 0px 25px 30px #443021;
     transition: .7s all ease;
 }
@@ -407,8 +427,8 @@ ul#menu {
     vertical-align: bottom;
     border:none;
     border-radius: 5px;
-    -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.75);
     margin:auto;
 }
@@ -418,8 +438,8 @@ ul#menu {
     vertical-align: bottom;
     border:none;
     border-radius: 5px;
-    -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    4px 4px 5px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.75);
 }
 .NewsTitolo {
@@ -566,12 +586,12 @@ article {
 }
 
 aside {
-    margin:10px;
+    display:block;
+    margin: 0px 10px 10px 10px;
     padding:10px;
     width:180px;
     float: right;
     text-align:right;
-    height:250px;
 }
 
 aside ul {

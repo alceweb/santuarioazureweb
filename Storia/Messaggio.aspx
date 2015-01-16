@@ -7,7 +7,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
 	<h2>Il messaggio di Maria e le celebrazioni del Santuario</h2>
         <% Response.WriteFile("Menu.html");%>
-    <div style="display:table">
+    <div class="div1">
 
 		<p style="text-align: justify; ">Il messaggio che Maria ha consegnato a 
 		Giannetta la sera di lunedì 26 maggio 1432 viene riproposto ai 

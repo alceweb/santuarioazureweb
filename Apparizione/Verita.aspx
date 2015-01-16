@@ -7,8 +7,8 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
     			<h2>La verità storica</h2>
     <% Response.WriteFile("Menu.html"); %>
-    <div style="display:table" >
-				<img alt="Antiche storie della 'famosa Madonna della fontana' di Caravaggio" border="0" height="190" hspace="10" src="Immagini/img_0852_s.jpg" width="150" style="float: right" />
+    <div class="div1" >
+				<img title="Antiche storie della 'famosa Madonna della fontana' di Caravaggio" border="0" height="190" src="Immagini/img_0852_s.jpg" width="150" style="float: right" title="Antiche storie della 'famosa Madonna della fontana' di Caravaggio" />
         <p>La prima notizia 
 							documentata dell’Apparizione risale 
 								al 31 luglio 
@@ -38,7 +38,7 @@
 							verso l’ultimo quarto del Settecento non si era 
 							sollevato alcun dubbio sulla veridicità storica 
 							dell’Apparizione della Madonna a Giannetta de Vacchi 
-							sul<img alt="Il famoso distico latino del secolo XV inciso alla base della Madonna con Bambino attualmente conservata nel Sacro Fonte" border="0" height="216" hspace="10" src="Immagini/img_0868_s.jpg" width="150" class="auto-style1" style="float: left" /> prato Mazzolengo presso Caravaggio verso le 
+							sul<img title="Il famoso distico latino del secolo XV inciso alla base della Madonna con Bambino attualmente conservata nel Sacro Fonte" border="0" height="216" hspace="10" src="Immagini/img_0868_s.jpg" width="150" class="auto-style1" style="float: left" /> prato Mazzolengo presso Caravaggio verso le 
 							cinque della sera il lunedì 26 maggio 1432. 
 							L’ininterrotta catena di “grazie ricevute” aveva 
 							portato a designare dal secolo XVII le realtà 
@@ -84,7 +84,7 @@
 							appassionato; le opinioni e le credenze non 
 							documentate esigono discernimento critico; anche le 
 							esagerazioni, per esempio, nel culto popolare alla 
-							Ver<img alt="L'antico gruppo dell'Apparizione come si presentava sino al 1932 con la 'Madonna vestita' con abiti preziosi" border="0" height="215" hspace="10" src="Immagini/madonna_vestita_s.jpg" width="150" style="float: right" />gine Maria meritano una critica severa. Ma gli 
+							Ver<img title="L'antico gruppo dell'Apparizione come si presentava sino al 1932 con la 'Madonna vestita' con abiti preziosi" border="0" height="215" hspace="10" src="Immagini/madonna_vestita_s.jpg" width="150" style="float: right" />gine Maria meritano una critica severa. Ma gli 
 							stessi critici a loro volta possono e devono essere 
 							criticati: quando esprimono obiezioni sulla carenza 
 							di documentazione coeva dei fatti senza conoscere 
@@ -117,7 +117,7 @@
 											indiretta dell’Apparizione da 
 											evidenziare: da un lato, la 
 											comparazione del testo latino della 
-											pergamena del 1432 con <strong><em><img alt="Autenticazione della pergamena Aleardi (1432) fatta da tre notai e dal paleografo Cereda di Cremona, dopo il rinvenimento (1857)" border="0" height="225" hspace="10" src="Immagini/img_0841_s.jpg" width="150" style="float: left" /></em></strong>quanto si 
+											pergamena del 1432 con <strong><em><img title="Autenticazione della pergamena Aleardi (1432) fatta da tre notai e dal paleografo Cereda di Cremona, dopo il rinvenimento (1857)" border="0" height="225" hspace="10" src="Immagini/img_0841_s.jpg" width="150" style="float: left" /></em></strong>quanto si 
 											legge in un<span class="Apple-converted-space">&nbsp;</span><em>breve</em>o 
 											lettera apostolica di Leone X (1516) 
 											che testimonia il riferimento 

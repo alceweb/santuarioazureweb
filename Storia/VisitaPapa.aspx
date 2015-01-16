@@ -8,6 +8,8 @@
 
 		<h2>La visita del Papa</h2>
         <% Response.WriteFile("Menu.html");%>
+    <div class="div1">
+
 		<table cellpadding="0" cellspacing="0">
 			<tr>
 				<td>
@@ -78,9 +80,9 @@
 						</td>
 						<td valign="top">
 						<div align="center">
-							<img alt="Il Papa visita il Sacro Speco al suo arrivo al Santuario (19 giugno 1992)" border="0" height="226" hspace="10" src="VisitaPapaImg/118_p118_s.jpg" width="150" /><br />
+							<img title="Il Papa visita il Sacro Speco al suo arrivo al Santuario (19 giugno 1992)" border="0" height="226" hspace="10" src="VisitaPapaImg/118_p118_s.jpg" width="150" /><br />
 							<br />
-							<img alt="Giovanni Paolo II tra il cardinale Martini e il vescovo di Cremona Enrico Assi il 21 giugno 1992" border="0" height="226" hspace="10" src="VisitaPapaImg/119_p121_s.jpg" width="150" /><br />
+							<img title="Giovanni Paolo II tra il cardinale Martini e il vescovo di Cremona Enrico Assi il 21 giugno 1992" border="0" height="226" hspace="10" src="VisitaPapaImg/119_p121_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -123,15 +125,15 @@
 						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
 							<tr>
 								<td style="text-align: center; " width="50%">
-								<img alt="Il piazzale del Santuario gremito di giovani fedeli che celebrano la veglia con il Papa" border="0" height="150" hspace="10" src="VisitaPapaImg/candeline_s.jpg" width="220" /></td>
+								<img title="Il piazzale del Santuario gremito di giovani fedeli che celebrano la veglia con il Papa" border="0" height="150" hspace="10" src="VisitaPapaImg/candeline_s.jpg" width="220" /></td>
 								<td style="text-align: center; " width="50%">
-								<img alt="Il Papa fra il vescovo di Cremona mons.Enrico Assi, il rettore del Santuario di allora mons. Vittorio Formento e l'attuale rettore mons. Roberto Ziglioli " border="0" height="150" hspace="10" src="VisitaPapaImg/113_s.jpg" width="189" /></td>
+								<img title="Il Papa fra il vescovo di Cremona mons.Enrico Assi, il rettore del Santuario di allora mons. Vittorio Formento e l'attuale rettore mons. Roberto Ziglioli " border="0" height="150" hspace="10" src="VisitaPapaImg/113_s.jpg" width="189" /></td>
 							</tr>
 						</table>
 						</td>
 						<td valign="top">
 						<div align="center">
-							<img alt="Il piazzale del Santuario gremito di giovani fedeli che celebrano la veglia con il Papa" border="0" height="225" hspace="10" src="VisitaPapaImg/117_s.jpg" width="150" /><br />
+							<img title="Il piazzale del Santuario gremito di giovani fedeli che celebrano la veglia con il Papa" border="0" height="225" hspace="10" src="VisitaPapaImg/117_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -184,7 +186,7 @@
 											<table align="left" border="0" cellpadding="0" cellspacing="0" width="26%">
 												<tr>
 													<td valign="top">
-													<img alt="Libro: Giovanni Paolo II al Santuario di Caravaggio 19-20-21 giugno 1992" border="0" height="159" hspace="10" src="VisitaPapaImg/libro_papa_s.jpg" width="150" /></td>
+													<img title="Libro: Giovanni Paolo II al Santuario di Caravaggio 19-20-21 giugno 1992" border="0" height="159" hspace="10" src="VisitaPapaImg/libro_papa_s.jpg" width="150" /></td>
 												</tr>
 												<tr>
 													<td>
@@ -231,7 +233,7 @@
 										<table align="left" border="0" cellpadding="0" cellspacing="0" width="26%">
 											<tr>
 												<td valign="top">
-												<img alt="L'entusiasmo dei giovani accoglie il Papa il pomeriggio di sabato 20 giugno" border="0" height="150" hspace="10" src="VisitaPapaImg/114_s.jpg" width="150" /></td>
+												<img title="L'entusiasmo dei giovani accoglie il Papa il pomeriggio di sabato 20 giugno" border="0" height="150" hspace="10" src="VisitaPapaImg/114_s.jpg" width="150" /></td>
 											</tr>
 											<tr>
 												<td>
@@ -306,5 +308,6 @@
 				</td>
 			</tr>
 		</table>
+    </div>
 </asp:Content>
 

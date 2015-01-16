@@ -7,6 +7,8 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
 	<h2>Devozione e devozioni</h2>
         <% Response.WriteFile("Menu.html");%>
+    <div class="div1">
+
 
 		<table cellpadding="0" cellspacing="0">
 			<tr>
@@ -96,11 +98,11 @@
 						</td>
 						<td valign="top">
 						<div align="center">
-							<img alt="La più antica raffigurazione della Madonna di Caravaggio si trova a Melzo ed è databile all'inizio del secolo XVI" border="0" height="208" hspace="10" src="DevozioniImg/img_0765_s.jpg" width="150" /><br />
+							<img title="La più antica raffigurazione della Madonna di Caravaggio si trova a Melzo ed è databile all'inizio del secolo XVI" border="0" height="208" hspace="10" src="DevozioniImg/img_0765_s.jpg" width="150" /><br />
 							<br />
 							&nbsp;</div>
 						<div align="center">
-							<img alt="La celebrazione della Messa solenne all'Altare maggiore del Santuario" border="0" height="150" src="DevozioniImg/111_p82_s.jpg" width="150" /><br />
+							<img title="La celebrazione della Messa solenne all'Altare maggiore del Santuario" border="0" height="150" src="DevozioniImg/111_p82_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -166,7 +168,7 @@
 							<br />
 							<br />
 							<br />
-							<img alt="Un acquerello raffigurante le macchine per i fuochi d'artificio erette sul piazzale del Santuario nell'800 " border="0" height="281" hspace="10" src="DevozioniImg/img_0775_s.jpg" width="150" /><br />
+							<img title="Un acquerello raffigurante le macchine per i fuochi d'artificio erette sul piazzale del Santuario nell'800 " border="0" height="281" hspace="10" src="DevozioniImg/img_0775_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -269,7 +271,7 @@
 						<div align="center">
 							<br />
 							<br />
-							<img alt="I 'michini' (l'origine del 'pane benedetto' è antichissima) erano piccoli pani azzimi impastati con l'acqua benedetta del Sacro Fonte. A forma di cuore con l'immagine dell'Apparizione, erano distribuiti in cancelleria fino agli anni Sessanta." border="0" height="152" hspace="10" src="DevozioniImg/110_p87_s.jpg" width="150" /><br />
+							<img title="I 'michini' (l'origine del 'pane benedetto' è antichissima) erano piccoli pani azzimi impastati con l'acqua benedetta del Sacro Fonte. A forma di cuore con l'immagine dell'Apparizione, erano distribuiti in cancelleria fino agli anni Sessanta." border="0" height="152" hspace="10" src="DevozioniImg/110_p87_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -622,7 +624,7 @@
 							<br />
 							<br />
 							<br />
-							<img alt="La corona preparata dal Capitolo della Fabbrica di San Pietro in Vaticano per l'Incoronazione della Madonna nel 1710 " border="0" height="172" src="DevozioniImg/163_s.jpg" width="150" /><br />
+							<img title="La corona preparata dal Capitolo della Fabbrica di San Pietro in Vaticano per l'Incoronazione della Madonna nel 1710 " border="0" height="172" src="DevozioniImg/163_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -750,15 +752,15 @@
 							<tr>
 								<td>
 								<div align="center">
-									<img alt="Il Santuario è da sempre meta privilegiata dei 'pellegrinaggi degli ammalati'. Alcune toccanti immagini della fine degli anni Cinquanta " border="0" height="220" src="DevozioniImg/ammalati_1_s.jpg" width="150" /></div>
+									<img title="Il Santuario è da sempre meta privilegiata dei 'pellegrinaggi degli ammalati'. Alcune toccanti immagini della fine degli anni Cinquanta " border="0" height="220" src="DevozioniImg/ammalati_1_s.jpg" width="150" /></div>
 								</td>
 								<td>
 								<div align="center">
-									<img alt="Il Santuario è da sempre meta privilegiata dei 'pellegrinaggi degli ammalati'. Alcune toccanti immagini della fine degli anni Cinquanta " border="0" height="220" src="DevozioniImg/ammalati_2_s.jpg" width="150" /></div>
+									<img title="Il Santuario è da sempre meta privilegiata dei 'pellegrinaggi degli ammalati'. Alcune toccanti immagini della fine degli anni Cinquanta " border="0" height="220" src="DevozioniImg/ammalati_2_s.jpg" width="150" /></div>
 								</td>
 								<td>
 								<div align="center">
-									<img alt="Il Santuario è da sempre meta privilegiata dei 'pellegrinaggi degli ammalati'." border="0" height="220" src="DevozioniImg/mamma%20e%20bambina_s.jpg" width="150" /></div>
+									<img title="Il Santuario è da sempre meta privilegiata dei 'pellegrinaggi degli ammalati'." border="0" height="220" src="DevozioniImg/mamma%20e%20bambina_s.jpg" width="150" /></div>
 								</td>
 							</tr>
 							<tr>
@@ -828,11 +830,11 @@
 							<br />
 							<br />
 							<br />
-							<img alt="Alcuni ex voto molto significativi " border="0" height="150" hspace="10" src="DevozioniImg/103_s.jpg" width="209" /><br />
+							<img title="Alcuni ex voto molto significativi " border="0" height="150" hspace="10" src="DevozioniImg/103_s.jpg" width="209" /><br />
 							<br />
-							<img alt="Alcuni ex voto molto significativi " border="0" height="150" hspace="10" src="DevozioniImg/104_s.jpg" width="209" /><br />
+							<img title="Alcuni ex voto molto significativi " border="0" height="150" hspace="10" src="DevozioniImg/104_s.jpg" width="209" /><br />
 							<br />
-							<img alt="Alcuni ex voto molto significativi " border="0" height="306" hspace="10" src="DevozioniImg/105_s.jpg" width="209" />&nbsp;&nbsp;</div>
+							<img title="Alcuni ex voto molto significativi " border="0" height="306" hspace="10" src="DevozioniImg/105_s.jpg" width="209" />&nbsp;&nbsp;</div>
 						</td>
 					</tr>
 				</table>
@@ -895,15 +897,15 @@
 						<table border="0" cellpadding="0" cellspacing="0" width="100%">
 							<tr valign="top">
 								<td style="text-align: center; " width="44%">
-								<img alt="Esempi di cartoline e immagini del Novecento " border="0" height="150" hspace="10" src="DevozioniImg/cartolina_03_s.jpg" width="236" /><br />
+								<img title="Esempi di cartoline e immagini del Novecento " border="0" height="150" hspace="10" src="DevozioniImg/cartolina_03_s.jpg" width="236" /><br />
 								&nbsp;</td>
 								<td rowspan="2" width="28%">
 								<div style="text-align: center; ">
-									<img alt="Esempi di cartoline e immagini del Novecento " border="0" height="234" hspace="10" src="DevozioniImg/cartolina_02_s.jpg" width="150" /></div>
+									<img title="Esempi di cartoline e immagini del Novecento " border="0" height="234" hspace="10" src="DevozioniImg/cartolina_02_s.jpg" width="150" /></div>
 								</td>
 								<td rowspan="2" width="28%">
 								<div style="text-align: center; ">
-									<img alt="Esempi di cartoline e immagini del Novecento " border="0" height="232" hspace="10" src="DevozioniImg/cartolina_04_s.jpg" width="150" /></div>
+									<img title="Esempi di cartoline e immagini del Novecento " border="0" height="232" hspace="10" src="DevozioniImg/cartolina_04_s.jpg" width="150" /></div>
 								</td>
 							</tr>
 							<tr valign="top">
@@ -960,7 +962,7 @@
 							<br />
 							<br />
 							<br />
-							<img alt="L'arazzo raffigurante la Madonna di Caravaggio conservato nella Parrocchiale dei SS. Fermo e Rustico" border="0" height="215" hspace="10" src="DevozioniImg/img_1013_s.jpg" width="150" /><br />
+							<img title="L'arazzo raffigurante la Madonna di Caravaggio conservato nella Parrocchiale dei SS. Fermo e Rustico" border="0" height="215" hspace="10" src="DevozioniImg/img_1013_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -1103,7 +1105,7 @@
 							<br />
 							<br />
 							<br />
-							<img alt="Momento di riposo negli spazi del Santuario negli anni Cinquanta" border="0" height="159" hspace="10" src="DevozioniImg/picnic_sull'erba_s.jpg" width="150" /><br />
+							<img title="Momento di riposo negli spazi del Santuario negli anni Cinquanta" border="0" height="159" hspace="10" src="DevozioniImg/picnic_sull'erba_s.jpg" width="150" /><br />
 							<br />
 							&nbsp;</div>
 						</td>
@@ -1176,7 +1178,7 @@
 							<br />
 							<br />
 							<br />
-							<img alt="La confessione dei pellegrini sotto i portici del Santuario" border="0" height="150" hspace="10" src="DevozioniImg/ammalati_5_s.jpg" width="228" /><br />
+							<img title="La confessione dei pellegrini sotto i portici del Santuario" border="0" height="150" hspace="10" src="DevozioniImg/ammalati_5_s.jpg" width="228" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -1197,5 +1199,6 @@
 				</td>
 			</tr>
 		</table>
+        </div>
 </asp:Content>
 

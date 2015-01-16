@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Le preghiere a Maria" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Elenco.aspx.cs" Inherits="Preghiere_Elenco" %>
+﻿<%@ Page Title="Le tue preghiere" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="PreghiereUtente.aspx.cs" Inherits="Riservata_PreghiereUtente" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
     <script src="../Scripts/ddaccordion.js"></script>
@@ -80,7 +80,6 @@
 
 
 </script>
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" Runat="Server">
     <h2><%= Title %></h2><hr />
@@ -90,8 +89,8 @@
         <thead>
         <tr>
             <td>
-                    <asp:LinkButton ID="ButtonNew" runat="server" ForeColor="#452a17" Text="Lascia la tua preghiera" PostBackUrl="~/Riservata/PreghiAdd.aspx" /><br />
-                    <asp:LinkButton ID="LinkButton2" runat="server" ForeColor="#452a17" Text="Le tue preghiere" PostBackUrl="~/Riservata/PreghiereUtente.aspx" />
+                    <asp:LinkButton ID="ButtonNew" runat="server" ForeColor="#452a17" Text="Lascia la tua preghiera" PostBackUrl="~/Riservata/PreghiAdd.aspx" />
+
             </td>
             
         </tr>
@@ -111,9 +110,7 @@
                                 <asp:Label ID="dataLabel" Font-Bold="true" runat="server" Text='<%# Eval("Data", "{0: dddd dd MMM yyyy}")%>' />-
                                     <asp:Label ID="NomeLabel" runat="server" Text='<%# Eval("Nome")%>' />
                                 <asp:Label ID="CittàLabel" runat="server" Text='<%#", da " + Eval("Citta")%>' />
-                            </asp:LinkButton>
-                        </div>
-                        <div class="thepet" style="background-image: url('../Images/SfondoTabellaNews.png'); border-style: none solid solid solid; border-width: 1px; border-color: #ffffff; border-radius: 0 0 5px 5px">
+                            </asp:LinkButton></div><div class="thepet" style="background-image: url('../Images/SfondoTabellaNews.png'); border-style: none solid solid solid; border-width: 1px; border-color: #ffffff; border-radius: 0 0 5px 5px">
                             <table style="margin-top: 0;">
                                 <tr>
                                     <td>
@@ -125,9 +122,7 @@
                     </ItemTemplate>
                     <SelectedItemTemplate>
                         <div class="mypets">
-                            <asp:Label ID="dataLabel" runat="server" Text='<%# Eval("Data", "{0: dddd dd MMM yyyy}")%>' CssClass="Data" />-
-                                <asp:Label ID="NomeLabel" runat="server" Text='<%# Eval("Nome")%>' />, da
-                                <asp:Label ID="CittàLabel" runat="server" Text='<%# Eval("Citta")%>' />
+                            <asp:Label ID="dataLabel" runat="server" Text='<%# Eval("Data", "{0: dddd dd MMM yyyy}")%>' CssClass="Data" />- <asp:Label ID="NomeLabel" runat="server" Text='<%# Eval("Nome")%>' />, da <asp:Label ID="CittàLabel" runat="server" Text='<%# Eval("Citta")%>' />
                         </div>
                         <div class="thepet" style="border-style: none solid solid solid; border-width: 1px; border-color: #ffffff; border-radius: 0 0 5px 5px">
                             <table>
@@ -149,11 +144,12 @@
                 </asp:ListView>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server"
                     ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"
-                    ProviderName="<%$ ConnectionStrings:DefaultConnection.ProviderName %>"
-                    SelectCommand="SELECT * FROM [FedPreg] WHERE [Pubblica] = 1 ORDER BY [Data] DESC"></asp:SqlDataSource>
+                    SelectCommand="SELECT * FROM [FedPreg] WHERE ([Utente] = @Utente)">
+                    <SelectParameters>
+                        <asp:SessionParameter Name="Utente" SessionField="Utente" Type="String" /></SelectParameters>
+                </asp:SqlDataSource>
             </td>
         </tr>
     </table>
-
 </asp:Content>
 

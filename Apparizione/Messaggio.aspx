@@ -7,7 +7,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
 			<h2>L'apparizione e il suo messaggio</h2>
     <% Response.WriteFile("Menu.html"); %>
-    <div style="display:table" >
+    <div class="div1" >
 			<p>inserire qui il contenuto</p>
 				<p >
 							Dio ricco di misericordia e 
@@ -42,7 +42,7 @@
 							preghiera.<span class="Apple-converted-space">&nbsp;</span><br />
 							</p>
 							<div >
-								<img alt="Stampa settecentesca dell'Apparizione della Madonna di Caravaggio" height="217" src="Immagini/050_p2_s.jpg" width="150" style="float: right" /><br />
+								<img title="Stampa settecentesca dell'Apparizione della Madonna di Caravaggio" height="217" src="Immagini/050_p2_s.jpg" width="150" style="float: right" /><br />
 								&nbsp;</div>
 					<br />
 							<span class="italic">Giannetta ripose: Signora, 
@@ -118,7 +118,7 @@
 							datazione più sicura, anche se si può fare un esame 
 							interno dei contenuti e dello stile.
 							<div align="center">
-								<img alt="Ricamo su un'antica tovaglia d'altare" border="0" height="207" hspace="10" src="Immagini/051_p5_s.jpg" width="150" style="float: right" /><br />
+								<img title="Ricamo su un'antica tovaglia d'altare" border="0" height="207" hspace="10" src="Immagini/051_p5_s.jpg" width="150" style="float: right" /><br />
 								&nbsp;</div>
 							Per quanto qualificata “antica” dagli storici non 
 							può essere considerata coeva all’evento. A quando 
@@ -181,7 +181,7 @@
 							Caravaggio. Per molti secoli invece il luogo e la 
 							chiesa dell’Apparizione erano indicati come “Santa 
 							Maria alla fontana”. E questo modo di scrivere aveva 
-							una ragione precisa.<img alt="Il borgo e il Santuario di Caravaggio dalla mappa &quot;Teresiana&quot;" border="0" height="186" hspace="10" src="Immagini/IMG_0761_p8_s.jpg" width="200" style="float: right" /><br />
+							una ragione precisa.<img title="Il borgo e il Santuario di Caravaggio dalla mappa &quot;Teresiana&quot;" border="0" height="186" hspace="10" src="Immagini/IMG_0761_p8_s.jpg" width="200" style="float: right" /><br />
 							Il prato Mazzolengo era parte di una vasta campagna 
 							che circondava Caravaggio e non si trovava certo in 
 							un luogo “incolto arido e selvatico… sapendo 
@@ -199,7 +199,7 @@
 							individuato, a distanza di alcune decine di passi.
 								<br />
 								&nbsp;
-								<img alt="Un'immagine di pellegrini del 1923. La piscina è alimentata dall'acqua che sgorga dal Sacro Fonte " src="Immagini/pediluvio%20nella%20fontana_s.jpg" width="227" style="float: left" height="150" /><br />
+								<img title="Un'immagine di pellegrini del 1923. La piscina è alimentata dall'acqua che sgorga dal Sacro Fonte " src="Immagini/pediluvio%20nella%20fontana_s.jpg" width="227" style="float: left" height="150" /><br />
 							Gli abitanti di Caravaggio sapevano che sulla strada 
 							che porta a Misano nella campagna “al Mazzolengo” si 
 							trova una grande sorgiva ben identificata e che quei 
@@ -353,7 +353,7 @@
 							<div style="text-align: center; ">
 								<br />
 								<br />
-								<img alt="Un'immagine attuale del Santuario che raffigura la piscina a meridione alimentata dall'acqua del Sacro Fonte " border="0" height="223" hspace="10" src="Immagini/91_p22_s.jpg" width="150" style="float: left" /><br />
+								<img title="Un'immagine attuale del Santuario che raffigura la piscina a meridione alimentata dall'acqua del Sacro Fonte " border="0" height="223" hspace="10" src="Immagini/91_p22_s.jpg" width="150" style="float: left" /><br />
 								&nbsp;</div>
 							Al di là del rivestimento culturale e letterario, 
 							l&#39;analisi obiettiva delle parole dell&#39;Apparizione di 
@@ -406,7 +406,7 @@
 							<strong class="italicbold">Il sabato della 
 							riconoscenza</strong><br />
 							<br />
-							<span class="italic"><em><img alt="Frontespizio di una &quot;storia&quot; edita nel 1723" border="0" height="234" hspace="10" src="Immagini/IMG_0862_s.jpg" width="150" style="float: right" />&quot;Voglio che tu dica&quot;,<span class="Apple-converted-space">&nbsp;</span></em>continua 
+							<span class="italic"><em><img title="Frontespizio di una &quot;storia&quot; edita nel 1723" border="0" height="234" hspace="10" src="Immagini/IMG_0862_s.jpg" width="150" style="float: right" />&quot;Voglio che tu dica&quot;,<span class="Apple-converted-space">&nbsp;</span></em>continua 
 							l&#39;antico racconto<em>, ...che dopo il vespro 
 							festeggino ogni sabato per devozione a me. Quella 
 							metà giornata devono dedicarla a me per i molti e 

@@ -15,6 +15,7 @@
    <h2><%= Title %></h2><hr />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
+
         <table >
             <tr>
                 <td>
@@ -32,12 +33,22 @@
                     <br />
                     Tel.&nbsp;&nbsp; 0363 3571
                     <br />
-                    Fax&nbsp;&nbsp;&nbsp;0363 357203</td>
-                <td style="vertical-align:top">E-mail: <a href="mailto:info@santuariodicaravaggio.org">info@santuariodicaravaggio.org </a></td>
-                <td >&nbsp;</td>
+                    Fax&nbsp;&nbsp;&nbsp;0363 357203<br />
+                    E-mail: <a href="mailto:info@santuariodicaravaggio.org">info@santuariodicaravaggio.org </a>
+
+                </td>
+                <td >
+<h4>ORARI APERTURA SANTUARIO</h4>
+<p>da novembre a febbraio: 6.30/12.00 – 14.00/17.00<br />
+marzo, aprile, ottobre: 6.30/12.00 – 14.00/18.00<br />
+da maggio a settembre: 6.30/12.00 – 14.00/19.00</p>
+
+<p>Domenica e festivi continuato 6.30/18.30</p>
+                </td>
             </tr>
         </table><hr />
-    <h3>Orari S. Messe e benedizioni</h3>
+    <div style="display:inline-block">
+    <h3 style="text-align:center">Orari S. Messe e benedizioni</h3>
     <table class="tbl1" >
         <tr>
             <th colspan=3>
@@ -97,8 +108,6 @@
                 dalle ore 14.00 alle ore 15.45</td>
         </tr>
     </table>
-
-
         <br />
     <table class="tbl1" >
         <tr>
@@ -159,13 +168,11 @@
                 ore 15.15</td>
         </tr>
         </table>
-
         <br />
     <table class="tbl1" >
          <tr>
             <th colspan="3">
                 Benedizioni
-
             </th>
         </tr>
         <tr>
@@ -230,9 +237,8 @@
                 ore 14.45 - 15.30 - 17.00</td>
         </tr>
     </table>
-
-
         <br />
         <br />
+    </div>
 </asp:Content>
 

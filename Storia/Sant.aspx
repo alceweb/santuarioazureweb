@@ -7,6 +7,8 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
 		<h2>Il Santuario che non c&#39;è più</h2>
         <% Response.WriteFile("Menu.html");%>
+    <div class="div1">
+
 		<table cellpadding="0" cellspacing="0">
 			<tr>
 				<td>
@@ -23,7 +25,7 @@
 						l’istituzione di una “cappellania”; nel mese di agosto 
 						1433 il duca di Milano può emanare disposizioni per la 
 						celebrazione di una Messa settimanale al sabato (“Messa 
-						ducale”).<img alt="Veduta del Santuario, 1868. Acquerello di Emilio Cavenaghi" height="150" hspace="10" src="SantuarioImg/148_s.jpg" width="200" class="auto-style1" style="float: right" /><br />
+						ducale”).<img title="Veduta del Santuario, 1868. Acquerello di Emilio Cavenaghi" height="150" hspace="10" src="SantuarioImg/148_s.jpg" width="200" class="auto-style1" style="float: right" /><br />
 						Nel 1516, come si legge nella “lettera apostolica” di 
 						Papa Leone X a conferma della piena autonomia della 
 						Schola di Santa Maria, la piccola cappella era divenuta 
@@ -64,7 +66,7 @@
 					<tr>
 						<td valign="top">
 						<p style="text-align: justify; "><strong><em>La vecchia 
-						e la nuova chiesa<img alt="Modello ligneo della navata orientale del Santuario del secolo XVII" border="0" height="150" hspace="10" src="SantuarioImg/IMG_0785_s.jpg" width="200" class="auto-style2" style="float: right" /></em></strong><br />
+						e la nuova chiesa<img title="Modello ligneo della navata orientale del Santuario del secolo XVII" border="0" height="150" hspace="10" src="SantuarioImg/IMG_0785_s.jpg" width="200" class="auto-style2" style="float: right" /></em></strong><br />
 						<br />
 						Resosi necessario un accertamento sullo stato 
 						dell’edificio ampliato, fu sentito il parere di molti 
@@ -122,5 +124,6 @@
 				</td>
 			</tr>
 		</table>
+    </div>
 </asp:Content>
 

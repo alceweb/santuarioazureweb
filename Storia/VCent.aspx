@@ -7,6 +7,8 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
 	<h2>Dal V centenario alla visita del Papa</h2>
     <% Response.WriteFile("Menu.html");%>
+    <div class="div1">
+
 		<table cellpadding="0" cellspacing="0">
 			<tr>
 				<td>
@@ -35,7 +37,7 @@
 						</td>
 						<td valign="top">
 						<div align="center">
-							<img alt="L'entusiasmo dei giovani accoglie il Papa il pomeriggio di sabato 20 giugno 1992" border="0" height="223" hspace="10" src="VCentImg/giovani_s.jpg" width="150" /><br />
+							<img title="L'entusiasmo dei giovani accoglie il Papa il pomeriggio di sabato 20 giugno 1992" border="0" height="223" hspace="10" src="VCentImg/giovani_s.jpg" width="150" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -97,9 +99,9 @@
 							<br />
 							<br />
 							<br />
-							<img alt="La processione del 1932 nel V centenario dell'Apparizione " border="0" height="150" hspace="10" src="VCentImg/processione_1932_s.jpg" width="205" /><br />
+							<img title="La processione del 1932 nel V centenario dell'Apparizione " border="0" height="150" hspace="10" src="VCentImg/processione_1932_s.jpg" width="205" /><br />
 							<br />
-							<img alt="Il cardinale Ildefonso Schuster, legato pontificio, giunge al Santuario per i festeggiamenti del V Centenario dell'Apparizione il 26 maggio 1932 " border="0" height="150" hspace="10" src="VCentImg/schuster_per_pg_137_s.jpg" width="204" /><br />
+							<img title="Il cardinale Ildefonso Schuster, legato pontificio, giunge al Santuario per i festeggiamenti del V Centenario dell'Apparizione il 26 maggio 1932 " border="0" height="150" hspace="10" src="VCentImg/schuster_per_pg_137_s.jpg" width="204" /><br />
 							&nbsp;</div>
 						</td>
 					</tr>
@@ -213,5 +215,6 @@
 				</td>
 			</tr>
 		</table>
+    </div>
 </asp:Content>
 
