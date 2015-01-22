@@ -47,7 +47,7 @@
             <tr>
                 <td></td>
                 <td>
-                    <asp:Button ID="InsertButton" ForeColor="Green" runat="server" CommandName="Insert" Text="Invia la preghiera" PostBackUrl="~/Riservata/PreghiAddOk.aspx" />
+                    <asp:Button ID="InsertButton" ForeColor="Green" runat="server" CommandName="Insert" Text="Invia la preghiera" />
                     <asp:Button ID="CancelButton" ForeColor="Red" runat="server" CommandName="Cancel" Text="Cancella" CausesValidation="False" />
 
                 </td>

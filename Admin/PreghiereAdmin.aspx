@@ -61,7 +61,7 @@
              </span>
         </EditItemTemplate>
         <EmptyDataTemplate>
-            <span>Non è stato restituito alcun dato.</span>
+            <span></span>
         </EmptyDataTemplate>
         <LayoutTemplate>
             <div id="itemPlaceholderContainer" runat="server" style="">
@@ -73,26 +73,16 @@
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
         ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
         DeleteCommand="DELETE FROM [FedPreg] WHERE [Id] = @Id" 
-        InsertCommand="INSERT INTO [FedPreg] ([Nome], [Citta], [Preghiera], [Data], [Utente], [Pubblica]) VALUES (@Nome, @Citta, @Preghiera, @Data, @Utente, @Pubblica)" 
         SelectCommand="SELECT * FROM [FedPreg] Where [Pubblica] = 0 ORDER BY [Pubblica], [Data]" 
-        UpdateCommand="UPDATE [FedPreg] SET [Nome] = @Nome, [Citta] = @Citta, [Preghiera] = @Preghiera, [Data] = @Data, [Utente] = @Utente, [Pubblica] = @Pubblica WHERE [Id] = @Id">
+        UpdateCommand="UPDATE [FedPreg] SET [Nome] = @Nome, [Citta] = @Citta, [Preghiera] = @Preghiera, [Data] = @Data, [Pubblica] = @Pubblica WHERE [Id] = @Id">
         <DeleteParameters>
             <asp:Parameter Name="Id" Type="Int32" />
         </DeleteParameters>
-        <InsertParameters>
-            <asp:Parameter Name="Nome" Type="String" />
-            <asp:Parameter Name="Citta" Type="String" />
-            <asp:Parameter Name="Preghiera" Type="String" />
-            <asp:Parameter DbType="Date" Name="Data" />
-            <asp:Parameter Name="Utente" Type="String" />
-            <asp:Parameter Name="Pubblica" Type="Boolean" />
-        </InsertParameters>
         <UpdateParameters>
             <asp:Parameter Name="Nome" Type="String" />
             <asp:Parameter Name="Citta" Type="String" />
             <asp:Parameter Name="Preghiera" Type="String" />
             <asp:Parameter DbType="Date" Name="Data" />
-            <asp:Parameter Name="Utente" Type="String" />
             <asp:Parameter Name="Pubblica" Type="Boolean" />
             <asp:Parameter Name="Id" Type="Int32" />
         </UpdateParameters>
