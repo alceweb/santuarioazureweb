@@ -16,9 +16,7 @@
 	di ricevere il periodico "Il Santuario di Caravaggio".
                     </p>
                     <p>
-                        <a href="../Riservata/Paypal.aspx"> Acquista nel negozio on-line</a><br />
-                        Oppure acquista tramite Conto corrente postale n. 16514242
-	intestato a: Santuario di Caravaggio 24043 Caravaggio (Bg) 
+                        Per l'acquisto chiedi informazioni in portineria 0363-3571 o invia una mail <a href="mailto:info@santuariodicaravaggio.org">info@santuariodicaravaggio.org </a>  
                     </p>
                 </td>
                 <td style="width: 210px">

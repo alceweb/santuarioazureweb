@@ -50,6 +50,7 @@
                         </asp:MenuItem>
                         <asp:MenuItem Text="Preghiere" Value="Preghiere">
                             <asp:MenuItem Text="Gestisci" Value="Gestisci"  NavigateUrl="~/Admin/PreghiereAdmin.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/StatistichePreghiere.aspx" Text="Statistiche" Value="Statistiche"></asp:MenuItem>
                         </asp:MenuItem>
                         <%--                        <asp:MenuItem Text="Utenti" Value="Utenti">
                             <asp:MenuItem NavigateUrl="~/Admin/Utenti.aspx" Text="Gestisci" Value="Gestisci"></asp:MenuItem>

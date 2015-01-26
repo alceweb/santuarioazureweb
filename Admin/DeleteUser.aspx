@@ -32,7 +32,7 @@ protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
 <form id="form1" runat="server">
   <h3>Delete User</h3>
     <asp:Label ID="Label1" runat="server" Text="Utente da cancellare"></asp:Label>
-    <asp:ListBox ID="ListBox1" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="UserName" DataValueField="UserName"></asp:ListBox>
+    <asp:ListBox ID="ListBox1" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="UserName" DataValueField="UserName" Rows="10"></asp:ListBox>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT [UserName] FROM [Users] ORDER BY [UserName]"></asp:SqlDataSource>
   <asp:Label id="Msg" ForeColor="maroon" runat="server" /><br />
 
