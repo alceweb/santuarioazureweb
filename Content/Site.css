@@ -261,7 +261,7 @@ footer {
 }
 
 #login a {
-    text-shadow: 2px 2px 5px #FFFFFF;
+    text-shadow: 0px 0px 5px #FFFFFF;
     margin-left: 10px;
     margin-right: 3px;
     padding: 2px 3px;
@@ -935,6 +935,16 @@ tr.pager td {
     .tbl4 td {
     vertical-align:top;
 }
+.tbl5 {
+    border: thin solid #FFF;
+    width: 710px;
+    margin: auto;
+    box-shadow: 0px 0px 23px #2e1b0c;
+    padding: 0;
+}
+    .tbl5 td {
+        padding:0;
+    }
 
 @media only screen and (max-width: 850px) {
     h2 {
