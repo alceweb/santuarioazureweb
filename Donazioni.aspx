@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Aiuta il santuario" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Donazioni.aspx.cs" Inherits="Donazioni" %>
+﻿<%@ Page Title="Aiuta il Santuario" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Donazioni.aspx.cs" Inherits="Donazioni" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
     <style type="text/css">
@@ -11,7 +11,7 @@
 <table class="tbl2" >
     <tr>
         <td>
-            <h2>Sostieni in tuo santuario</h2>
+            <h2>Sostieni in tuo Santuario</h2>
                 <p>
                     Grazie di cuore  a chi mette a disposizione tempo ed energie per il buon funzionamento delle strutture del nostro Santuario.
                 </p>
