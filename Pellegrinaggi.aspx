@@ -6,6 +6,9 @@
     <h2><%= Title %></h2><hr />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
+    <div class="div1">
+
+
     <p class="MsoNormal" style="margin: 0cm 0cm 0pt; text-align: justify;">
         <b style="mso-bidi-font-weight: normal;"><span style="font-size: 13pt;"><font face="Times New Roman">Organizzazione del pellegrinaggio<o:p></o:p></font></span></b></p>
     <p class="MsoNormal" style="margin: 0cm 0cm 0pt 18pt; text-align: justify; text-indent: -18pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt;">
@@ -113,5 +116,7 @@
     <p class="MsoNormal" style="margin: 0cm 0cm 0pt 18pt; text-align: justify; text-indent: -18pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt;">
         <font face="Times New Roman"><span style="font-size: 13pt;"><span style="mso-list: Ignore;">-<span style="font: 7pt/normal &quot;Times New Roman&quot;; font-size-adjust: none; font-stretch: normal;"> </span></span>In Santuario non si celebrano i sacramenti dell’Iniziazione Cristiana (Battesimo, Cresima, Prima Comunione). Deroghe a tali disposizioni sono concesse solamente dal Vescovo di Cremona.<o:p></o:p></span></font></p>
     <p>&nbsp;</p>
+    </div>
+
 </asp:Content>
 

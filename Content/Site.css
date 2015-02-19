@@ -454,11 +454,9 @@ ul#menu {
 }
 .NewsDescrizione {
     text-align: left;
-    text-shadow:0px 5px 5px #FFFFFF;
-}
-    .NewsDescrizione {
+    text-shadow:0px 0px 5px #FFFFFF;
         padding-left:10px;
-    }
+}
 .NewsItem a:hover {
     -webkit-box-shadow: 1px 24px 15px rgba(50, 50, 50, 1);
     -moz-box-shadow:    1px 24px 15px rgba(50, 50, 50, 1);
@@ -919,6 +917,13 @@ tr.pager td {
 }
     .tbl3 h3 {
         text-align:center;
+    }
+    .tbl3 tr {
+        transition: all 1.2s ease;
+    }
+    .tbl3 tr:hover {
+        background:#ac9c90;
+    transition: all 1.3s ease;
     }
     .tbl4 {
     margin:auto;

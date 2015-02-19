@@ -159,7 +159,7 @@
         DeleteCommand="DELETE FROM [FedPreg] WHERE [Id] = @Id" 
         InsertCommand="INSERT INTO [FedPreg] ([Nome], [Citta], [Preghiera], [Data], [Utente], [Pubblica]) VALUES (@Nome, @Citta, @Preghiera, @Data, @Utente, @Pubblica)" 
         SelectCommand="SELECT * FROM [FedPreg] where [Pubblica]=1 ORDER BY [Pubblica], [Data] Desc" 
-        UpdateCommand="UPDATE [FedPreg] SET [Nome] = @Nome, [Citta] = @Citta, [Preghiera] = @Preghiera, [Data] = @Data, [Utente] = @Utente, [Pubblica] = @Pubblica WHERE [Id] = @Id">
+        UpdateCommand="UPDATE [FedPreg] SET [Nome] = @Nome, [Citta] = @Citta, [Preghiera] = @Preghiera, [Data] = @Data, [Pubblica] = @Pubblica WHERE [Id] = @Id">
         <DeleteParameters>
             <asp:Parameter Name="Id" Type="Int32" />
         </DeleteParameters>
@@ -176,7 +176,6 @@
             <asp:Parameter Name="Citta" Type="String" />
             <asp:Parameter Name="Preghiera" Type="String" />
             <asp:Parameter DbType="Date" Name="Data" />
-            <asp:Parameter Name="Utente" Type="String" />
             <asp:Parameter Name="Pubblica" Type="Boolean" />
             <asp:Parameter Name="Id" Type="Int32" />
         </UpdateParameters>

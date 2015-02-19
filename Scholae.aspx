@@ -7,6 +7,8 @@
     <hr />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
+    <div class="div1">
+
                 <img class="NewsImg float-right" src="Images/Scholae.JPG" />
                 <p>
                     Sono benvenute le Scholae Cantorum che intendono animare la celebrazione di una Messa d’orario.
@@ -23,5 +25,6 @@
                 <p>
                     Il grand’organo della basilica può essere usato solo previa autorizzazione dell’organista.
                 </p>
+    </div>
 </asp:Content>
 

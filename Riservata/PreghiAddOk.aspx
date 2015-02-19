@@ -14,9 +14,12 @@
         <tr>
             <td>
     <h3 style="text-align:center">
-                    Prima di essere pubblicata verrà valutata dal personale addetto.<br />La troverai pubblicata al più presto.
+                    Prima di essere pubblicata verrà valutata dal personale addetto.
 
     </h3>
+                <h3 style="text-align:center">
+                    La troverai pubblicata al più presto.
+                </h3>
 
             </td>
         </tr>
