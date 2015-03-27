@@ -232,6 +232,10 @@ footer {
     -moz-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
     box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
 }
+.newsContainer{
+       max-width:80%;
+
+}
 
 
 /* site title
