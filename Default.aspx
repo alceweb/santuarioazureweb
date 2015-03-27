@@ -112,7 +112,7 @@
                 </span>
             </ItemTemplate>
             <LayoutTemplate>
-                <div id="itemPlaceholderContainer" runat="server" style="">
+                <div class="newsContainer" id="itemPlaceholderContainer" runat="server" style="">
                     <div id="itemPlaceholder" runat="server" style="">
                     </div>
                 </div>
