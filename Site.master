@@ -104,6 +104,7 @@
                                         <a class="linka" href="<%: ResolveUrl("~/Scholae.aspx") %>">Scholae Cantorum</a><br />
                                         <a class="linka" href="<%: ResolveUrl("~/Preghiere/Elenco.aspx") %>">Preghiere</a><br />
                                         <a class="linka" href="<%: ResolveUrl("~/Ramo/Main.aspx") %>">Il ramo fiorito</a><br />
+                                        <a class="linka" href="<%: ResolveUrl("~/IscrizioneNL.aspx") %>">Iscr. Newsletter</a><br />
                                     </h3>
                             </aside>
                             <div >

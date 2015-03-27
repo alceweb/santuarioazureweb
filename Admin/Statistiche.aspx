@@ -35,7 +35,7 @@
                 <asp:Label ForeColor="white" ID="CreateDateLabel" runat="server" Text='<%# Eval("CreateDate", "{0:dddd dd-MMM-yyyy HH:mm}") %>' />
                 <br />
                 LastLoginDate:
-                <asp:Label ForeColor="white" ID="LastLoginDateLabel" runat="server" Text='<%# Eval("LastLoginDate", "{0:dddd dd-MMM-yyyy HH:mm}") %>' />
+                <asp:Label ForeColor="white" ID="LastLoginDateLabel" runat="server" Text='<%# Eval("LastLoginDate", "{0:dddd dd-MMM-yyyy HH:mm:ss}") %>' />
                 <br />
                 LastLockoutDate:
                 <asp:Label ForeColor="white" ID="LastLockoutDateLabel" runat="server" Text='<%# Eval("LastLockoutDate", "{0:dddd dd-MMM-yyyy HH:mm}") %>' /><br />

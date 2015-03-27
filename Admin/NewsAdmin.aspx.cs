@@ -33,10 +33,6 @@ public partial class Admin_NewsAdmin : System.Web.UI.Page
         }
 
     }
-     protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-    {
-        pnlGen.Visible = true;
-    }
    protected void btnDownload2_Click(object sender, EventArgs e)
     {
         //Recupero l'ID che identificherà il file primario

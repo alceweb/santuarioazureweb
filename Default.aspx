@@ -101,7 +101,7 @@
                     <asp:Label ID="DataLabel" CssClass="NewsData" runat="server" Text='<%# Eval("Data", "{0:dddd dd-MMM-yy}") %>' />
                     <br />
                     <asp:Label ID="TitoloLabel" CssClass="NewsTitolo" runat="server" Text='<%# Eval("Titolo") %>' />
-                    <br />
+                    <br /><br />
                     <a href='News.aspx?ID=<%# Eval("Id") %>' class="NewsA">
                         <img class="NewsImg" src='<%# "NewsImg/" + Eval("ID") + "/" + Eval("id") + ".jpg" %>' /></a>
                     <br />

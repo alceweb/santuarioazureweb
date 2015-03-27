@@ -718,6 +718,26 @@ td input[type="submit"], td input[type="button"], td button {
     padding: 4px;
     margin-right: 4px;
 }
+/*Form newsletter*/
+.divnl {
+    text-shadow: 0px 0px 3px #fff;
+    text-align: justify;
+    background-color: #fff;
+    padding: 0px 15px 50px 30px;
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 10px #2E1B0C;
+    margin-top:0px;
+}
+.buttonnl {
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.txtnl {
+    border-radius: 8px;
+    font-size: 0.8em;
+}
 
 /* info and errors */
 .message-info {
@@ -850,7 +870,6 @@ tr.pager td {
 .tbl1 {
     border: medium solid #FFFFFF;
     background-image: url('../Images/SfondoTabellaNews.png');
-    margin:auto;
 }
     .tbl1 th {
         text-align:center;

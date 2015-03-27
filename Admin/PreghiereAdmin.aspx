@@ -40,7 +40,7 @@
                 </tr>
                 <tr>
                     <td>Data: </td><td>
-                        <asp:TextBox ID="DataTextBox" runat="server" Text='<%# Bind("Data", "{0:dddd dd-MMM-yyyy}") %>' />
+                        <asp:TextBox ID="DataTextBox" runat="server" Text='<%# Bind("Data") %>' />
                     </td>
                 </tr>
                 <tr>
@@ -122,7 +122,7 @@
                 </tr>
                 <tr>
                     <td>Data: </td><td>
-                        <asp:TextBox ID="DataTextBox" runat="server" Text='<%# Bind("Data", "{0:dddd dd-MMM-yyyy}") %>' />
+                        <asp:TextBox ID="DataTextBox" runat="server" Text='<%# Bind("Data") %>' />
                     </td>
                 </tr>
                 <tr>

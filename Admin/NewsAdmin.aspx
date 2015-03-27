@@ -8,7 +8,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder" Runat="Server">
     <div  >
         <h3 style="text-align:center">Scegli la news da modificare
-        <asp:DropDownList ID="DropDownList1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Titolo" DataValueField="Id">
+        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource1" DataTextField="Titolo" DataValueField="Id">
             </asp:DropDownList>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server"
                 ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"
@@ -19,9 +19,10 @@
         </asp:SqlDataSource>
         </h3>
         <hr />
-        <asp:Panel ID="pnlGen" Visible="false" runat="server">
                 <asp:ListView ID="ListView1" runat="server" SelectedIndex="0" DataKeyNames="Id" DataSourceID="SqlDataSource2">
                     <ItemTemplate>
+                            <asp:Button ID="Button1" runat="server" ForeColor="White" BackColor="Green" CommandName="Edit" Text="Modifica" />
+                            <asp:Button ID="Button2" runat="server" ForeColor="White" BackColor="Red" OnClientClick='return confirm("Stai cancellando definitivamente una news! CONTINUARE?")' CommandName="Delete" Text="Elimina" /><hr />
                         <span style="">Id:
                             <asp:Label CssClass="NewsLabel" ID="IdLabel" runat="server" Text='<%# Eval("Id") %>' />
                             Data:
@@ -42,9 +43,9 @@
                             Descrizione:<br />
                             <div class="NewsLabel">
                                 <asp:Label ID="DescrizioneLabel" runat="server" Text='<%# Eval("Descrizione") %>' />
-                            </div>
-                            <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Modifica" />
-                            <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Elimina" />
+                            </div><hr />
+                            <asp:Button ID="EditButton" ForeColor="White" BackColor="Green" runat="server" CommandName="Edit" Text="Modifica" />
+                            <asp:Button ID="DeleteButton" ForeColor="White" BackColor="Red" runat="server" CommandName="Delete" Text="Elimina" />
                             <br />
                         </span>
                     </ItemTemplate>
@@ -72,7 +73,7 @@
                                     showsTime: true,
                                     ifFormat: "%d/%m/%Y %H:%M",
                                     daFormat: "%l;%M %p, %e %m",
-                                    align: "CL",
+                                    align: "BR",
                                     electric: false,
                                     singleClick: true,
                                     displayArea: ".siblings('.dtcDisplayArea')",
@@ -100,15 +101,15 @@
                                 </div>
                                 <div style="border-width: thin; border-color: #452A15; border-top-style: solid">
                                     <span style="float: left">Data evento:<br />
-                                        <asp:TextBox ID="TextBoxData" Width="160px" runat="server" class="Calender" Text='<%# Bind("Data", "{0:dd-MMM-yy}") %>' Font-Size="Small"></asp:TextBox>
+                                        <asp:TextBox ID="TextBoxData" Width="160px" runat="server" class="Calender" Text='<%# Bind("Data") %>' Font-Size="Small"></asp:TextBox>
                                         <img src="../Images/calender.png" />
                                     </span>
                                     <span style="float: right">Data fine pubblicazione<br />
-                                        <asp:TextBox ID="txtDataFine" Width="160px" ForeColor="Red" class="Cal" Text='<%# Bind("DataFine", "{0:dd-MMM-yy hh:mm}") %>' Font-Size="Small" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txtDataFine" Width="160px" ForeColor="Red" class="Cal" Text='<%# Bind("DataFine") %>' Font-Size="Small" runat="server"></asp:TextBox>
                                         <img src="../Images/calender.png" />
                                     </span>
                                     <span style="float: right">Data inizio pubblicazione<br />
-                                        <asp:TextBox ID="txtDataInizio" Width="160px" ForeColor="Green" class="Cal" Text='<%# Bind("DataInizio", "{0:dd-MMM-yy hh:mm}") %>' Font-Size="Small" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txtDataInizio" Width="160px" ForeColor="Green" class="Cal" Text='<%# Bind("DataInizio") %>' Font-Size="Small" runat="server"></asp:TextBox>
                                         <img src="../Images/calender.png" />
                                     </span>
                                 </div>
@@ -119,8 +120,8 @@
                                 <asp:Label ID="DescrizioneLabel" Width="130px" runat="server" Text="Testo news:"></asp:Label>
                                 <CKEditor:CKEditorControl ID="CKEditor1" Text='<%# Bind("Descrizione") %>' BasePath="~/ckeditor" runat="server" UIColor="Gray" Language="it" EnterMode="BR"></CKEditor:CKEditorControl>
                                 <hr />
-                                <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Aggiorna" />
-                                <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Annulla" />
+                                <asp:Button ID="UpdateButton" ForeColor="White" BackColor="Green" runat="server" CommandName="Update" Text="Aggiorna" />
+                                <asp:Button ID="CancelButton" ForeColor="White" BackColor="Red" runat="server" CommandName="Cancel" Text="Annulla" />
 
                             </div>
                         </span>
@@ -159,14 +160,14 @@
                 </asp:SqlDataSource>
                 <hr />
                 <asp:Button ID="LinkButton1" OnClick="LinkButton1_Click" Visible="false" runat="server" Text="Gestisci immagine principale"></asp:Button>
-                <asp:Button ID="LinkButton2" OnClick="LinkButton2_Click" runat="server" Text="Gestisci galleria"></asp:Button>
+                <asp:Button ID="LinkButton2" ForeColor="White" BackColor="Blue" OnClick="LinkButton2_Click" runat="server" Text="Gestisci galleria"></asp:Button>
             Solo immagini .jpg dimesione consigliata 640x480
                 <asp:Panel ID="pnlImg" runat="server">
                     <h2>Immagine principale</h2>
                     <p>
                         <asp:Image ID="Image2" CssClass="NewsImg" runat="server" />
                         <asp:FileUpload ID="FileUpload2" runat="server" BackColor="#CCC2BA"  />
-                        <asp:Button ID="btnDownload2" OnClick="btnDownload2_Click" runat="server" Text="Download" /><br />
+                        <asp:Button ID="btnDownload2" ForeColor="White" BackColor="Green" OnClick="btnDownload2_Click" runat="server" Text="Download" /><br />
                         <asp:Label ID="LblUploadOk2" runat="server"></asp:Label>
                     </p>
                     <hr />
@@ -187,7 +188,6 @@
                         <FooterTemplate></ul></FooterTemplate>
                     </asp:Repeater>
                 </asp:Panel>
-        </asp:Panel>
     </div>
 </asp:Content>
 

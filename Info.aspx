@@ -91,7 +91,7 @@ da maggio a settembre: 6.30/12.00 – 14.00/19.00</p>
         <tr>
             <td rowspan="2">
 
-                Adorazione eucaraistica</td>
+                Adorazione eucaristica</td>
             <td>
 
                 Mattino</td>

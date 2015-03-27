@@ -7,6 +7,9 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
     <hr />
+    <table class="tbl2">
+        <tr>
+            <td>
 <h3>La tua richiesta di reset della passsword è stata inviata al personale addetto.<br />
 </h3>
     <p>
@@ -23,5 +26,10 @@
     Grazie per aver utilizzato il nostro sito.
     </h3>
     <hr />
+
+            </td>
+        </tr>
+
+    </table>
 </asp:Content>
 
