@@ -10,8 +10,8 @@
         <asp:PlaceHolder runat="server" ID="successMessage" Visible="false" ViewStateMode="Disabled">
             <p class="message-success"><%: SuccessMessage %></p>
         </asp:PlaceHolder>
-
-        <p>L'utente ha eseguito l'accesso come <strong><%: User.Identity.Name %></strong>.</p>
+        <asp:LinkButton ID="LinkButton1"  runat="server" CausesValidation="False" PostBackUrl="~/Account/ModificaMail.aspx">Modifica mail per l'utente <strong><%: User.Identity.Name %></strong>.</asp:LinkButton>
+        <p></p>
 
         <asp:PlaceHolder runat="server" ID="setPassword" Visible="false">
             <p>
@@ -84,39 +84,6 @@
             </asp:ChangePassword>
         </asp:PlaceHolder>
     </section>
-
-    <section id="externalLoginsForm">
-        
-        <asp:ListView runat="server"
-            ItemType="Microsoft.AspNet.Membership.OpenAuth.OpenAuthAccountData"
-            SelectMethod="GetExternalLogins" DeleteMethod="RemoveExternalLogin" DataKeyNames="ProviderName,ProviderUserId">
-        
-            <LayoutTemplate>
-                <h3>Account di accesso esterni registrati</h3>
-                <table>
-                    <thead><tr><th>Servizio</th><th>Nome utente</th><th>Ultimo utilizzo</th><th>&nbsp;</th></tr></thead>
-                    <tbody>
-                        <tr runat="server" id="itemPlaceholder"></tr>
-                    </tbody>
-                </table>
-            </LayoutTemplate>
-            <ItemTemplate>
-                <tr>
-                    
-                    <td><%#: Item.ProviderDisplayName %></td>
-                    <td><%#: Item.ProviderUserName %></td>
-                    <td><%#: ConvertToDisplayDateTime(Item.LastUsedUtc) %></td>
-                    <td>
-                        <asp:Button runat="server" Text="Rimuovi" CommandName="Delete" CausesValidation="false" 
-                            ToolTip='<%# "Rimuovere i dati " + Item.ProviderDisplayName + " di accesso da account personale" %>'
-                            Visible="<%# CanRemoveExternalLogins %>" />
-                    </td>
-                    
-                </tr>
-            </ItemTemplate>
-        </asp:ListView>
-
-        <h3>Aggiungi account di accesso esterno</h3>
-        <uc:OpenAuthProviders runat="server" ReturnUrl="~/Account/Manage" />
-    </section>
+    <hr />
+    <h3>Cambia mail</h3>
 </asp:Content>

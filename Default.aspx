@@ -123,5 +123,5 @@
         </asp:ListView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server"
             ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"
-            SelectCommand='SELECT * FROM [News] WHERE ([DataInizio] <= { fn NOW() } AND [DataFine] >= { fn NOW() })'></asp:SqlDataSource>
+            SelectCommand='SELECT * FROM [News] WHERE ([DataInizio] <= { fn NOW() } AND [DataFine] >= { fn NOW() }) order by Data desc'></asp:SqlDataSource>
 </asp:Content>

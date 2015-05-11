@@ -180,7 +180,7 @@
         </SelectedItemTemplate>
     </asp:ListView>
 <asp:LinqDataSource ID="LinqDataSource1" runat="server" 
-    ContextTypeName="DataClasses2DataContext" EntityTypeName="" 
+    ContextTypeName="DataClassesDataContext" EntityTypeName="" 
     TableName="Memberships" EnableDelete="True" EnableInsert="True" EnableUpdate="True">
 </asp:LinqDataSource>
 

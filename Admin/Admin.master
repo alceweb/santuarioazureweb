@@ -65,7 +65,7 @@
                             <asp:MenuItem NavigateUrl="~/Admin/AssegnaRuoli.aspx" Text="Assegna ruoli" Value="Assegna ruoli"></asp:MenuItem>
                         </asp:MenuItem>
                         <asp:MenuItem Text="Newsletter" Value="Newsletter">
-                            <asp:MenuItem Text="Gestisci" Value="Gestisci"></asp:MenuItem>
+                            <asp:MenuItem Text="Gestisci/Invia" Value="Gestisci" NavigateUrl="~/Admin/NewsletterAdmin.aspx"></asp:MenuItem>
                             <asp:MenuItem NavigateUrl="~/Admin/NewsletterAdd.aspx" Text="Aggiungi" Value="Aggiungi"></asp:MenuItem>
                         </asp:MenuItem>
                         <asp:MenuItem Text="Documenti" Value="Documenti">

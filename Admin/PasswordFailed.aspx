@@ -11,7 +11,7 @@
     <div style="width:100%; text-align:center">
         <asp:ListBox ID="UsersListBox" runat="server" AutoPostBack="true" DataSourceID="SqlDataSourceUsers" DataTextField="UserName" DataValueField="UserId" CssClass="NewsLabel float-left tbl2" style="margin-top:10px; height:380px"></asp:ListBox>
     <asp:SqlDataSource ID="SqlDataSourceUsers" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
-        SelectCommand="SELECT * FROM [Users] left join Memberships on Memberships.UserId=Users.UserId where FailedPasswordAttemptCount >= 1 ORDER BY FailedPasswordAttemptWindowStart">
+        SelectCommand="SELECT * FROM [Users] left join Memberships on Memberships.UserId=Users.UserId where FailedPasswordAttemptCount >= 1  order by [FailedPasswordAttemptWindowStart] desc">
     </asp:SqlDataSource>
     </div>
     <div>
@@ -35,8 +35,11 @@
                 LastLoginDate:
                 <asp:Label ForeColor="green" ID="LastLoginDateLabel" runat="server" Text='<%# Eval("LastLoginDate", "{0:dddd dd-MMM-yyyy HH:mm:ss}") %>' />
                 <br />
+                <div style="display:inline-block">
                 FailedPassword:
                 <asp:Label ForeColor="green" ID="FailedPasswordAttemptWindowStartLabel" runat="server" Text='<%# Eval("FailedPasswordAttemptWindowStart", "{0:dddd dd-MMM-yyyy HH:mm:ss}") %>' />
+
+                </div>
                 <br />
                 LastLockoutDate:
                 <asp:Label ForeColor="#CC0000" ID="LastLockoutDateLabel" runat="server" Text='<%# Eval("LastLockoutDate", "{0:dddd dd-MMM-yyyy HH:mm:ss}") %>' /><br />

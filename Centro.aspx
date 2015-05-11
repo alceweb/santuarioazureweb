@@ -15,38 +15,51 @@
             $(".group1").colorbox({ maxHeight: '100%', rel: 'group1', transition: 'fade' });
         });
 		</script>
-        <table>
-            <tr>
-                <td>
-                    <a class="group1" runat="server" href="~/Images/c1.jpg"><img class="NewsImg float-right" alt="" src="Images/c1.jpg" /></a>Al Centro di spiritualità si svolgono corsi di esercizi spirituali per i fedeli laici, i sacerdoti, le religiose e i religiosi; 
+    <table class="tbl3" >
+        <tr>
+            <td colspan="2">
+                <h2>Richiesta informazioni</h2>
+
+            </td>
+            <td rowspan="6">
+                <div >
+                    <p>
+                        <a class="group1 float-left" runat="server" href="~/Images/c1.jpg">
+                            <img class="NewsImg float-left" alt="" src="Images/c1.jpg" /></a>Al Centro di spiritualità si svolgono corsi di esercizi spirituali per i fedeli laici, i sacerdoti, le religiose e i religiosi; 
                     giornate di ritiro e brevi corsi di spiritualità per ammalati; incontri spirituali e formativi per coppie di sposi e gruppi giovanili.
                     E' possibile anche una sosta di preghiera e di silenzio per persone singole (con lettera di presentazione del proprio parroco).
                     Con l'apporto di operatori specialisti, al Santuario si trova un Servizio di consulenza matrimoniale e famigliare in aiuto a coppie di fidanzati, coniugi, nuclei famigliari.
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <hr /><h2 >Auditorium</h2>
-                        <p>
-                            <a id="A1" class="group1 float-right" runat="server" href="~/Images/c2.jpg"><img alt="" class="NewsImg" src="Images/c2.jpg" /></a>
-                            400 posti a sedere<br />
-                            WiFi ADSL protetta<br />
-                            Impianto microfonico con possibilità di registrazione audio 
-                        </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
 
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align:center">
-                    <hr /><h2 >Camere</h2>
-                    <a id="A2" class="group1" runat="server" href="~/Images/c3.jpg"><img class="NewsImg" src="Images/C3.jpg" /></a>
-                    <a id="A3" class="group1" runat="server" href="~/Images/c4.jpg"><img class="NewsImg" src="Images/c4.jpg" /></a><br />
-                        <h3>50 camere</h3>
-                    <p >
+                    </p>
+
+                </div>
+                <div >
+                    <hr />
+                    <div class="float-left">
+                        <a id="A1" class="group1" runat="server" href="~/Images/c2.jpg">
+                            <img alt="" class="NewsImg float-left" src="Images/c2.jpg" /></a>
+                    </div>
+                        <h2 style="text-align:center">Auditorium</h2>
+                    <p style="text-align:center">
+                        400 posti a sedere<br />
+                        WiFi ADSL protetta<br /><br />
+                        <em>Impianto microfonico con possibilità di registrazione audio</em> 
+
+                    </p>
+
+                </div>
+                <div >
+                    <hr />
+                    <div class="float-left">
+                    <a id="A2" class="group1" runat="server" href="~/Images/c3.jpg">
+                        <img class="NewsImg float-left" src="Images/C3.jpg" /></a><br /><br />
+                    <a id="A3" class="group1" runat="server" href="~/Images/c4.jpg">
+                        <img class="NewsImg float-left" src="Images/c4.jpg" /></a><br />
+
+                    </div>
+                    <h2 style="text-align:center">Camere</h2>
+                    <h3 style="text-align:center">50 camere</h3>
+                    <p style="text-align:center">
                         40&nbsp; singole<br />
                         10 doppie<br />
                         2 camere per diversamente abili<br />
@@ -54,14 +67,7 @@
                         <em>Tutte le stanze sono coperte da rete WiFi ADSL protetta</em><br />
                     </p>
 
-                </td>
-            </tr>
-        </table>
-    <table class="tbl1" >
-        <tr>
-            <td colspan="2">
-                <h2>Richiesta informazioni</h2>
-
+                </div>
             </td>
         </tr>
         <tr>
@@ -70,7 +76,7 @@
 
             </td>
             <td>
-                <asp:TextBox ID="NomeTextBox" runat="server"></asp:TextBox><br />
+                <asp:TextBox ID="NomeTextBox" Width="230px" runat="server"></asp:TextBox><br />
 
             </td>
         </tr>
@@ -80,7 +86,7 @@
 
             </td>
             <td>
-                <asp:TextBox ID="CognomeTextBox" runat="server"></asp:TextBox><br />
+                <asp:TextBox ID="CognomeTextBox" Width="230px" required="required" runat="server"></asp:TextBox><br />
 
             </td>
         </tr>
@@ -90,7 +96,7 @@
 
             </td>
             <td>
-                <asp:TextBox ID="MailTextBox" runat="server"></asp:TextBox><br />
+                <asp:TextBox ID="MailTextBox" Width="230px" required="required" type="Email" runat="server"></asp:TextBox><br />
 
             </td>
         </tr>
@@ -100,26 +106,19 @@
 
             </td>
             <td>
-                <asp:TextBox ID="TelTextBox" runat="server"></asp:TextBox><br />
+                <asp:TextBox ID="TelTextBox" Width="230px" runat="server"></asp:TextBox><br />
             </td>
         </tr>
         <tr>
             <td colspan="2">
                 <asp:label ID="RichiestaLabel" runat="server" Text="Richiesta"/>
-
+                <asp:TextBox Height="500px" ID="RichiestaTtBox1" required="required" Width="360px" TextMode="MultiLine" runat="server"></asp:TextBox><br />
             </td>
         </tr>
         <tr>
-            <td colspan="2">
-                <asp:TextBox Height="500px" ID="RichiestaTtBox1" TextMode="MultiLine" runat="server"></asp:TextBox><br />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <asp:Button ID="InviaButton" OnClick="InviaButton_Click" runat="server" Text="Invia" />
-            </td>
-            <td>
-                <asp:Button ID="Button2" CommandName="Delete" runat="server" Text="Annulla" />
+            <td colspan="2" style="text-align:center">
+                <asp:Button ID="InviaButton" ForeColor="White" BackColor="green" OnClick="InviaButton_Click" runat="server" Text="Invia" />
+                <asp:Button ID="Button2" ForeColor="White" BackColor="Red" CommandName="Delete" runat="server" Text="Annulla" />
             </td>
         </tr>
     </table>

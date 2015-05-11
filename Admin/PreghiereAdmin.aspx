@@ -149,7 +149,9 @@
             <div id="itemPlaceholderContainer" runat="server" style=""><h2>Pubblicate</h2><hr /><span runat="server" id="itemPlaceholder" /></div>
                 <asp:DataPager ID="DataPager1" runat="server">
                     <Fields>
-                        <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="True" ShowLastPageButton="True" />
+                                <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" FirstPageText="<<" LastPageText="Ultimo" NextPageText=">>" />
+                                <asp:NumericPagerField />
+                                <asp:NextPreviousPagerField ButtonType="Link" ShowLastPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" FirstPageText="<<" LastPageText=">>" />
                     </Fields>
                 </asp:DataPager>
         </LayoutTemplate>

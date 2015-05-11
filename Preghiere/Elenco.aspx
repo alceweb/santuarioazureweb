@@ -145,7 +145,14 @@
                         </div>
                         <div style="">
                         </div>
+                        <asp:DataPager ID="Paginazione" runat="server" PageSize="30">
+                            <Fields>
+                                <asp:NumericPagerField />
+                            </Fields>
+
+                        </asp:DataPager>
                     </LayoutTemplate>
+                    
                 </asp:ListView>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server"
                     ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"

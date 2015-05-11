@@ -974,6 +974,7 @@ tr.pager td {
         padding:0;
     }
 
+/*Start css mobile*/
 @media only screen and (max-width: 850px) {
     h2 {
         font-size:0.8em;
