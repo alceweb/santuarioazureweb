@@ -117,6 +117,7 @@
             <div class="float-left">
                 <p><a href="<%: ResolveUrl("~/Admin/Main.aspx") %>"><img src="<%: ResolveUrl("Images/Picture.png")%>" /></a>&copy; <%: DateTime.Now.Year %> 
                             <a href="http://www.cr-consult.eu" ><em>Almish</em><span style="color:#FF0000" lang="it">&amp;</span><em>Cesàre</em><span style="color:#FF0000">W</span><em>eb</em></a>
+                    <a href="<%: ResolveUrl("~/Sicurezza/sicurezza.aspx") %>"><img src="<%: ResolveUrl("Images/Telecamere.png")%>" /></a>
                 </p>
             </div>
     </footer>
