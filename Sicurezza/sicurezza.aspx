@@ -17,7 +17,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
        <h2>Telecamere di sicurezza</h2>
    <div class="telecamere">
-     <iframe src="http://213.149.204.115:85/"></iframe>
+     <iframe src="http://213.149.204.115:85/ie.html"></iframe>
 
    </div>
 </asp:Content>
