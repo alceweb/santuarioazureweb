@@ -25,12 +25,12 @@
                     <li>con <strong><em>versamento</em></strong> su c/c postale n° 16514242 intestato a Santuario di Caravaggio, 24043 Caravaggio (Bg)</li>
                     <li>con <strong><em>lasciti ed eredità</em></strong> secondo precise formule che possono essere suggerite dalla Direzione pastorale del Santuario</li>
                     <li>con il <strong><em>dono di arredi</em></strong> (paramenti, biancheria..) necessari alle celebrazioni liturgiche. Per tale tipo di aiuto, però, è bene contattare in precedenza la Direzione del Santuario. </li>
-                    <li>attraverso il sito <strong>"Lumen"</strong> che trovi qui sotto</li>
-                    <%--<li>Se possiedi un account PayPal puoi fare direttamente dal sito la tua offerta</li>--%>
+                    <%--<li>attraverso il sito <strong>"Lumen"</strong> che trovi qui sotto</li>
+                    <li>Se possiedi un account PayPal puoi fare direttamente dal sito la tua offerta</li>--%>
                 </ol><hr />
 
     </div>
-            <iframe src="https://www.donatelumen.org/caravaggio_main_altar_it/" style="border-style: none; margin: 0px; width: 100%; height:630px" seamless="seamless"></iframe>
+<%--            <iframe src="https://www.donatelumen.org/caravaggio_main_altar_it/" style="border-style: none; margin: 0px; width: 100%; height:630px" seamless="seamless"></iframe>--%>
         </td>
     </tr>
 

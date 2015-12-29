@@ -86,6 +86,8 @@
                 Approvato <asp:CheckBox ID="IsApprovedCheckBox" runat="server" Checked='<%# Bind("IsApproved") %>' />
                 <asp:Label ID="Label3" runat="server" ForeColor="red" Text="(Disattivando la casella l'utente non potrà più accedere)"></asp:Label>
                 <br />
+                Bloccato <asp:CheckBox ID="IsLockedOutCheckBox" runat="server" Checked='<%# Bind("IsLockedOut") %>' />
+                <asp:Label ID="Label4" runat="server" ForeColor="red" Text="(A seguito di un blocco automatico, disattivando la casella l'utente sarà sbloccato)"></asp:Label><br />
                 Commenti:<br />
                 <asp:TextBox ID="CommentTextBo1" TextMode="MultiLine" runat="server" Text='<%# Bind("Comment") %>'></asp:TextBox>
                 <hr />
@@ -121,7 +123,7 @@
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
         ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
         SelectCommand="SELECT *, Users.UserName FROM [Memberships] left join Users on Users.UserId=Memberships.UserId WHERE ([Memberships].[UserId] = @UserId)"
-        UpdateCommand="UPDATE [Memberships] SET [IsApproved] = @IsApproved, [Comment] = @Comment WHERE [Memberships].[UserId] = @UserId">
+        UpdateCommand="UPDATE [Memberships] SET [IsApproved] = @IsApproved, [IsLockedOut] = @IsLockedOut, [Comment] = @Comment WHERE [Memberships].[UserId] = @UserId">
         <SelectParameters>
             <asp:ControlParameter ControlID="UsersDropDownList" Name="UserId" PropertyName="SelectedValue" Type="String" />
         </SelectParameters>

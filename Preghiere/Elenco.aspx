@@ -97,10 +97,10 @@
         </tr>
         </thead>
         <tr>
-            <td style="width: 250px; vertical-align: top">
+            <td >
                 <img style="border: none; box-shadow: none" src="<%: ResolveUrl("~/Images/Madonna.png")%>" />
             </td>
-            <td style="vertical-align: top">
+            <td >
                 <asp:ListView ID="ListView1" runat="server" DataKeyNames="id" DataSourceID="SqlDataSource1">
                     <EmptyDataTemplate>
                         <span>Non è stato restituito alcun dato.</span>

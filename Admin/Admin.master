@@ -36,14 +36,23 @@
             <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
             <div class="float-left">
                 <div>
-                    <a class="linka" runat="server" href="~/Default.aspx">Torna al sito</a><hr />
+                    <h2><a class="linka" runat="server" href="~/Default.aspx">Torna al sito</a></h2><hr />
                 </div>
+                <asp:Panel ID="Panel1" Visible="false" runat="server">
+                    <div>
+                    <a class="linka" runat="server" href="~/Admin/Info.aspx">Info Orari</a><hr />
+
+                    </div>
+                </asp:Panel>
                 <asp:Menu ID="Menu1" runat="server" BackColor="#331f0e" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#e2e2e2" StaticSubMenuIndent="10px">
                     <DynamicHoverStyle BackColor="#9e8c6a" ForeColor="#331f0e" />
                     <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
                     <DynamicMenuStyle BackColor="#9e8c6a" />
                     <DynamicSelectedStyle BackColor="#331f0e" />
                     <Items>
+                        <asp:MenuItem Text="Sito" Value="Sito">
+                            <asp:MenuItem NavigateUrl="~/Admin/Main.aspx" Text="Statistiche" Value="Statistiche"></asp:MenuItem>
+                        </asp:MenuItem>
                         <asp:MenuItem Text="News" Value="News">
                             <asp:MenuItem Text="Gestisci" Value="Gestisci" NavigateUrl="~/Admin/NewsAdmin.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="Aggiungi" Value="Aggiungi" NavigateUrl="~/Admin/NewsAdd.aspx"></asp:MenuItem>

@@ -234,7 +234,7 @@ footer {
 }
 .newsContainer{
        max-width:80%;
-
+       display:table;
 }
 
 
@@ -339,11 +339,25 @@ ul#menu {
         }
 
 .menul {
+    border: thin solid #C0B6AE;
     float: left;
-    font-size:0.93em;
-    padding-left:15px;
-    padding-top:10px;
-    display:inline-block;
+    font-size: 0.93em;
+    padding: 10px 15px 10px 15px;
+    display: inline-block;
+    background-color: rgba(167, 167, 167, 0.27);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.menul:hover {
+    background-color: rgba(167, 167, 167, 0.97);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
 .menul a {
     color: #3D2815;
@@ -354,11 +368,13 @@ ul#menu {
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
 
 }
-.menul a:hover img {
+.menul a:hover {
     opacity: 0.8;
     border-radius: 10px;
     -ms-transform: rotate(-5deg) scale(1.2,1.2); /* IE 9 */
     -webkit-transform: rotate(-5deg) scale(1.1,1.1); /* Chrome, Safari, Opera */
+    -moz-transform: rotate(-5deg) scale(1.1,1.1);
+    -o-transform: rotate(-5deg) scale(1.1,1.1);
     transform:rotate(-2deg) scale(1.1,1.1);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -398,6 +414,8 @@ ul#menu {
     background-image: url('../Images/SfondoTabellaNews.png');
     background-repeat: repeat;
     text-align:center;
+    max-width:280px;
+    height:300px;
 }
 
 .NewsA {
@@ -427,6 +445,7 @@ ul#menu {
 }
 .NewsImg {
     height:150px;
+    max-width:260px;
     text-align: center;
     vertical-align: bottom;
     border:none;
@@ -974,6 +993,53 @@ tr.pager td {
         padding:0;
     }
 
+.divEventi {
+    border: 1px solid rgba(59, 36, 18, 0.15);
+    border-radius:5px;
+    height: 180px;
+    font-size: small;
+    float: left;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 10px rgba(129, 78, 38, 0.52);
+    background-color: rgba(150, 133, 116, 0.46);
+    margin: 5px;
+    padding: 5px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+    .divEventi:hover {
+    background-color: rgba(150, 133, 116, 0.96);
+    border-radius:15px;
+    -ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+    transform: scale(1.1,1.1);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    }
+    .divEventi img {
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 10px #2E1B0C;
+    border-radius:5px;
+    margin:5px;
+    height:100px;
+
+    }
+    .divEventi span {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    }
 /*Start css mobile*/
 @media only screen and (max-width: 850px) {
     h2 {
@@ -1116,3 +1182,40 @@ tr.pager td {
     }
 }
 /* END: Mobile Styles */
+/* sezione Coolies*/
+.divCook {
+    border-width: thin;
+    border-style: none solid solid solid;
+    border-color: #E3CFAA;
+    width: 180px;
+    color: #fff;
+    float: left;
+    border-radius: 0px 0px 15px 15px;
+    text-align: justify;
+    background-color: rgba(54, 33, 16, 0.80);
+    padding: 5px;
+    position: absolute;
+    -webkit-animation-name: cook; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+    animation-name: cook;
+    animation-duration: 3s;
+    animation-direction: normal;
+    top: 10px;
+    left: 0px;
+    font-size: small;
+    z-index:999;
+}
+    .divCook a {
+        color:#fff;
+    }
+/* Chrome, Safari, Opera */
+@-webkit-keyframes cook {
+    0%   {left:50%; top:50%;}
+    100% {left:0px; top:10px;}
+}
+
+/* Standard syntax */
+@keyframes cook {
+    0%   {left:50%; top:50%;}
+    100% {left:0px; top:10px;}
+}    

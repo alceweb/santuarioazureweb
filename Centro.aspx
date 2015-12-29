@@ -4,6 +4,7 @@
     <script src="Scripts/jquery-2.1.1.min.js"></script>
     <script src="Scripts/jquery.colorbox.js"></script>
     <link href="Content/colorbox.css" rel="stylesheet" />
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" Runat="Server">
     <h2><%: Title %></h2><hr />
@@ -19,6 +20,9 @@
         <tr>
             <td colspan="2">
                 <h2>Richiesta informazioni</h2>
+
+               <h3><asp:Label ID="lblMessage" ForeColor="red" runat="server" Text=""></asp:Label></h3>
+
 
             </td>
             <td rowspan="6">
@@ -111,7 +115,6 @@
         </tr>
         <tr>
             <td colspan="2">
-                <asp:label ID="RichiestaLabel" runat="server" Text="Richiesta"/>
                 <asp:TextBox Height="500px" ID="RichiestaTtBox1" required="required" Width="360px" TextMode="MultiLine" runat="server"></asp:TextBox><br />
             </td>
         </tr>

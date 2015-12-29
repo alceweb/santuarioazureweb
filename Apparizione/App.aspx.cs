@@ -9,6 +9,11 @@ public partial class Apparizione_App : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        SqlDataSource SqlDSStaPageIns = new SqlDataSource();
+        SqlDSStaPageIns.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+        string pagina = Page.Title.ToString();
+        String data = DateTime.Today.ToString();
+        SqlDSStaPageIns.InsertCommand = "insert into StaPage ([Pagina], [Data]) values ('" + pagina + "', '" + data + "')";
+        SqlDSStaPageIns.Insert();
     }
 }

@@ -46,39 +46,73 @@
             </asp:ListView>
             </td>
             <td>
-            <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
-                <ItemTemplate>
-                    <td>
-                    <asp:Label ID="LabelUtente" runat="server" Text='<%# Eval("Utente") %>'></asp:Label>
-                    </td>
-                    <td>
-                    <asp:Label ID="Label2" ForeColor="red" runat="server" Text='<%#Eval("Preghiere") %>'></asp:Label>
+                <asp:ListView ID="ListView1" runat="server" DataKeyNames="Utente" DataSourceID="SqlDataSource1">
+                    <ItemTemplate>
+                        <td>
+                            <asp:LinkButton ID="LinkButton1" CommandName="Select" runat="server">
+                                <asp:Label ID="LabelUtente" runat="server" Text='<%# Eval("Utente") %>'></asp:Label>
+                            </asp:LinkButton>
+                        </td>
+                        <td>
+                            <asp:Label ID="Label2" ForeColor="red" runat="server" Text='<%#Eval("Preghiere") %>'></asp:Label>
 
-                    </td>
-                </ItemTemplate>
-        <GroupTemplate>
-            <tr id="itemPlaceholderContainer" runat="server">
-                <td id="itemPlaceholder" runat="server"></td>
-            </tr>
-        </GroupTemplate>
-        <LayoutTemplate>
-            <table id="Table1" runat="server">
-                <tr id="Tr1" runat="server">
-                    <td id="Td1" runat="server">
-                        <table class="tbl2" id="groupPlaceholderContainer" runat="server" border="0" style="">
-                            <tr id="groupPlaceholder" runat="server">
+                        </td>
+                    </ItemTemplate>
+                    <SelectedItemTemplate>
+                        <td style="color: green"><asp:Label ID="Label2" ForeColor="red" runat="server" Text='<%#Eval("Utente") %>'></asp:Label>
+                            <asp:ListView ID="ListView3" runat="server" DataSourceID="SqlDataSource3">
+                                <ItemTemplate>
+                                    <asp:Label ID="LblPreghiera" runat="server" Text='<%# Eval("Preghiera") %>'>
+
+                                    </asp:Label>
+                                </ItemTemplate>
+                                <ItemSeparatorTemplate>
+                                </ItemSeparatorTemplate>
+                                <GroupTemplate>
+                                    <tr id="itemPlaceholderContainer" runat="server">
+                                        <td id="itemPlaceholder" runat="server"></td>
+                                    </tr>
+                                </GroupTemplate>
+                                <LayoutTemplate>
+                                    <table id="Table1" runat="server">
+                                        <tr id="Tr1" runat="server">
+                                            <td id="Td1" runat="server">
+                                                <table class="tbl2" id="groupPlaceholderContainer" runat="server" border="0" style="">
+                                                    <tr id="groupPlaceholder" runat="server">
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </LayoutTemplate>
+                            </asp:ListView>
+                        </td>
+                        <td></td>
+                    </SelectedItemTemplate>
+                    <GroupTemplate>
+                        <tr id="itemPlaceholderContainer" runat="server">
+                            <td id="itemPlaceholder" runat="server"></td>
+                        </tr>
+                    </GroupTemplate>
+                    <LayoutTemplate>
+                        <table id="Table1" runat="server">
+                            <tr id="Tr1" runat="server">
+                                <td id="Td1" runat="server">
+                                    <table class="tbl2" id="groupPlaceholderContainer" runat="server" border="0" style="">
+                                        <tr id="groupPlaceholder" runat="server">
+                                        </tr>
+                                    </table>
+                                </td>
                             </tr>
                         </table>
-                    </td>
-                </tr>
-            </table>
-        </LayoutTemplate>
-            </asp:ListView>
+                    </LayoutTemplate>
+                </asp:ListView>
 
             </td>
         </tr>
     </table>
     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" />
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" />
+    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" />
 </asp:Content>
 

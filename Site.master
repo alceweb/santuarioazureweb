@@ -17,9 +17,9 @@
 </head>
 <body>
     <form runat="server">
-<%--   <asp:ScriptManager runat="server">
+   <asp:ScriptManager runat="server">
         <Scripts>
-            <asp:ScriptReference Name="MsAjaxBundle" />
+<%--            <asp:ScriptReference Name="MsAjaxBundle" />--%>
             <asp:ScriptReference Name="jquery" />
             <asp:ScriptReference Name="jquery.ui.combined" />
             <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
@@ -32,7 +32,8 @@
             <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
             <asp:ScriptReference Name="WebFormsBundle" />
         </Scripts>
-    </asp:ScriptManager>--%>
+    </asp:ScriptManager>
+<%--    <link href="<%: ResolveUrl(mob) %>" rel="stylesheet" />--%>
     <header>
         <div class="content-wrapper">
             <div class="float-right">
@@ -79,6 +80,20 @@
                 <li><a id="A3" runat="server" href="~/Apparizione/App.aspx">Apparizione</a></li>
                 <li><a id="A4" runat="server" href="~/Storia/Storia.aspx">La storia</a></li>
             </ul>
+        <asp:Panel ID="PnlCookie" runat="server">
+            <div class="divCook">
+               <span>
+                Questo sito utilizza cookie.
+                Se accedi a un qualunque elemento del sito acconsenti all'uso del cookie.
+               </span>
+                   <hr />
+                 <div style="text-align:center">
+                <a href="CookiesInfo.aspx" runat="server" id="Cookies">Approfondisci</a>
+                <asp:LinkButton ID="CookieButton"  runat="server" OnClick="CookieButton_Click" Text="Acconsenti" Height="25px" Font-Size="Small"></asp:LinkButton>
+                 </div>
+            </div>
+
+        </asp:Panel>
             <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
             <section class="content-wrapper main-content clear-fix">
                             <div class="menul">

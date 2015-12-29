@@ -14,5 +14,6 @@ public partial class Admin_StatistichePreghiere : System.Web.UI.Page
     {
         SqlDataSource1.SelectCommand = "select Utente, count(Utente) as 'Preghiere' From FedPreg group by Utente order By Preghiere Desc";
         SqlDataSource2.SelectCommand = "select Data, count(Data) as 'Preghiere' From FedPreg group by Data order By Data Desc";
+        SqlDataSource3.SelectCommand = "select * From FedPreg Where Nome = 'donato'";
     }
 }

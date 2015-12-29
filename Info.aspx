@@ -15,7 +15,6 @@
    <h2><%= Title %></h2><hr />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
-
         <table >
             <tr>
                 <td>
@@ -39,206 +38,19 @@
                 </td>
                 <td >
 <h4>ORARI APERTURA SANTUARIO</h4>
-<p>da novembre a febbraio: 6.30/12.00 – 14.00/17.00<br />
-marzo, aprile, ottobre: 6.30/12.00 – 14.00/18.00<br />
+<p>da ottobre ad aprile: 6.30/12.00 – 14.00/18.00<br />
 da maggio a settembre: 6.30/12.00 – 14.00/19.00</p>
 
 <p>Domenica e festivi continuato 6.30/18.30</p>
                 </td>
             </tr>
         </table><hr />
-    <div style="display:inline-block">
-    <h3 style="text-align:center">Orari S. Messe e benedizioni</h3>
-    <table class="tbl1" >
-        <tr>
-            <th colspan=3>
-                Orario feriale
-            </th>
-        </tr>
-        <tr>
-            <td rowspan="2">
+    <asp:FormView ID="FormView1" runat="server" DataKeyNames="Id" DataSourceID="SqlDataSource1">
+        <ItemTemplate>
+            <asp:Label ID="OrariLabel" runat="server" Text='<%# Bind("Orari") %>' />
+        </ItemTemplate>
 
-                SS. Messe</td>
-            <td>
-
-                Mattino</td>
-            <td>
-
-                ore 07.00<br />
-                ore 08.30<br />
-                ore 10.00</td>
-        </tr>
-        <tr>
-            <td>
-
-                Pomeriggio</td>
-            <td>
-
-                ore 16.00 (al sabato è festivo)</td>
-        </tr>
-        <tr>
-            <td>
-
-                S. Rosario</td>
-            <td>
-
-                &nbsp;</td>
-            <td>
-
-                invernale: ore 15.30<br />
-                estivo: segue la messa delle ore 16.00</td>
-        </tr>
-        <tr>
-            <td rowspan="2">
-
-                Adorazione eucaristica</td>
-            <td>
-
-                Mattino</td>
-            <td>
-
-                Dalle 10.30 alle 12.00</td>
-        </tr>
-        <tr>
-            <td>
-
-                Pomeriggio</td>
-            <td>
-
-                dalle ore 14.00 alle ore 15.45</td>
-        </tr>
-    </table>
-        <br />
-    <table class="tbl1" >
-        <tr>
-            <th colspan="3">
-                Celebrazioni proprie del Santuario
-
-            </th>
-        </tr>
-        <tr>
-            <td>Venerdì</td>
-            <td>ore 16.00 Atto penitenziale (al Fonte) a Messa</td>
-        </tr>
-        <tr>
-            <td>S. Rosario</td>
-            <td>Dopo la Messa delle ore 16:00 Lodi alla Vergine (allo Speco)</td>
-        </tr>
-        </table>
-
-        <br />
-    <table class="tbl1" >
-         <tr>
-            <th colspan="3">
-                Orario festivo
-            </th>
-        </tr>
-        <tr>
-            <td rowspan="2">
-
-                SS. Messe</td>
-            <td>
-
-                Mattino</td>
-            <td>
-
-                ore 07.00<br />
-                ore 08.30<br />
-                ore 10.00<br />
-                ore 11.30</td>
-        </tr>
-        <tr>
-            <td>
-
-                Pomeriggio</td>
-            <td>
-
-                ore 16.00<br />
-                ore 17.30</td>
-        </tr>
-        <tr>
-            <td>
-
-                S. Rosario</td>
-            <td>
-
-                Pomeriggio</td>
-            <td>
-
-                ore 15.15</td>
-        </tr>
-        </table>
-        <br />
-    <table class="tbl1" >
-         <tr>
-            <th colspan="3">
-                Benedizioni
-            </th>
-        </tr>
-        <tr>
-            <td rowspan="2">
-
-                <span class="auto-style2">delle persone</span><br />
-                (al fonte, ogni sabato e<br />
-&nbsp;domenica, ogni giorno
-                <br />
-                prefestivo e festivo)</td>
-            <td>
-
-                Sabato</td>
-            <td>
-
-                ore 15.45</td>
-        </tr>
-        <tr>
-            <td>
-
-                Domenica</td>
-            <td>
-
-                ore 9.45 - 11.15&nbsp;<br />
-                ore 15.00 - 15.45 - 17.15</td>
-        </tr>
-        <tr>
-            <td>
-
-                S. Rosario</td>
-            <td>
-
-                &nbsp;</td>
-            <td>
-
-                invernale: ore 15.30<br />
-                estivo: segue la messa delle ore 16.00</td>
-        </tr>
-        <tr>
-            <td rowspan="2">
-
-                <span class="auto-style2">degli autoveicoli</span><br />
-                (nel piazzale riservato, ogni
-                <br />
-                sabato e domenica, ogni giorno
-                <br />
-                prefestivo e festivo)&nbsp;</td>
-            <td>
-
-                Sabato</td>
-            <td>
-
-                ore 15.30</td>
-        </tr>
-        <tr>
-            <td>
-
-                Domenica</td>
-            <td>
-
-                ore 9.30 -&nbsp;11.00<br />
-                ore 14.45 - 15.30 - 17.00</td>
-        </tr>
-    </table>
-        <br />
-        <br />
-    </div>
+    </asp:FormView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [Orari]"></asp:SqlDataSource>
 </asp:Content>
 

@@ -69,6 +69,18 @@ public partial class SiteMaster : MasterPage
     = new System.Globalization.CultureInfo("it-IT");
         System.Threading.Thread.CurrentThread.CurrentUICulture
              = new System.Globalization.CultureInfo("it-IT");
-
+        if (Request.Cookies["santuario"] != null)
+        {
+            PnlCookie.Visible = false;
+        }
+    }
+    protected void CookieButton_Click(object sender, EventArgs e)
+    {
+        HttpCookie myCookie = new HttpCookie("santuario");
+        myCookie["Accettato"] = "Cookies accettati";
+        myCookie["Data"] = DateTime.Now.ToString();
+        myCookie.Expires = DateTime.Now.AddDays(180d);
+        Response.Cookies.Add(myCookie);
+        PnlCookie.Visible = false;
     }
 }
