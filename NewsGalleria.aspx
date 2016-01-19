@@ -15,6 +15,16 @@
             $(".group1").colorbox({ maxHeight: '100%', rel: 'group1', transition: 'fade' });
         });
 		</script>
+    <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
+        <ItemTemplate>
+            <h2><asp:Label ID="Label1" runat="server" Text='<%# Eval("Titolo") %>'></asp:Label></h2>
+        </ItemTemplate>
+    </asp:ListView>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [News] WHERE ([Id] = @Id)">
+        <SelectParameters>
+            <asp:QueryStringParameter Name="Id" QueryStringField="ID" Type="Int32" />
+        </SelectParameters>
+    </asp:SqlDataSource>
     <table class="tbl3">
         <tr>
             <td>
@@ -24,11 +34,13 @@
                         </div>
                     </HeaderTemplate>
                     <ItemTemplate>
+                        <div class="div2">
+
                         <a class="group1" href="<%# (Container.DataItem as string).Substring(Server.MapPath("./").Length).Replace("\\", "/") %>">
                             <img class="NewsImg" style="border: thin solid #9C9C9C; margin: 8px;" src="<%# (Container.DataItem as string).Substring(Server.MapPath("./").Length).Replace("\\", "/") %>" />
                         </a>
-                    </ItemTemplate>
-                    <FooterTemplate></ul></FooterTemplate>
+                         </div>
+                   </ItemTemplate>
                 </asp:Repeater>
 
             </td>

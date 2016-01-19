@@ -14,66 +14,66 @@
             <ul class="ei-slider-large">
                 <li>
                     <img src="Slideshow/images/large/6.jpg" />
-                    <div class="ei-title">
+<%--                    <div class="ei-title">
                         <a href="#nogo">
                             <h2></h2>
                             <h3></h3>
                         </a>
-                    </div>
+                    </div>--%>
                 </li>
                 <li>
                     <img src="Slideshow/images/large/1.jpg" />
-                    <div class="ei-title">
+<%--                    <div class="ei-title">
                         <h2></h2>
                         <h3></h3>
-                    </div>
+                    </div>--%>
                 </li>
                 <li>
                     <img src="Slideshow/images/large/2.jpg" />
-                    <div class="ei-title">
+<%--                    <div class="ei-title">
                         <h2></h2>
                         <h3></h3>
-                    </div>
+                    </div>--%>
                 </li>
                 <li>
                     <img src="Slideshow/images/large/3.jpg" />
-                    <div class="ei-title">
+<%--                    <div class="ei-title">
                         <h2></h2>
                         <h3></h3>
-                    </div>
+                    </div>--%>
                 </li>
                 <li>
                     <img src="Slideshow/images/large/4.jpg" />
-                    <div class="ei-title">
+<%--                    <div class="ei-title">
                         <h2></h2>
                         <h3></h3>
-                    </div>
+                    </div>--%>
                 </li>
                 <li>
                     <img src="Slideshow/images/large/5.jpg" />
-                    <div class="ei-title">
+<%--                    <div class="ei-title">
                         <h2></h2>
                         <h3></h3>
-                    </div>
+                    </div>--%>
                 </li>
                 <li>
                     <img src="Slideshow/images/large/7.jpg" />
-                    <div class="ei-title">
+<%--                    <div class="ei-title">
                         <h2></h2>
                         <h3 ></h3>
-                    </div>
+                    </div>--%>
                 </li>
             </ul>
             <!-- ei-slider-large -->
             <ul class="ei-slider-thumbs">
                 <li class="ei-slider-element">Current</li>
-                <li><a href="#">Slide 6</a><img src="Slideshow/images/thumbs/6.jpg" alt="thumb06" /></li>
+<%--                <li><a href="#">Slide 6</a><img src="Slideshow/images/thumbs/6.jpg" alt="thumb06" /></li>
                 <li><a href="#">Slide 1</a><img src="Slideshow/images/thumbs/1.jpg" alt="thumb01" /></li>
                 <li><a href="#">Slide 2</a><img src="Slideshow/images/thumbs/2.jpg" alt="thumb02" /></li>
                 <li><a href="#">Slide 3</a><img src="Slideshow/images/thumbs/3.jpg" alt="thumb03" /></li>
                 <li><a href="#">Slide 4</a><img src="Slideshow/images/thumbs/4.jpg" alt="thumb04" /></li>
                 <li><a href="#">Slide 5</a><img src="Slideshow/images/thumbs/5.jpg" alt="thumb05" /></li>
-                <li><a href="#">Slide 7</a><img src="Slideshow/images/thumbs/7.jpg" alt="thumb07" /></li>
+                <li><a href="#">Slide 7</a><img src="Slideshow/images/thumbs/7.jpg" alt="thumb07" /></li>--%>
             </ul>
             <!-- ei-slider-thumbs -->
         </div>
@@ -124,4 +124,5 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server"
             ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"
             SelectCommand='SELECT * FROM [News] WHERE ([DataInizio] <= { fn NOW() } AND [DataFine] >= { fn NOW() }) order by Data desc'></asp:SqlDataSource>
+
 </asp:Content>

@@ -17,9 +17,9 @@
 </head>
 <body>
     <form runat="server">
-   <asp:ScriptManager runat="server">
+<%--   <asp:ScriptManager runat="server">
         <Scripts>
-<%--            <asp:ScriptReference Name="MsAjaxBundle" />--%>
+            <asp:ScriptReference Name="MsAjaxBundle" />
             <asp:ScriptReference Name="jquery" />
             <asp:ScriptReference Name="jquery.ui.combined" />
             <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
@@ -32,7 +32,7 @@
             <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
             <asp:ScriptReference Name="WebFormsBundle" />
         </Scripts>
-    </asp:ScriptManager>
+    </asp:ScriptManager>--%>
 <%--    <link href="<%: ResolveUrl(mob) %>" rel="stylesheet" />--%>
     <header>
         <div class="content-wrapper">
@@ -61,7 +61,7 @@
                                         ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" 
                                         SelectCommand="select count(memberships.UserId) as accessi from Memberships Left Join Users on Memberships.UserId=Users.UserId where Memberships.LastLoginDate > convert(date, getdate())">
                                     </asp:SqlDataSource>
-                                     - Hello, <a id="A1" runat="server" class="username" href="~/Account/Manage" title="Manage your account">
+                                     - Hello, <a id="A1" runat="server" class="username" href="~/Account/Manage" title="Gestisci il tuo profilo">
                                         <asp:LoginName ID="LoginName1" runat="server" CssClass="username" />
                                     </a>.
                                 <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutText="Disconnetti" LogoutPageUrl="~/" />

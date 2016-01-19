@@ -25,7 +25,7 @@
                             </div>
                         </HeaderTemplate>
                         <ItemTemplate>
-                            <a href='../<%# (Container.DataItem as string).Substring(Server.MapPath("~/").Length).Replace("\\", "/") %>'>Leggi</a>
+                            <a target="_blank" href='../<%# (Container.DataItem as string).Substring(Server.MapPath("~/").Length).Replace("\\", "/") %>'>Leggi</a>
                         </ItemTemplate>
                         <FooterTemplate></ul></FooterTemplate>
                     </asp:Repeater>
@@ -46,7 +46,7 @@
                             </div>
                         </HeaderTemplate>
                         <ItemTemplate>
-                            <a href='../<%# (Container.DataItem as string).Substring(Server.MapPath("~/").Length).Replace("\\", "/") %>'>Leggi</a>    
+                            <a target="_blank" href='../<%# (Container.DataItem as string).Substring(Server.MapPath("~/").Length).Replace("\\", "/") %>'>Leggi</a>    
 
                         </ItemTemplate>
                         <FooterTemplate></ul></FooterTemplate>
@@ -95,7 +95,7 @@
                 </tr>
                 <tr id="Tr3" runat="server">
                     <td id="Td2" runat="server" style="text-align:center">
-                        <asp:DataPager ID="DataPager1" runat="server">
+                        <asp:DataPager ID="DataPager1" runat="server" PageSize="48">
                             <Fields>
                                 <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="True" ShowLastPageButton="True" />
                             </Fields>

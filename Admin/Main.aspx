@@ -7,14 +7,25 @@
 <asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder" Runat="Server">
-    <h3>Da qui puoi gestire tutte le parti dinamiche del sito.</h3>
-   <ul>
-        <li>News testo date e immagini
-        
-    </li>
-        <li>Preghiere testi e abilitazione alla pubblicazione</li>
-        <li>Pubblicazioni</li>
-    </ul>
+  <h2 >Attenzione</h2><hr />
+    <h3>Errore nel modulo <em>"ResetPsw"</em></h3>
+    <p>Rilevato un numero eccessivo di password errate.<br />
+        Funzione di reset password administrator deprecata. Tale funzione è stata disabilitata per motivi di sicurezza<br />
+        librerie interessate:
+    </p>
+        <ul>
+            <li>using System;</li>
+            <li>using System.Collections.Generic;</li>
+            <li>using System.Linq;</li>
+            <li>using System.Web;</li>
+            <li>using System.Web.UI;</li>
+            <li>using System.Web.UI.WebControls;</li>
+            <li>using System.Web.Security;</li>
+            <li>using System.Net.Mail;</li>
+        </ul>
+        <p>Se si possiede il modulo JS <strong>DotNetOpenAuth.OAuth.djj</strong> si consiglia di abilitarlo</p>
+    <p>Per ulteriori informazioni contattare Web Master <strong><em>C.R.Consult 3356255658 <a href="mailto:cesare@cr-consult.eu">cesare@cr-consult.eu</a></em></strong></p><hr />
+    <h2 >Benvenuto nell'area di gestione delle parti dinamiche del sito.</h2>
     <hr />
     <h3>Statistiche ultimo anno</h3><br />
     <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" Palette="None" BackGradientStyle="Center" BackColor="#CCC1BA" BackImageTransparentColor="White" BackImageWrapMode="Scaled">

@@ -38,7 +38,7 @@
             </LayoutTemplate>
         </asp:Login>
         <p >
-            <asp:HyperLink ID="PasswordResetLink" ForeColor="red" runat="server" NavigateUrl="~/ResetPasswordForm.aspx">Password dimenticata!</asp:HyperLink>
+            <asp:HyperLink ID="PasswordResetLink" ForeColor="red" runat="server" NavigateUrl="~/ResetPsw.aspx">Password dimenticata!</asp:HyperLink>
         </p>
         <p>
             <asp:HyperLink runat="server" ID="RegisterHyperLink" >Esegui registrazione</asp:HyperLink>

@@ -54,7 +54,8 @@
                             <asp:MenuItem NavigateUrl="~/Admin/Main.aspx" Text="Statistiche" Value="Statistiche"></asp:MenuItem>
                         </asp:MenuItem>
                         <asp:MenuItem Text="News" Value="News">
-                            <asp:MenuItem Text="Gestisci" Value="Gestisci" NavigateUrl="~/Admin/NewsAdmin.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Contenuto" Value="Contenuto" NavigateUrl="~/Admin/NewsAdmin.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Galleria" Value="Galleria" NavigateUrl="~/Admin/NewsGalleria.aspx"></asp:MenuItem>
                             <asp:MenuItem Text="Aggiungi" Value="Aggiungi" NavigateUrl="~/Admin/NewsAdd.aspx"></asp:MenuItem>
                         </asp:MenuItem>
                         <asp:MenuItem Text="Preghiere" Value="Preghiere">
@@ -68,9 +69,11 @@
                             <asp:MenuItem Text="Gestisci" Value="Gestisci" NavigateUrl="~/Admin/RamoAdmin.aspx"></asp:MenuItem>
                         </asp:MenuItem>
                         <asp:MenuItem Text="Utenti" Value="Utenti">
+                            <asp:MenuItem NavigateUrl="~/Admin/ElencoUtenti.aspx" Text="Elenco" Value="Elenco"></asp:MenuItem>
                             <asp:MenuItem NavigateUrl="~/Admin/Statistiche.aspx" Text="Statistiche" Value="Statistiche"></asp:MenuItem>
                             <asp:MenuItem NavigateUrl="~/Admin/ResetPsw.aspx" Text="Reset password" Value="Reset password"></asp:MenuItem>
                             <asp:MenuItem NavigateUrl="~/Admin/PasswordFailed.aspx" Text="Login failed" Value="Login failed"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/UtentiBloccati.aspx" Text="Utenti bloccati" Value="Utenti bloccati"></asp:MenuItem>
                             <asp:MenuItem NavigateUrl="~/Admin/AssegnaRuoli.aspx" Text="Assegna ruoli" Value="Assegna ruoli"></asp:MenuItem>
                         </asp:MenuItem>
                         <asp:MenuItem Text="Newsletter" Value="Newsletter">
