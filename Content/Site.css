@@ -763,9 +763,6 @@ td input[type="submit"], td input[type="button"], td button {
     text-align: justify;
     background-color: #fff;
     padding: 0px 15px 50px 30px;
-    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
-    box-shadow: 0px 0px 10px #2E1B0C;
     margin-top:0px;
 }
 .buttonnl {

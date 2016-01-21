@@ -87,6 +87,7 @@
             <asp:Parameter Name="Id" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
+    <h2>Pubblicate</h2>
     <asp:ListView ID="ListView2" runat="server" DataKeyNames="Id" DataSourceID="SqlDataSource2">
         <ItemTemplate>
             <asp:LinkButton CssClass="link3" ID="EditButton" runat="server" CommandName="Edit" > 
@@ -146,7 +147,7 @@
             <span>Non è stato restituito alcun dato.</span>
         </EmptyDataTemplate>
         <LayoutTemplate>
-            <div id="itemPlaceholderContainer" runat="server" style=""><h2>Pubblicate</h2><hr /><span runat="server" id="itemPlaceholder" /></div>
+            <div id="itemPlaceholderContainer" runat="server" style=""><hr /><span runat="server" id="itemPlaceholder" /></div>
                 <asp:DataPager ID="DataPager1" runat="server">
                     <Fields>
                                 <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" FirstPageText="<<" LastPageText="Ultimo" NextPageText=">>" />

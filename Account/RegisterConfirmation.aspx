@@ -21,20 +21,20 @@
                 <p>
                     Puoi cambiare la tua password in qualsiasi momento cliccando sul nome utente che appare in alto a destra una volta effettato il login
                 </p>
-                <p>
-                    Per chiarimenti riguardo a questo sito scrivi a <a href="mailto:info@santuariodicaravaggio.org">info@santuariodicaravaggio.org</a>
-                </p>
             </td>
         </tr>
         <tr>
             <td>
                 <img src="../Images/newsletter.png" />
                 <h3 style="text-align:center">Se vuoi puoi iscriverti alla newsletter del venerdì compilando il form qui sotto.</h3>
+                <h3></h3>
+                <div style="margin:auto; display:table">
+                    <iframe src="../IscrizioneNL2.aspx" style="height:600px; width:600px; margin:auto; background-color:#fff; border-radius:15px; border-style:none; position:relative"></iframe>
+                </div>
             </td>
         </tr>
     </table>
 <div style="width:800px; margin:auto">
-    <iframe src="../IscrizioneNL2.aspx" style="height:600px; width:800px; margin:auto; background-color:#fff; border-radius:15px; border-style:none; position:relative"></iframe>
 </div>
 
 </asp:Content>

@@ -14,6 +14,18 @@ public partial class Admin_StatistichePreghiere : System.Web.UI.Page
     {
         SqlDataSource1.SelectCommand = "select Utente, count(Utente) as 'Preghiere' From FedPreg group by Utente order By Preghiere Desc";
         SqlDataSource2.SelectCommand = "select Data, count(Data) as 'Preghiere' From FedPreg group by Data order By Data Desc";
-        SqlDataSource3.SelectCommand = "select * From FedPreg Where Nome = 'donato'";
+        SqlDataSource3.SelectCommand = "select count(id) as tot from FedPreg";
+        ListView3.DataSourceID = "SqlDataSource3";
+        ListView3.DataBind();
+    }
+
+    protected void ListView1_DataBound(object sender, EventArgs e)
+    {
+        lblUtente.Text = ListView1.Items.Count.ToString();
+    }
+
+    protected void ListView2_DataBound(object sender, EventArgs e)
+    {
+        lblData.Text = ListView2.Items.Count.ToString();
     }
 }

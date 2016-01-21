@@ -7,6 +7,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link href="Content/Site.css" rel="stylesheet" />
+    <style>
+        html{
+            background-image:none;
+            background-color:#fff;
+        }
+    </style>
 </head>
 <body style="border-top:none">
     <form id="form1" method="post" runat="server">
