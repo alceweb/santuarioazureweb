@@ -40,8 +40,8 @@ public partial class ResetPsw : System.Web.UI.Page
 
         if (u == null)
         {
-            Msg.ForeColor = System.Drawing.Color.Red;
-            Msg.Text = "Utente " + Server.HtmlEncode(UsernameTextBox.Text) + " non trovato. Riprova con un nome utente valido.";
+            Msg.ForeColor = System.Drawing.Color.Blue;
+            Msg.Text = "Utente <strong>" + Server.HtmlEncode(UsernameTextBox.Text) + " </strong>non trovato.<br/> Riprova con un nome utente valido o cantattaci <strong>info@santuariodicaravaggio.org</strong>";
 
             ResetPasswordButton.Visible = false;
         }
@@ -99,7 +99,7 @@ public partial class ResetPsw : System.Web.UI.Page
                 //L'oggetto 
                 mMailMessage.Subject = "Reset password sito Santuario di Caravaggio";
                 //Il corpo 
-                mMailMessage.Body = "La procedura di reset della password è avvenuta in modo corretto.<br/>La password dell'utente <strong>" + UsernameTextBox.Text + "</strong> è stata resettata.<br/>La nuova password è: <hr/>" + Server.HtmlEncode(newPassword) + "<hr/><p>Una volta eseguito l'accesso con la nuova passwod, ti consigliamo di cambiarla cliccanco sul nome utente che apparirà in alto a sinistra sopra il menu.</p>";
+                mMailMessage.Body = "La procedura di reset della password è avvenuta in modo corretto.<br/>La password dell'utente <strong>" + UsernameTextBox.Text + "</strong> è stata resettata.<br/>La nuova password è: <hr/>" + Server.HtmlEncode(newPassword) + "<hr/><p>Una volta eseguito l'accesso con la nuova passwod, ti consigliamo di cambiarla cliccanco sul nome utente che apparirà in alto a destra sopra il menu.</p>";
                 //Setto la modalità testo, per il contenuto del messaggio. Sarebbe possibile inviare anche dell'HTML mettendo true 
                 mMailMessage.IsBodyHtml = true;
                 //Setto la priorità 

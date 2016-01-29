@@ -6,19 +6,22 @@
     <h2><%= Title %></h2><hr />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
-    <table>
+    <table >
         <tr>
             <td style="">
     <asp:ListView ID="ListView1" runat="server" DataKeyNames="Id" DataSourceID="SqlDataSource1">
         <ItemTemplate>
+                    <a class="aEventi" href='<%# ResolveUrl("~/News.aspx?Id=" + Eval("Id")) %>'>
             <div class="divEventi" >
-                    <a href='<%# ResolveUrl("~/News.aspx?Id=" + Eval("Id")) %>'>
-                    <asp:Label  ID="DataLabel" runat="server" Text='<%# Eval("Data", "{0:dddd dd MMM yy}") %>' Font-Bold="True" Font-Italic="True" /><br />
-                    <asp:Label ID="TitoloLabel" runat="server" Text='<%# Eval("Titolo") %>' /><br />
                     <asp:Image ID="Image1" runat="server" ImageUrl='<%# "~/NewsImg/" + Eval("Id") + "/" + Eval("Id") + ".jpg"  %>' PostBackUrl="~/News.aspx" />
-                    </a>
+                        <span>
+                    <asp:Label  ID="DataLabel" runat="server" Text='<%# Eval("Data", "{0:dddd dd MMM yy}") %>' Font-Bold="True" Font-Italic="True" /><br />
+                    <asp:Label ID="TitoloLabel" ForeColor="Green" runat="server" Text='<%# Eval("DescrizioneBreve") %>' /><br />
+                    <asp:Label ID="Label1" runat="server" ForeColor="White" Text='<%# Eval("Titolo") %>'></asp:Label>
+                        </span>
 
             </div>
+                    </a>
         </ItemTemplate>
     </asp:ListView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" 

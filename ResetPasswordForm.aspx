@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
 <h2><%: Page.Title %></h2><hr />
-    <table class="tbl1" >
+    <table class="tbl3" >
         <tr>
             <td colspan="2">
                 <h2>Richiesta reset password</h2>
@@ -53,11 +53,10 @@
             </td>
         </tr>
         <tr>
-            <td>
-                <asp:Button ID="InviaButton" OnClick="InviaButton_Click" runat="server" Text="Invia" />
-            </td>
-            <td>
-                <asp:Button ID="Button2" CommandName="Delete" runat="server" Text="Annulla" />
+            <td colspan="2"><hr />
+                <asp:Button ID="InviaButton" CssClass="btn_ok" OnClick="InviaButton_Click" runat="server" Text="Invia" />
+            
+                <asp:Button ID="Button2" CssClass="btn_ko" PostBackUrl="~/Account/Login.aspx" CausesValidation="false" runat="server" Text="Annulla" UseSubmitBehavior="False" />
             </td>
         </tr>
     </table>

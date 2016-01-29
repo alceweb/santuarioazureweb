@@ -10,8 +10,9 @@
             <span>Non è stato restituito alcun dato.</span>
         </EmptyDataTemplate>
         <ItemTemplate>
-            <td style="">
-                <a class="linkag" style="float:right" href='<%# "NewsGalleria.aspx?id=" + Eval("Id")  %>'>Galleria fotografica</a>
+            <div class="NewsItem">
+
+                <a style="float:right" href='<%# "NewsGalleria.aspx?id=" + Eval("Id")  %>'>Galleria fotografica</a>
             <asp:Label ID="DataLabel" CssClass="NewsData" runat="server" Text='<%# Eval("Data", "{0:dddd dd-MM-yy}") %>' Font-Size="1.9em" />
             <br />
             <asp:Label ID="TitoloLabel" CssClass="NewsTitolo" runat="server" Text='<%# Eval("Titolo") %>' />
@@ -19,27 +20,10 @@
             <asp:Label ID="DescrizioneBreveLabel" CssClass="NewDescrizioneBreve" runat="server" Text='<%# Eval("DescrizioneBreve") %>' /><br /><br />
                 <a class="linka" href='<%# "NewsGalleria.aspx?id=" + Eval("Id")  %>'>
             <img class="NewsImg1" src='<%# "NewsImg/" + Eval("ID") + "/" + Eval("ID") + ".jpg" %>' /></a>
-                </a>
+                </a><br />
                     <asp:Label CssClass="NewsDescrizione" ID="DescrizioneLabel" runat="server" Text='<%# Eval("Descrizione") %>' />
-                <br /><br />
-            </td>
+            </div>
         </ItemTemplate>
-        <LayoutTemplate>
-            <table id="Table1" style="margin:auto" runat="server">
-                <tr id="Tr1" runat="server">
-                    <td id="Td1" runat="server">
-                        <table class="tbl3"  id="itemPlaceholderContainer" runat="server" border="0" style="">
-                            <tr id="itemPlaceholder" runat="server">
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr id="Tr3" runat="server">
-                    <td id="Td2" runat="server" style="">
-                    </td>
-                </tr>
-            </table>
-        </LayoutTemplate>
     </asp:ListView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>" SelectCommand="SELECT * FROM [News] WHERE ([Id] = @Id)">
         <SelectParameters>

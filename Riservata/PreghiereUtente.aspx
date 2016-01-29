@@ -86,17 +86,10 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
     <table >
-        <thead>
-        <tr>
-            <td>
-                    <asp:LinkButton ID="ButtonNew" runat="server" ForeColor="#452a17" Text="Lascia la tua preghiera" PostBackUrl="~/Riservata/PreghiAdd.aspx" />
-
-            </td>
-            
-        </tr>
-        </thead>
         <tr>
             <td style="width: 250px; vertical-align: top">
+                    <h3><asp:LinkButton ID="ButtonNew" CssClass="linka" runat="server" Text="Scrivi la tua preghiera" PostBackUrl="~/Riservata/PreghiAdd.aspx" /></h3>
+                    <h3><asp:LinkButton ID="LinkButton2" runat="server" CssClass="linka" Text="Tutte le preghiere" PostBackUrl="~/Preghiere/Elenco.aspx" /></h3>
                 <img style="border: none; box-shadow: none" src="<%: ResolveUrl("~/Images/Madonna.png")%>" />
             </td>
             <td style="vertical-align: top">

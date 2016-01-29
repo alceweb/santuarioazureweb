@@ -15,7 +15,7 @@
     </asp:SqlDataSource>
     </div>
     <div>
-    <asp:ListView ID="ListView1" runat="server" DataKeyNames="UserId" DataSourceID="SqlDataSource1" GroupItemCount="3">
+    <asp:ListView ID="ListView1" runat="server" DataKeyNames="UserId" DataSourceID="SqlDataSource1" GroupItemCount="1">
         <EmptyItemTemplate>
             <td id="Td1" runat="server" />
         </EmptyItemTemplate>
@@ -60,14 +60,17 @@
             </td>
         </ItemTemplate>
         <EditItemTemplate>
-            <td id="Td3" runat="server" style="">
+            <td id="Td2" runat="server" style="">
+                Email:
+                <asp:Label ForeColor="white" ID="EmailLabel" runat="server" Text='<%# Eval("Email") %>' />
+                <br />
                 Approvato <asp:CheckBox ID="IsApprovedCheckBox" runat="server" Checked='<%# Bind("IsApproved") %>' />
                 <asp:Label ID="Label3" runat="server" ForeColor="red" Text="(Disattivando la casella l'utente non potrà più accedere)"></asp:Label>
                 <br />
                 Bloccato <asp:CheckBox ID="IsLockedOutCheckBox" runat="server" Checked='<%# Bind("IsLockedOut") %>' />
                 <asp:Label ID="Label4" runat="server" ForeColor="red" Text="(Dopo 5 tentativi di password errati)"></asp:Label><br />
                 Commenti:<br />
-                <asp:TextBox ID="CommentTextBo1" TextMode="MultiLine" runat="server" Text='<%# Bind("Comment") %>'></asp:TextBox>
+                <asp:TextBox ID="CommentTextBo1" Width="250px" TextMode="MultiLine" runat="server" Text='<%# Bind("Comment") %>'></asp:TextBox>
                 <hr />
                 <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Aggiorna" />
                 <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Annulla" />
@@ -89,10 +92,6 @@
                             <tr id="groupPlaceholder" runat="server">
                             </tr>
                         </table>
-                    </td>
-                </tr>
-                <tr id="Tr2" runat="server">
-                    <td id="Td5" runat="server" style="">
                     </td>
                 </tr>
             </table>

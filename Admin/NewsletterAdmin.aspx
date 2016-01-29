@@ -13,7 +13,7 @@
             <asp:LinkButton CssClass="link3" ID="SelectButton" runat="server" CommandName="Select" > 
                         <asp:Label ID="Label1" runat="server" Font-Bold="true" Text='<%# Eval("Data", "{0:dd MMM yyyy}") %>'></asp:Label> - 
                         <asp:Label ID="Label2" runat="server" Text='<%# Eval("Titolo") %>'></asp:Label>
-            </asp:LinkButton><span style="float:right"><asp:LinkButton ID="DeleteButton" ForeColor="Red" Font-Bold="true" OnClientClick='return confirm("Stai cancellando definitivamente record")' runat="server" CommandName="Delete" Text="Elimina" />
+            </asp:LinkButton><span style="float:right"><asp:LinkButton ID="DeleteButton" ForeColor="Red" Font-Bold="true" OnClientClick='return confirm("La newsletter sarà cancellata definitivamente. Continuare?")' runat="server" CommandName="Delete" Text="Elimina" />
             </span>
             <hr /></span>
         </ItemTemplate>

@@ -97,19 +97,19 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
         <asp:ListView ID="ListView2" runat="server" DataKeyNames="Id" DataSourceID="SqlDataSource1">
             <ItemTemplate>
-                <span class="NewsItems">
+                    <a href='News.aspx?ID=<%# Eval("Id") %>' >
+                <div class="NewsItems">
                     <asp:Label ID="DataLabel" CssClass="NewsData" runat="server" Text='<%# Eval("Data", "{0:dddd dd-MMM-yy}") %>' />
                     <br />
                     <asp:Label ID="TitoloLabel" CssClass="NewsTitolo" runat="server" Text='<%# Eval("Titolo") %>' />
                     <br /><br />
-                    <a href='News.aspx?ID=<%# Eval("Id") %>' class="NewsA">
-                        <img class="NewsImg" src='<%# "NewsImg/" + Eval("ID") + "/" + Eval("id") + ".jpg" %>' /></a>
+                        <img src='<%# "NewsImg/" + Eval("ID") + "/" + Eval("id") + ".jpg" %>' />
                     <br />
                     <span>
                         <asp:Label ID="DescrizioneBreveLabel" CssClass="NewsDescrizione" runat="server" Text='<%# Eval("DescrizioneBreve") %>' />
                     </span>
                     <br />
-                </span>
+                </div></a>
             </ItemTemplate>
             <LayoutTemplate>
                 <div class="newsContainer" id="itemPlaceholderContainer" runat="server" style="">

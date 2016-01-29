@@ -12,7 +12,7 @@ public partial class EleNews : System.Web.UI.Page
         SqlDataSource SqlDSStaPageIns = new SqlDataSource();
         SqlDSStaPageIns.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         string pagina = Page.Title.ToString();
-        String data = DateTime.Today.ToString();
+        String data = DateTime.Today.ToString("MM/dd/yyyy");
         SqlDSStaPageIns.InsertCommand = "insert into StaPage ([Pagina], [Data]) values ('" + pagina + "', '" + data + "')";
         SqlDSStaPageIns.Insert();
     }
