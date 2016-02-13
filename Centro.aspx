@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Centro di spiritualità" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Centro.aspx.cs" Inherits="Centro" %>
+<%@ Register Assembly="Recaptcha.Web" Namespace="Recaptcha.Web.UI.Controls" TagPrefix="cc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
     <script src="Scripts/jquery-2.1.1.min.js"></script>
@@ -20,10 +21,6 @@
         <tr>
             <td colspan="2">
                 <h2>Richiesta informazioni</h2>
-
-               <h3><asp:Label ID="lblMessage" ForeColor="red" runat="server" Text=""></asp:Label></h3>
-
-
             </td>
             <td rowspan="6">
                 <div >
@@ -116,6 +113,13 @@
         <tr>
             <td colspan="2">
                 <asp:TextBox Height="500px" ID="RichiestaTtBox1" required="required" Width="360px" TextMode="MultiLine" runat="server"></asp:TextBox><br />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+               <h3><asp:Label ID="lblMessage" ForeColor="red" runat="server" Text=""></asp:Label></h3>
+              <cc1:Recaptcha ID="Recaptcha1"  runat="server" />
+
             </td>
         </tr>
         <tr>

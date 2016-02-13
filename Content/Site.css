@@ -50,6 +50,26 @@ body{
 .divRst h2{
     text-align:center;
 }
+.divStat{
+    text-shadow: 0px 0px 8px #fff;
+    text-align:left;
+    margin:5px;
+    padding:5px;
+    float:left;
+}
+.divStat div{
+    border-bottom:solid thin #008000;
+    padding:0px;
+}
+.hr1{
+
+}
+.txt-center{
+    text-align:center;
+}
+.txt-right{
+    text-align:right;
+}
 a {
     color: #333;
     outline: none;

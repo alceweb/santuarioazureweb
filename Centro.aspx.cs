@@ -20,6 +20,16 @@ public partial class Centro : System.Web.UI.Page
     }
     protected void InviaButton_Click(object sender, EventArgs e)
     {
+        if (String.IsNullOrEmpty(Recaptcha1.Response))
+        {
+            lblMessage.Text = "Inserire codice reCaptcha in basso";
+        }
+        else
+        {
+            RecaptchaVerificationResult result = Recaptcha1.Verify();
+
+            if (result == RecaptchaVerificationResult.Success)
+            {
                 ////Preparo i campi della mail
                 String from = "webservice@santuariodicaravaggio.eu";
                 String to = "cesare@cr-consult.eu";
@@ -43,6 +53,16 @@ public partial class Centro : System.Web.UI.Page
                 //Invio il messaggio 
                 mSmtpClient.Send(mMailMessage);
                 Response.Redirect("FormResponse.aspx");
-       
+
+            }
+            if (result == RecaptchaVerificationResult.IncorrectCaptchaSolution)
+            {
+                lblMessage.Text = "reCaptcha inserito in modo scorretto";
+            }
+            else
+            {
+                lblMessage.Text = "C'è stato un problema, riprova.";
+            }
+        }
     }
 }

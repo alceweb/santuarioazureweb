@@ -28,76 +28,76 @@
     <h2 >Benvenuto nell'area di gestione delle parti dinamiche del sito.</h2>
     <hr />
     <h3>Statistiche ultimo anno</h3><br />
-    <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" Palette="None" BackGradientStyle="Center" BackColor="#CCC1BA" BackImageTransparentColor="White" BackImageWrapMode="Scaled">
+    <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1" Width="1024px">
         <Series>
-            <asp:Series Name="Series1" XValueMember='mese' YValueMembers="numero" XAxisType="Primary" IsXValueIndexed="True" XValueType="Auto" IsValueShownAsLabel="False" YValuesPerPoint="1" BackImageWrapMode="Tile" Enabled="True" ShadowOffset="5" YAxisType="Primary" IsVisibleInLegend="True">
+            <asp:Series Name="Series1" XValueMember='mese' YValueMembers="numero" XAxisType="Primary" IsXValueIndexed="True" IsValueShownAsLabel="False" BackImageWrapMode="Tile" Enabled="True" ShadowOffset="5" YAxisType="Primary" IsVisibleInLegend="True" >
             </asp:Series>
         </Series>
         <ChartAreas>
-            <asp:ChartArea Name="ChartArea1" Area3DStyle-Enable3D="False" BackGradientStyle="Center" IsSameFontSizeForAllAxes="True" BackColor="#CCC1BA"></asp:ChartArea>
+            <asp:ChartArea Name="ChartArea1" BackGradientStyle="VerticalCenter" IsSameFontSizeForAllAxes="True" BackColor="#CCC1BA" Area3DStyle-Enable3D="True"></asp:ChartArea>
         </ChartAreas>
         <Titles>
             <asp:Title Name="Titolo" Text="Trend invio preghiere per mese">
             </asp:Title>
         </Titles>
-    </asp:Chart>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"/>
-    <asp:Chart ID="ChartAccessi" runat="server" DataSourceID="SqlDataSource2">
+    </asp:Chart><br />
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"/>
+    <asp:Chart ID="ChartAccessi" runat="server" DataSourceID="SqlDataSource2" Width="1024px">
         <Series>
             <asp:Series Name="Series1" XValueMember='mese' YValueMembers="numero" XAxisType="Primary" IsXValueIndexed="True" XValueType="Auto" IsValueShownAsLabel="False" YValuesPerPoint="1" ShadowOffset="5">
             </asp:Series>
         </Series>
         <ChartAreas>
-            <asp:ChartArea Name="ChartAreaAccessi"></asp:ChartArea>
+            <asp:ChartArea Name="ChartAreaAccessi" BackGradientStyle="VerticalCenter" BackColor="#CCC1BA" Area3DStyle-Enable3D="True"></asp:ChartArea>
         </ChartAreas>
         <Titles>
             <asp:Title Name="Titolo" Text="Trend accesso area riservata per mese">
             </asp:Title>
         </Titles>
-    </asp:Chart>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"/>
-    <asp:Chart ID="ChartNuoviUtenti" runat="server" DataSourceID="SqlDataSource3">
+    </asp:Chart><br />
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"/>
+    <asp:Chart ID="ChartNuoviUtenti" runat="server" DataSourceID="SqlDataSource3" Width="1024px">
         <Series>
             <asp:Series Name="Series1" XValueMember='mese' YValueMembers="numero" XAxisType="Primary" IsXValueIndexed="True" XValueType="Auto" IsValueShownAsLabel="False" YValuesPerPoint="1" ShadowOffset="5">
             </asp:Series>
         </Series>
         <ChartAreas>
-            <asp:ChartArea Name="ChartAreaNuoviUtenti"></asp:ChartArea>
+            <asp:ChartArea Name="ChartAreaNuoviUtenti" BackGradientStyle="VerticalCenter" BackColor="#CCC1BA" Area3DStyle-Enable3D="True"></asp:ChartArea>
         </ChartAreas>
         <Titles>
             <asp:Title Name="Titolo" Text="Trend nuove iscrizioni per mese">
             </asp:Title>
         </Titles>
-    </asp:Chart>
-        <asp:SqlDataSource ID="SqlDSNL" runat="server"></asp:SqlDataSource>
-    <asp:Chart ID="ChartNL" runat="server" DataSourceID="SqlDSNL" Palette="None" BackGradientStyle="Center" BackColor="204, 193, 186" BackImageTransparentColor="White" BackImageWrapMode="Scaled" >
+    </asp:Chart><br />
+        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"/>
+    <asp:Chart ID="ChartNL" runat="server" DataSourceID="SqlDSNL" Palette="None" BackGradientStyle="Center" BackColor="204, 193, 186" BackImageTransparentColor="White" BackImageWrapMode="Scaled" Width="1024px">
         <Series>
             <asp:Series Name="Series1" XValueMember='Mese' YValueMembers="Numero" XAxisType="Primary" IsXValueIndexed="True" XValueType="Auto" IsValueShownAsLabel="False" YValuesPerPoint="1" BackImageWrapMode="Tile" Enabled="True" ShadowOffset="5">
             </asp:Series>
         </Series>
         <ChartAreas>
-            <asp:ChartArea Name="ChartArea1" Area3DStyle-Enable3D="False" BackGradientStyle="Center" IsSameFontSizeForAllAxes="True" BackColor="#CCC1BA"></asp:ChartArea>
+            <asp:ChartArea Name="ChartArea1" BackGradientStyle="VerticalCenter" BackColor="#CCC1BA" Area3DStyle-Enable3D="True"></asp:ChartArea>
         </ChartAreas>
         <Titles>
             <asp:Title Name="Titolo" Text="Trend iscrizione newsletter">
             </asp:Title>
         </Titles>
     </asp:Chart><hr />
+        <asp:SqlDataSource ID="SqlDSNL" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"/>
     <h3>Statistiche generali dalla pubblicazione del sito</h3><br />
-    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"/>
-        <asp:SqlDataSource ID="SqlDSStaPage" runat="server"></asp:SqlDataSource>
     <asp:Chart ID="ChartPage" runat="server" DataSourceID="SqlDSStaPage" Palette="None" BackGradientStyle="Center" BackColor="204, 193, 186" BackImageTransparentColor="White" BackImageWrapMode="Scaled" Width="1024px">
         <Series>
             <asp:Series Name="Series1" XValueMember='Pagina' YValueMembers="Numero" XAxisType="Primary" IsXValueIndexed="True" XValueType="Auto" IsValueShownAsLabel="True" YValuesPerPoint="1" BackImageWrapMode="Tile" Enabled="True" ShadowOffset="5">
             </asp:Series>
         </Series>
         <ChartAreas>
-            <asp:ChartArea Name="ChartArea1" Area3DStyle-Enable3D="False" BackGradientStyle="Center" IsSameFontSizeForAllAxes="True" BackColor="#CCC1BA"></asp:ChartArea>
+            <asp:ChartArea Name="ChartArea1" BackGradientStyle="VerticalCenter" BackColor="#CCC1BA" Area3DStyle-Enable3D="True"></asp:ChartArea>
         </ChartAreas>
         <Titles>
             <asp:Title Name="Titolo" Text="Pagine più significative, con accessi superiori a 3.000 unità">
             </asp:Title>
         </Titles>
     </asp:Chart>
+        <asp:SqlDataSource ID="SqlDSStaPage" runat="server" ConnectionString="<%$ ConnectionStrings:DefaultConnection %>"/>
 </asp:Content>
 

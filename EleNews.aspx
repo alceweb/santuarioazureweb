@@ -16,8 +16,8 @@
                     <asp:Image ID="Image1" runat="server" ImageUrl='<%# "~/NewsImg/" + Eval("Id") + "/" + Eval("Id") + ".jpg"  %>' PostBackUrl="~/News.aspx" />
                         <span>
                     <asp:Label  ID="DataLabel" runat="server" Text='<%# Eval("Data", "{0:dddd dd MMM yy}") %>' Font-Bold="True" Font-Italic="True" /><br />
-                    <asp:Label ID="TitoloLabel" ForeColor="Green" runat="server" Text='<%# Eval("DescrizioneBreve") %>' /><br />
-                    <asp:Label ID="Label1" runat="server" ForeColor="White" Text='<%# Eval("Titolo") %>'></asp:Label>
+                    <asp:Label ID="Label1" runat="server" ForeColor="White" Text='<%# Eval("Titolo") %>'></asp:Label><br />
+                    <asp:Label ID="TitoloLabel" ForeColor="Green" runat="server" Text='<%# Eval("DescrizioneBreve") %>' />
                         </span>
 
             </div>
